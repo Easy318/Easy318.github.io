@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Train," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Superli's Blog" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="Python入门_1讲关于本人培训之前需要注意的几点:  培训的通知, 培训资料的下载(无敌传送门) 课后问题的回复 本人的一些情况 课程大纲  Python 里的基本概念程序的注释Python的编译器会忽略注释掉的文本,但是,作为文档,它对程序的阅读者是很有帮助的 基本的使用:  单行注释使用 # 多行注释使用 3个单引号或者3个双引号括 起来的一个字符串  标识符的拼写和命名惯例 Python">
+<meta name="keywords" content="Train">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python入门_1讲">
+<meta property="og:url" content="http://www.superli.tech/Python入门-1讲/index.html">
+<meta property="og:site_name" content="Superli&#39;s Blog">
+<meta property="og:description" content="Python入门_1讲关于本人培训之前需要注意的几点:  培训的通知, 培训资料的下载(无敌传送门) 课后问题的回复 本人的一些情况 课程大纲  Python 里的基本概念程序的注释Python的编译器会忽略注释掉的文本,但是,作为文档,它对程序的阅读者是很有帮助的 基本的使用:  单行注释使用 # 多行注释使用 3个单引号或者3个双引号括 起来的一个字符串  标识符的拼写和命名惯例 Python">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://www.superli.tech/Python入门-1讲/条件控制.png">
+<meta property="og:image" content="http://www.superli.tech/Python入门-1讲/whileloop.png">
+<meta property="og:updated_time" content="2019-01-03T08:57:51.480Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python入门_1讲">
+<meta name="twitter:description" content="Python入门_1讲关于本人培训之前需要注意的几点:  培训的通知, 培训资料的下载(无敌传送门) 课后问题的回复 本人的一些情况 课程大纲  Python 里的基本概念程序的注释Python的编译器会忽略注释掉的文本,但是,作为文档,它对程序的阅读者是很有帮助的 基本的使用:  单行注释使用 # 多行注释使用 3个单引号或者3个双引号括 起来的一个字符串  标识符的拼写和命名惯例 Python">
+<meta name="twitter:image" content="http://www.superli.tech/Python入门-1讲/条件控制.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.superli.tech/Python入门-1讲/"/>
+
+
+
+
+
+  <title>Python入门_1讲 | Superli's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+	<a href="https://github.com/easy318"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Superli's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-game">
+          <a href="/categories/Game/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-gamepad"></i> <br />
+            
+            游戏
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-train">
+          <a href="/categories/Train/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-graduation-cap"></i> <br />
+            
+            培训
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.superli.tech/Python入门-1讲/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="李超">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/头像.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Superli's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Python入门_1讲</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-19T19:10:54+08:00">
+                2018-09-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Train/" itemprop="url" rel="index">
+                    <span itemprop="name">Train</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/Python入门-1讲/" class="leancloud_visitors" data-flag-title="Python入门_1讲">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+			<span class="post-meta-divider"></span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,463
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Python入门-1讲"><a href="#Python入门-1讲" class="headerlink" title="Python入门_1讲"></a>Python入门_1讲</h1><p>关于本人培训之前需要注意的几点:</p>
+<ul>
+<li>培训的通知, 培训资料的下载(<a href="http://www.superli.tech/categories/Train/">无敌传送门</a>)</li>
+<li>课后问题的回复</li>
+<li>本人的一些情况</li>
+<li><a href="https://github.com/Easy318/MyPicture/blob/master/%E5%9B%BE%E5%BD%A2%E6%A8%A1%E6%9D%BF/%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.png?raw=true" target="_blank" rel="noopener">课程大纲</a></li>
+</ul>
+<h2 id="Python-里的基本概念"><a href="#Python-里的基本概念" class="headerlink" title="Python 里的基本概念"></a>Python 里的基本概念</h2><h3 id="程序的注释"><a href="#程序的注释" class="headerlink" title="程序的注释"></a>程序的注释</h3><p>Python的编译器会忽略注释掉的文本,但是,作为文档,它对程序的阅读者是很有帮助的</p>
+<p>基本的使用:</p>
+<ul>
+<li>单行注释使用 <strong>#</strong></li>
+<li>多行注释使用 <strong>3个单引号或者3个双引号括</strong> 起来的一个字符串</li>
+</ul>
+<h3 id="标识符的拼写和命名惯例"><a href="#标识符的拼写和命名惯例" class="headerlink" title="标识符的拼写和命名惯例"></a>标识符的拼写和命名惯例</h3><ul>
+<li>Python 对大小写敏感(区分大小写)</li>
+<li>标识符由字母、数字和下划线组成</li>
+<li>标识符必须是字母或下划线( _ )开头</li>
+<li>不能以关键字(保留字)命名</li>
+</ul>
+<p>Python里面的关键字:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> keyword</span><br><span class="line">print(keyword.kwlist)</span><br></pre></td></tr></table></figure>
+<p>命名规范:</p>
+<ul>
+<li>为什么使用命名规范<ul>
+<li>程序员们为了自己的代码能更容易的在同行之间交流，所以多采取统一的可读性比较好的命名方式</li>
+<li>驼峰式命名法 / 下划线法</li>
+</ul>
+</li>
+<li>类名采用大驼峰式命名,即首字母需要大写</li>
+<li>模块、变量、函数和方法名称可以凭自己喜好使用 驼峰式命名法 / 下划线法</li>
+<li>当一个变量名是一个常量的时候所有字母大写</li>
+</ul>
+<p>概念补充：</p>
+<ul>
+<li>驼峰式命名： 骆驼式命名法就是当变量名或函数名是由一个或多个单词连结在一起，而构成的唯一识别字时，第一个单词以小写字母开始，从第二个单词开始以后的每个单词的首字母都采用大写字母，例如：myFirstName、myLastName，这样的变量名看上去就像骆驼峰一样此起彼伏</li>
+<li>下划线命名法： 逻辑断点之间用下划线连接，字母全部小写，例如： my_firstname, my_lastname</li>
+</ul>
+<h3 id="行与缩进"><a href="#行与缩进" class="headerlink" title="行与缩进"></a>行与缩进</h3><p>Python使用缩进来表示代码块,而不是{},缩进的空格数是可变的，但是同一个代码块的语句必须包含相同的缩进空格数, 为了统一,一般使用4个空格来进行缩进</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 标准</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">False</span>:</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">"True"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">"False"</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 非标准</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">False</span>:</span><br><span class="line">   <span class="keyword">print</span> (<span class="string">"True"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">"False"</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 错误</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">False</span>:</span><br><span class="line">   <span class="keyword">print</span> (<span class="string">"True"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">"False"</span>)</span><br><span class="line">   print(<span class="string">"Hello, world"</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p>只介绍基本的数据类型:</p>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number（数字)</td>
+<td>int,long,float,complex</td>
+</tr>
+<tr>
+<td>String（字符串)</td>
+<td>“BNU”</td>
+</tr>
+<tr>
+<td>List（列表)</td>
+<td>[1,2,3],[1,2,3,[1,2,3],4]</td>
+</tr>
+<tr>
+<td>Dictionary（字典)</td>
+<td>{1:”nihao”,2:”hello”}</td>
+</tr>
+<tr>
+<td>Tuple（元组)</td>
+<td>(1,2,3,abc)</td>
+</tr>
+<tr>
+<td>Bool（布尔)</td>
+<td>True、False</td>
+</tr>
+</tbody>
+</table>
+<p><strong>变量的声明:</strong> 因为在Python里面一切皆对象, 任何变量都可以指定为任何类型的一个值,所以不需要为该变量声明为某一个类型,这和很多其他语言中的情况不太一样, 但是请记住,所有的值和对象都是有类型的,而且类型错误一定会进行检查</p>
+<p>一个简单的赋值操作:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">text = <span class="string">"Hello, Python"</span></span><br><span class="line">text</span><br></pre></td></tr></table></figure>
+<h3 id="输出-输入"><a href="#输出-输入" class="headerlink" title="输出/输入"></a>输出/输入</h3><p><strong>输出:</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(text)</span><br></pre></td></tr></table></figure>
+<p><strong>输入:</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">user_input = input(<span class="string">"&gt;&gt;&gt;:"</span>)</span><br><span class="line">print(user_input)</span><br></pre></td></tr></table></figure>
+<h3 id="逻辑判断"><a href="#逻辑判断" class="headerlink" title="逻辑判断"></a>逻辑判断</h3><p>Python条件语句是通过一条或多条语句的执行结果（True或者False）来决定执行的代码块</p>
+<p>用图来简单表示:</p>
+<p><img src="条件控制.png" alt="条件控制"></p>
+<p>Python中if语句的一般形式如下所示：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> condition_1:</span><br><span class="line">    statement_block_1</span><br><span class="line"><span class="keyword">elif</span> condition_2:</span><br><span class="line">    statement_block_2</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    statement_block_3</span><br></pre></td></tr></table></figure>
+<ul>
+<li>如果 “condition_1” 为 True 将执行 “statement_block_1” 块语句</li>
+<li>如果 “condition_1” 为False，将判断 “condition_2”</li>
+<li>如果”condition_2” 为 True 将执行 “statement_block_2” 块语句</li>
+<li>如果 “condition_2” 为False，将执行”statement_block_3”块语句</li>
+</ul>
+<p><strong>注意:</strong></p>
+<ul>
+<li>Python 中用 elif 代替了 else if，所以if语句的关键字为：if – elif – else</li>
+<li>每个条件后面要使用冒号 :，表示接下来是满足条件后要执行的语句块</li>
+<li>使用缩进来划分语句块，相同缩进数的语句在一起组成一个语句块</li>
+<li>在Python中没有switch – case语句</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 评级</span></span><br><span class="line">score = <span class="number">90</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="number">0</span> &lt; score &lt;= <span class="number">60</span>:</span><br><span class="line">    print(<span class="string">"不及格"</span>)</span><br><span class="line"><span class="keyword">elif</span> <span class="number">60</span> &lt; score &lt;= <span class="number">90</span>:</span><br><span class="line">    print(<span class="string">"良好"</span>)</span><br><span class="line"><span class="keyword">elif</span> <span class="number">90</span> &lt; score &lt;=<span class="number">100</span>:</span><br><span class="line">    print(<span class="string">"优秀"</span>)</span><br></pre></td></tr></table></figure>
+<p>牛刀小试: <strong>猜数字游戏</strong></p>
+<p>操作中…</p>
+<h3 id="逻辑循环"><a href="#逻辑循环" class="headerlink" title="逻辑循环"></a>逻辑循环</h3><p>Python中的循环语句有 for 和 while</p>
+<p><strong>注意:</strong> 切勿把程序写成死循环</p>
+<h4 id="while-loop"><a href="#while-loop" class="headerlink" title="while loop"></a>while loop</h4><p>简单的用流程图表示为:</p>
+<p><img src="whileloop.png" alt="whileloop"></p>
+<p>基本句法:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> 判断条件：</span><br><span class="line">    语句</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line"><span class="keyword">while</span> 判断条件:</span><br><span class="line">    成立则执行该语句</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    不成立则执行该语句然后退出</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 循环10次:</span></span><br><span class="line">count = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">    print(<span class="string">"你是风儿我是沙,缠缠绵绵到天涯..."</span>,count)</span><br><span class="line">    count +=<span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> count == <span class="number">10</span>:</span><br><span class="line">        print(<span class="string">"What the hell 风和沙,你们这些bad guy.."</span>)</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">count = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> count &lt; <span class="number">5</span>:</span><br><span class="line">   <span class="keyword">print</span> (count, <span class="string">" 小于 5"</span>)</span><br><span class="line">   count = count + <span class="number">1</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">   <span class="keyword">print</span> (count, <span class="string">" 大于或等于 5"</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="for-语句"><a href="#for-语句" class="headerlink" title="for 语句"></a>for 语句</h4><p>Python for循环可以遍历任何序列的项目，如一个列表或者一个字符串</p>
+<p>for循环的一般格式如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> &lt;variable&gt; <span class="keyword">in</span> &lt;sequence&gt;:</span><br><span class="line">    &lt;statements&gt;</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    &lt;statements&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 打印10个数</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">    print(<span class="string">"loop:"</span>, i )</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    print(<span class="string">"循环完毕"</span>)</span><br></pre></td></tr></table></figure>
+<p><strong>关于 continu与break 用法:</strong></p>
+<p>需求一：还是上面的程序，但是遇到小于5的循环次数就不走了，直接跳入下一次循环</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">    <span class="keyword">if</span> i&lt;<span class="number">5</span>:</span><br><span class="line">        <span class="keyword">continue</span> <span class="comment">#不往下走了,直接进入下一次loop</span></span><br><span class="line">    print(<span class="string">"loop:"</span>, i )</span><br></pre></td></tr></table></figure>
+<p>需求二：还是上面的程序，但是遇到大于5的循环次数就不走了，直接退出</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">    <span class="keyword">if</span> i&gt;<span class="number">5</span>:</span><br><span class="line">        <span class="keyword">break</span> <span class="comment">#不往下走了,直接跳出整个loop</span></span><br><span class="line">    print(<span class="string">"loop:"</span>, i )</span><br></pre></td></tr></table></figure>
+<h3 id="牛刀大试"><a href="#牛刀大试" class="headerlink" title="牛刀大试"></a>牛刀大试</h3><p>回到上面for 循环的例子，如何实现让用户不断的猜年龄，但用户最多只有3次猜的机会，再猜不对就退出程序</p>
+
+      
+    </div>
+    
+    
+    
+<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #555;font-size:14px;">-------------The End-------------</div>
+    
+</div>
+
+  
+</div>
+	<div>
+		
+			
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文作者:</span><a href="/" title="访问 李超 的个人博客">李超</a></p>
+  <p><span>本文链接:</span><a href="/Python入门-1讲/" title="Python入门_1讲">http://www.superli.tech/Python入门-1讲/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.superli.tech/Python入门-1讲/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>版权声明:</span><i class="fa fa-creative-commons"></i>本博客所有文章除特别声明外，均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+    });
+    });  
+</script>
+
+
+		
+	</div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="李超 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="李超 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Train/" rel="tag">
+			<i class="fa fa-tag"></i>
+			Train</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/game/" rel="next" title="一个部落">
+                <i class="fa fa-chevron-left"></i> 一个部落
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Python入门-2讲/" rel="prev" title="Python入门_2讲">
+                Python入门_2讲 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTUwNy8xNjAzNA=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/头像.jpg"
+                alt="李超" />
+            
+              <p class="site-author-name" itemprop="name">李超</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/easy318" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://mlln.cn/#menu" title="mlln.cn" target="_blank">mlln.cn</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://chengming1993722.github.io/" title="chengming1993722.github.io" target="_blank">chengming1993722.github.io</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python入门-1讲"><span class="nav-number">1.</span> <span class="nav-text">Python入门_1讲</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-里的基本概念"><span class="nav-number">1.1.</span> <span class="nav-text">Python 里的基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#程序的注释"><span class="nav-number">1.1.1.</span> <span class="nav-text">程序的注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标识符的拼写和命名惯例"><span class="nav-number">1.1.2.</span> <span class="nav-text">标识符的拼写和命名惯例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#行与缩进"><span class="nav-number">1.1.3.</span> <span class="nav-text">行与缩进</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据类型"><span class="nav-number">1.1.4.</span> <span class="nav-text">数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出-输入"><span class="nav-number">1.1.5.</span> <span class="nav-text">输出/输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑判断"><span class="nav-number">1.1.6.</span> <span class="nav-text">逻辑判断</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑循环"><span class="nav-number">1.1.7.</span> <span class="nav-text">逻辑循环</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#while-loop"><span class="nav-number">1.1.7.1.</span> <span class="nav-text">while loop</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#for-语句"><span class="nav-number">1.1.7.2.</span> <span class="nav-text">for 语句</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#牛刀大试"><span class="nav-number">1.1.8.</span> <span class="nav-text">牛刀大试</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-snowflake-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">李超</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      本站总访问数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      人次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("sf9UBNH48IvYO9WEIqh1aNCx-gzGzoHsz", "VH7LBOLAcT2B6sDLznQ98MyV");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Python," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Superli's Blog" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="Python Shutil Easystartos模块提供了对目录或者文件的新建/删除/查看文件属性，还提供了对文件以及目录的路径操作, 比如说：绝对路径，父目录…  但是，os并没有提供文件的移动、复制、打包、压缩、解压等操作, 而接下来所讲的shutil则就是对os中文件操作的补充 使用shutil.copyfileobj(fsrc, fdst[, length])copy文件内容到另一个文件">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python Shutil">
+<meta property="og:url" content="http://www.superli.tech/Shutil/index.html">
+<meta property="og:site_name" content="Superli&#39;s Blog">
+<meta property="og:description" content="Python Shutil Easystartos模块提供了对目录或者文件的新建/删除/查看文件属性，还提供了对文件以及目录的路径操作, 比如说：绝对路径，父目录…  但是，os并没有提供文件的移动、复制、打包、压缩、解压等操作, 而接下来所讲的shutil则就是对os中文件操作的补充 使用shutil.copyfileobj(fsrc, fdst[, length])copy文件内容到另一个文件">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-10-19T01:05:25.828Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python Shutil">
+<meta name="twitter:description" content="Python Shutil Easystartos模块提供了对目录或者文件的新建/删除/查看文件属性，还提供了对文件以及目录的路径操作, 比如说：绝对路径，父目录…  但是，os并没有提供文件的移动、复制、打包、压缩、解压等操作, 而接下来所讲的shutil则就是对os中文件操作的补充 使用shutil.copyfileobj(fsrc, fdst[, length])copy文件内容到另一个文件">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.superli.tech/Shutil/"/>
+
+
+
+
+
+  <title>Python Shutil | Superli's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+	<a href="https://github.com/easy318"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Superli's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-game">
+          <a href="/categories/Game/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-gamepad"></i> <br />
+            
+            游戏
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-train">
+          <a href="/categories/Train/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-graduation-cap"></i> <br />
+            
+            培训
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.superli.tech/Shutil/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="李超">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/头像.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Superli's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Python Shutil</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-06T08:52:12+08:00">
+                2018-08-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/Shutil/" class="leancloud_visitors" data-flag-title="Python Shutil">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+			<span class="post-meta-divider"></span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,060
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Python-Shutil-Easystart"><a href="#Python-Shutil-Easystart" class="headerlink" title="Python Shutil Easystart"></a>Python Shutil Easystart</h1><p>os模块提供了对目录或者文件的新建/删除/查看文件属性，还提供了对文件以及目录的路径操作, 比如说：绝对路径，父目录…  但是，os并没有提供文件的移动、复制、打包、压缩、解压等操作, 而接下来所讲的shutil则就是对os中文件操作的补充</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><h3 id="shutil-copyfileobj-fsrc-fdst-length"><a href="#shutil-copyfileobj-fsrc-fdst-length" class="headerlink" title="shutil.copyfileobj(fsrc, fdst[, length])"></a>shutil.copyfileobj(fsrc, fdst[, length])</h3><p>copy文件内容到另一个文件，可以copy指定大小的内容</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 定义</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">copyfileobj</span><span class="params">(fsrc, fdst, length=<span class="number">16</span>*<span class="number">1024</span>)</span>:</span></span><br><span class="line">    <span class="string">"""copy data from file-like object fsrc to file-like object fdst"""</span></span><br><span class="line">    <span class="keyword">while</span> <span class="number">1</span>:</span><br><span class="line">        buf = fsrc.read(length)</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> buf:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        fdst.write(buf)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 注意: 在其中fsrc，fdst都是文件对象，都需要打开后才能进行复制操作</span></span><br><span class="line"><span class="comment"># 使用</span></span><br><span class="line"><span class="keyword">import</span> shutil</span><br><span class="line">f1=open(<span class="string">'name'</span>,<span class="string">'r'</span>)</span><br><span class="line">f2=open(<span class="string">'name_copy'</span>,<span class="string">'w+'</span>)</span><br><span class="line">shutil.copyfileobj(f1,f2,length=<span class="number">16</span>*<span class="number">1024</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="shutil-copyfile-src-dst"><a href="#shutil-copyfile-src-dst" class="headerlink" title="shutil.copyfile(src, dst)"></a>shutil.copyfile(src, dst)</h3><p>只复制文件内容,效果同上,不过这里只用给path而不需要给文件对象,从源src复制到dst中去,前提是目标地址是具备可写权限,否则将抛出异常信息IOException,值得注意的是当前的dst已存在的话就会被覆盖掉</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 定义</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">copyfile</span><span class="params">(src, dst, *, follow_symlinks=True)</span>:</span></span><br><span class="line">    <span class="string">"""Copy data from src to dst.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    If follow_symlinks is not set and src is a symbolic link, a new</span></span><br><span class="line"><span class="string">    symlink will be created instead of copying the file it points to.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="keyword">if</span> _samefile(src, dst):</span><br><span class="line">        <span class="keyword">raise</span> SameFileError(<span class="string">"&#123;!r&#125; and &#123;!r&#125; are the same file"</span>.format(src, dst))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> fn <span class="keyword">in</span> [src, dst]:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            st = os.stat(fn)</span><br><span class="line">        <span class="keyword">except</span> OSError:</span><br><span class="line">            <span class="comment"># File most likely does not exist</span></span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="comment"># XXX What about other special files? (sockets, devices...)</span></span><br><span class="line">            <span class="keyword">if</span> stat.S_ISFIFO(st.st_mode):</span><br><span class="line">                <span class="keyword">raise</span> SpecialFileError(<span class="string">"`%s` is a named pipe"</span> % fn)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> follow_symlinks <span class="keyword">and</span> os.path.islink(src):</span><br><span class="line">        os.symlink(os.readlink(src), dst)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">with</span> open(src, <span class="string">'rb'</span>) <span class="keyword">as</span> fsrc:</span><br><span class="line">            <span class="keyword">with</span> open(dst, <span class="string">'wb'</span>) <span class="keyword">as</span> fdst:</span><br><span class="line">                copyfileobj(fsrc, fdst)</span><br><span class="line">    <span class="keyword">return</span> dst</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用</span></span><br><span class="line">shutil.copyfile(<span class="string">'name'</span>, <span class="string">'name_copy_2'</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="shutil-copymode-src-dst"><a href="#shutil-copymode-src-dst" class="headerlink" title="shutil.copymode(src, dst)"></a>shutil.copymode(src, dst)</h3><p>仅copy权限，不更改文件内容，组和用户</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 定义</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">copymode</span><span class="params">(src, dst, *, follow_symlinks=True)</span>:</span></span><br><span class="line">  <span class="keyword">if</span> <span class="keyword">not</span> follow_symlinks <span class="keyword">and</span> os.path.islink(src) <span class="keyword">and</span> os.path.islink(dst):</span><br><span class="line">    <span class="keyword">if</span> hasattr(os, <span class="string">'lchmod'</span>):</span><br><span class="line">      stat_func, chmod_func = os.lstat, os.lchmod</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">      <span class="keyword">return</span></span><br><span class="line">  <span class="keyword">elif</span> hasattr(os, <span class="string">'chmod'</span>):</span><br><span class="line">    stat_func, chmod_func = os.stat, os.chmod</span><br><span class="line">  <span class="keyword">else</span>:</span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line">  st = stat_func(src)</span><br><span class="line">  chmod_func(dst, stat.S_IMODE(st.st_mode))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用(以Linux 平台为例子)</span></span><br><span class="line">&gt;&gt;&gt;ls -l</span><br><span class="line">total <span class="number">4</span></span><br><span class="line">-rw-r--r--. <span class="number">1</span> root root <span class="number">79</span> May <span class="number">14</span> <span class="number">05</span>:<span class="number">17</span> test1</span><br><span class="line">-rwxr-xr-x. <span class="number">1</span> root root <span class="number">0</span> May <span class="number">14</span> <span class="number">19</span>:<span class="number">10</span> test2</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> shutil</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>shutil.copymode(<span class="string">'test1'</span>, <span class="string">'test2'</span>)</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;ls -l</span><br><span class="line">total <span class="number">4</span></span><br><span class="line">-rw-r--r--. <span class="number">1</span> root root <span class="number">79</span> May <span class="number">14</span> <span class="number">05</span>:<span class="number">17</span> test1</span><br><span class="line">-rw-r--r--. <span class="number">1</span> root root <span class="number">0</span> May <span class="number">14</span> <span class="number">19</span>:<span class="number">10</span> test2</span><br><span class="line"></span><br><span class="line"><span class="comment"># 当目标文件dst不存在时,将会报错</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>shutil.copymode(<span class="string">'test1'</span>, <span class="string">'test3'</span>)  </span><br><span class="line">Traceback (most recent call last):</span><br><span class="line"> File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line"> File <span class="string">"/usr/local/python/lib/python3.6/shutil.py"</span>, line <span class="number">132</span>, <span class="keyword">in</span> copymode</span><br><span class="line">  chmod_func(dst, stat.S_IMODE(st.st_mode))</span><br><span class="line">FileNotFoundError: [Errno <span class="number">2</span>] No such file <span class="keyword">or</span> directory: <span class="string">'test233'</span></span><br></pre></td></tr></table></figure>
+<h3 id="shutil-copystat-src-dst"><a href="#shutil-copystat-src-dst" class="headerlink" title="shutil.copystat(src, dst)"></a>shutil.copystat(src, dst)</h3><p>复制所有的状态信息，包括权限，组，用户，时间等</p>
+<h3 id="shutil-copy-src-dst"><a href="#shutil-copy-src-dst" class="headerlink" title="shutil.copy(src, dst)"></a>shutil.copy(src, dst)</h3><p>复制文件的内容以及权限，先copyfile后copymode</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 定义</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">copy</span><span class="params">(src, dst, *, follow_symlinks=True)</span>:</span></span><br><span class="line"> </span><br><span class="line"> <span class="keyword">if</span> os.path.isdir(dst):</span><br><span class="line">   dst = os.path.join(dst, os.path.basename(src))</span><br><span class="line"> copyfile(src, dst, follow_symlinks=follow_symlinks)</span><br><span class="line"> copymode(src, dst, follow_symlinks=follow_symlinks)</span><br><span class="line"> <span class="keyword">return</span> dst</span><br></pre></td></tr></table></figure>
+<h3 id="shutil-copy2-src-dst"><a href="#shutil-copy2-src-dst" class="headerlink" title="shutil.copy2(src, dst)"></a>shutil.copy2(src, dst)</h3><p>复制文件的内容以及文件的所有状态信息。先copyfile后copystat</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">copy2</span><span class="params">(src, dst, *, follow_symlinks=True)</span>:</span></span><br><span class="line">  <span class="string">"""Copy data and all stat info ("cp -p src dst"). Return the file's</span></span><br><span class="line"><span class="string">  destination."</span></span><br><span class="line"><span class="string">  The destination may be a directory.</span></span><br><span class="line"><span class="string">  If follow_symlinks is false, symlinks won't be followed. This</span></span><br><span class="line"><span class="string">  resembles GNU's "cp -P src dst".</span></span><br><span class="line"><span class="string">  """</span></span><br><span class="line">  <span class="keyword">if</span> os.path.isdir(dst):</span><br><span class="line">    dst = os.path.join(dst, os.path.basename(src))</span><br><span class="line">  copyfile(src, dst, follow_symlinks=follow_symlinks)</span><br><span class="line">  copystat(src, dst, follow_symlinks=follow_symlinks)</span><br><span class="line">  <span class="keyword">return</span> dst</span><br></pre></td></tr></table></figure>
+<h3 id="shutil-copytree-src-dst-symlinks-False-ignore-None-copy-function-copy2-ignore-dangling-symlinks-False"><a href="#shutil-copytree-src-dst-symlinks-False-ignore-None-copy-function-copy2-ignore-dangling-symlinks-False" class="headerlink" title="shutil.copytree(src, dst, symlinks=False, ignore=None, copy_function=copy2, ignore_dangling_symlinks=False)"></a>shutil.copytree(src, dst, symlinks=False, ignore=None, copy_function=copy2, ignore_dangling_symlinks=False)</h3><p>递归的复制文件内容及状态信息</p>
+<h3 id="shutil-rmtree-path-ignore-errors-False-onerror-None"><a href="#shutil-rmtree-path-ignore-errors-False-onerror-None" class="headerlink" title="shutil.rmtree(path, ignore_errors=False, onerror=None)"></a>shutil.rmtree(path, ignore_errors=False, onerror=None)</h3><p>递归地删除文件</p>
+<h3 id="shutil-move-src-dst"><a href="#shutil-move-src-dst" class="headerlink" title="shutil.move(src, dst)"></a>shutil.move(src, dst)</h3><p>递归的移动文件</p>
+<h3 id="shutil-make-archive-base-name-format-root-dir-None-base-dir-None-verbose-0-dry-run-0-owner-None-group-None-logger-None"><a href="#shutil-make-archive-base-name-format-root-dir-None-base-dir-None-verbose-0-dry-run-0-owner-None-group-None-logger-None" class="headerlink" title="shutil.make_archive(base_name, format, root_dir=None, base_dir=None, verbose=0, dry_run=0, owner=None, group=None, logger=None)"></a>shutil.make_archive(base_name, format, root_dir=None, base_dir=None, verbose=0, dry_run=0, owner=None, group=None, logger=None)</h3><p>压缩打包</p>
+<ul>
+<li>base_name：压缩打包后的文件名或者路径名</li>
+<li>format：   压缩或者打包格式, “zip”, “tar”, “bztar”or “gztar”</li>
+<li>root_dir:  将哪个目录或者文件打包（也就是源文件）</li>
+</ul>
+<h3 id="shutil-unpack-archive-filename-extract-dir-format"><a href="#shutil-unpack-archive-filename-extract-dir-format" class="headerlink" title="shutil.unpack_archive(filename[, extract_dir[, format]])"></a>shutil.unpack_archive(filename[, extract_dir[, format]])</h3><p>解压</p>
+<ul>
+<li>filename: 待解压文件的完整路径</li>
+<li>extract_dir: 解压路径, 默认为当前目录</li>
+<li>format: 解压格式, one of “zip”, “tar”, “gztar”, “bztar”, or “xztar”</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #555;font-size:14px;">-------------The End-------------</div>
+    
+</div>
+
+  
+</div>
+	<div>
+		
+			
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文作者:</span><a href="/" title="访问 李超 的个人博客">李超</a></p>
+  <p><span>本文链接:</span><a href="/Shutil/" title="Python Shutil">http://www.superli.tech/Shutil/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.superli.tech/Shutil/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>版权声明:</span><i class="fa fa-creative-commons"></i>本博客所有文章除特别声明外，均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+    });
+    });  
+</script>
+
+
+		
+	</div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="李超 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="李超 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag">
+			<i class="fa fa-tag"></i>
+			Python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/Itertools/" rel="next" title="Python itertools">
+                <i class="fa fa-chevron-left"></i> Python itertools
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/解决Pandas下-to-csv乱码/" rel="prev" title="解决Pandas下,to_csv乱码">
+                解决Pandas下,to_csv乱码 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTUwNy8xNjAzNA=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/头像.jpg"
+                alt="李超" />
+            
+              <p class="site-author-name" itemprop="name">李超</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/easy318" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://mlln.cn/#menu" title="mlln.cn" target="_blank">mlln.cn</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://chengming1993722.github.io/" title="chengming1993722.github.io" target="_blank">chengming1993722.github.io</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python-Shutil-Easystart"><span class="nav-number">1.</span> <span class="nav-text">Python Shutil Easystart</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用"><span class="nav-number">1.1.</span> <span class="nav-text">使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#shutil-copyfileobj-fsrc-fdst-length"><span class="nav-number">1.1.1.</span> <span class="nav-text">shutil.copyfileobj(fsrc, fdst[, length])</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shutil-copyfile-src-dst"><span class="nav-number">1.1.2.</span> <span class="nav-text">shutil.copyfile(src, dst)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shutil-copymode-src-dst"><span class="nav-number">1.1.3.</span> <span class="nav-text">shutil.copymode(src, dst)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shutil-copystat-src-dst"><span class="nav-number">1.1.4.</span> <span class="nav-text">shutil.copystat(src, dst)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shutil-copy-src-dst"><span class="nav-number">1.1.5.</span> <span class="nav-text">shutil.copy(src, dst)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shutil-copy2-src-dst"><span class="nav-number">1.1.6.</span> <span class="nav-text">shutil.copy2(src, dst)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shutil-copytree-src-dst-symlinks-False-ignore-None-copy-function-copy2-ignore-dangling-symlinks-False"><span class="nav-number">1.1.7.</span> <span class="nav-text">shutil.copytree(src, dst, symlinks=False, ignore=None, copy_function=copy2, ignore_dangling_symlinks=False)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shutil-rmtree-path-ignore-errors-False-onerror-None"><span class="nav-number">1.1.8.</span> <span class="nav-text">shutil.rmtree(path, ignore_errors=False, onerror=None)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shutil-move-src-dst"><span class="nav-number">1.1.9.</span> <span class="nav-text">shutil.move(src, dst)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shutil-make-archive-base-name-format-root-dir-None-base-dir-None-verbose-0-dry-run-0-owner-None-group-None-logger-None"><span class="nav-number">1.1.10.</span> <span class="nav-text">shutil.make_archive(base_name, format, root_dir=None, base_dir=None, verbose=0, dry_run=0, owner=None, group=None, logger=None)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shutil-unpack-archive-filename-extract-dir-format"><span class="nav-number">1.1.11.</span> <span class="nav-text">shutil.unpack_archive(filename[, extract_dir[, format]])</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-snowflake-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">李超</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      本站总访问数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      人次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("sf9UBNH48IvYO9WEIqh1aNCx-gzGzoHsz", "VH7LBOLAcT2B6sDLznQ98MyV");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

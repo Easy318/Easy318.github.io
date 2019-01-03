@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Python,Word,Excel," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Superli's Blog" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="Python自动化Wrod和Excel入门培训阅读文档之前你应该 在window环境下 熟悉Python 了解Word和Excel 结合./doc和./src文件下的测试文档和源文件进行学习使用  培训完以后你应该具备  能够使用Python对Work进行段落、图片、表格插入，以及简单的样式应用  能够使用Python对Excel进行简单的数据导入导出,获取合并单元格的值  能够在数据库、Exce">
+<meta name="keywords" content="Python,Word,Excel">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python自动化Word、Excel">
+<meta property="og:url" content="http://www.superli.tech/Python自动化Word、Excel/index.html">
+<meta property="og:site_name" content="Superli&#39;s Blog">
+<meta property="og:description" content="Python自动化Wrod和Excel入门培训阅读文档之前你应该 在window环境下 熟悉Python 了解Word和Excel 结合./doc和./src文件下的测试文档和源文件进行学习使用  培训完以后你应该具备  能够使用Python对Work进行段落、图片、表格插入，以及简单的样式应用  能够使用Python对Excel进行简单的数据导入导出,获取合并单元格的值  能够在数据库、Exce">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://www.superli.tech/Python自动化Word、Excel/xlwt练习_01.png">
+<meta property="og:image" content="http://www.superli.tech/Python自动化Word、Excel/xlwt练习_02.png">
+<meta property="og:updated_time" content="2018-10-19T01:05:18.525Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python自动化Word、Excel">
+<meta name="twitter:description" content="Python自动化Wrod和Excel入门培训阅读文档之前你应该 在window环境下 熟悉Python 了解Word和Excel 结合./doc和./src文件下的测试文档和源文件进行学习使用  培训完以后你应该具备  能够使用Python对Work进行段落、图片、表格插入，以及简单的样式应用  能够使用Python对Excel进行简单的数据导入导出,获取合并单元格的值  能够在数据库、Exce">
+<meta name="twitter:image" content="http://www.superli.tech/Python自动化Word、Excel/xlwt练习_01.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.superli.tech/Python自动化Word、Excel/"/>
+
+
+
+
+
+  <title>Python自动化Word、Excel | Superli's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+	<a href="https://github.com/easy318"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Superli's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-game">
+          <a href="/categories/Game/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-gamepad"></i> <br />
+            
+            游戏
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-train">
+          <a href="/categories/Train/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-graduation-cap"></i> <br />
+            
+            培训
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.superli.tech/Python自动化Word、Excel/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="李超">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/头像.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Superli's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Python自动化Word、Excel</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-22T19:43:49+08:00">
+                2018-08-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/Python自动化Word、Excel/" class="leancloud_visitors" data-flag-title="Python自动化Word、Excel">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+			<span class="post-meta-divider"></span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2,138
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Python自动化Wrod和Excel入门培训"><a href="#Python自动化Wrod和Excel入门培训" class="headerlink" title="Python自动化Wrod和Excel入门培训"></a>Python自动化Wrod和Excel入门培训</h1><h2 id="阅读文档之前你应该"><a href="#阅读文档之前你应该" class="headerlink" title="阅读文档之前你应该"></a>阅读文档之前你应该</h2><ul>
+<li>在window环境下</li>
+<li>熟悉Python</li>
+<li>了解Word和Excel</li>
+<li>结合./doc和./src文件下的测试文档和源文件进行学习使用</li>
+</ul>
+<h2 id="培训完以后你应该具备"><a href="#培训完以后你应该具备" class="headerlink" title="培训完以后你应该具备"></a>培训完以后你应该具备</h2><ul>
+<li style="list-style: none"><input type="checkbox" checked> 能够使用Python对Work进行段落、图片、表格插入，以及简单的样式应用</li>
+<li style="list-style: none"><input type="checkbox" checked> 能够使用Python对Excel进行简单的数据导入导出,获取合并单元格的值</li>
+<li style="list-style: none"><input type="checkbox" checked> 能够在数据库、Excel和Word之间相互导入导出数据</li>
+</ul>
+<h2 id="Python自动化之Word"><a href="#Python自动化之Word" class="headerlink" title="Python自动化之Word"></a>Python自动化之Word</h2><h3 id="安装-python-docx"><a href="#安装-python-docx" class="headerlink" title="安装(python-docx)"></a>安装(python-docx)</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install python-docx</span><br></pre></td></tr></table></figure>
+<h3 id="快速入门-auto-Word"><a href="#快速入门-auto-Word" class="headerlink" title="快速入门(auto_Word)"></a>快速入门(auto_Word)</h3><h4 id="打开一份文档"><a href="#打开一份文档" class="headerlink" title="打开一份文档"></a>打开一份文档</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> docx <span class="keyword">import</span> Document</span><br><span class="line"><span class="comment"># 打开一份空白的模板,这几乎和新建一份默认设置的空白文档一样</span></span><br><span class="line">document = Document()</span><br><span class="line"><span class="comment"># 打开一份已有的文档</span></span><br><span class="line"><span class="comment"># document = Document('file_path')</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 对文档操作完以后记得保存</span></span><br><span class="line">document.save(<span class="string">'file_path'</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="添加标题"><a href="#添加标题" class="headerlink" title="添加标题"></a>添加标题</h4><p>标题一共分为9级(1~9)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 默认一级标题</span></span><br><span class="line">document.add_heading(<span class="string">'一级标题'</span>)</span><br><span class="line">document.add_heading(<span class="string">'二级标题'</span>, level=<span class="number">2</span>)</span><br><span class="line">document.add_heading(<span class="string">'三级标题'</span>, level=<span class="number">3</span>)</span><br><span class="line">document.add_heading(<span class="string">'四级标题'</span>, level=<span class="number">4</span>)</span><br><span class="line">document.add_heading(<span class="string">'五级标题'</span>, level=<span class="number">5</span>)</span><br><span class="line">document.add_heading(<span class="string">'六级标题'</span>, level=<span class="number">6</span>)</span><br><span class="line">document.add_heading(<span class="string">'七级标题'</span>, level=<span class="number">7</span>)</span><br><span class="line">document.add_heading(<span class="string">'八级标题'</span>, level=<span class="number">8</span>)</span><br><span class="line">document.add_heading(<span class="string">'九级标题'</span>, level=<span class="number">9</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h4><p><strong>段落的添加</strong>:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 添加到最后</span></span><br><span class="line">paragraph = document.add_paragraph(<span class="string">'after'</span>)</span><br><span class="line"><span class="comment"># 添加到之前</span></span><br><span class="line">prior_paragraph = paragraph.insert_paragraph_before(<span class="string">'before'</span>)</span><br></pre></td></tr></table></figure>
+<p><strong>段落样式的应用</strong>:</p>
+<blockquote>
+<p>可通过add_run()方法来实现段落的拆分,字体样式应用(比如:粗体和斜体)</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 段落样式</span></span><br><span class="line">document.add_paragraph(<span class="string">'一个简单的段落样式.'</span>, style=<span class="string">'ListBullet'</span>)</span><br><span class="line"><span class="comment">#或者</span></span><br><span class="line">paragraph = document.add_paragraph(<span class="string">'Lorem ipsum dolor sit amet.'</span>)</span><br><span class="line">paragraph.style = <span class="string">'ListBullet'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 通过add_run()方法来实现</span></span><br><span class="line"><span class="comment"># 把一个段落分开运行</span></span><br><span class="line">paragraph = document.add_paragraph(<span class="string">'我是 '</span>)</span><br><span class="line">paragraph.add_run(<span class="string">'奥特曼.'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 应用粗体和斜体</span></span><br><span class="line">paragraph = document.add_paragraph(<span class="string">'我 '</span>)</span><br><span class="line">paragraph.add_run(<span class="string">'是 '</span>).bold = <span class="keyword">True</span></span><br><span class="line">paragraph.add_run(<span class="string">'奥 '</span>).italic = <span class="keyword">True</span></span><br><span class="line">paragraph.add_run(<span class="string">' 特曼.'</span>)</span><br><span class="line"><span class="comment"># 也可以</span></span><br><span class="line">run = paragraph.add_run(<span class="string">'是 '</span>)</span><br><span class="line">run.bold = <span class="keyword">True</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 字符样式,包括其字体，大小，颜色，粗体，斜体等</span></span><br><span class="line">paragraph = document.add_paragraph(<span class="string">'一样, '</span>)</span><br><span class="line">paragraph.add_run(<span class="string">'很明显不一样嘛.'</span>, <span class="string">'Emphasis'</span>)</span><br><span class="line"><span class="comment"># 也可以</span></span><br><span class="line">paragraph_6 = document.add_paragraph(<span class="string">'一样, '</span>)</span><br><span class="line">run = paragraph_6.add_run(<span class="string">'很明显不一样嘛.'</span>)</span><br><span class="line">run.style = <span class="string">'Emphasis'</span></span><br></pre></td></tr></table></figure>
+<h4 id="分页"><a href="#分页" class="headerlink" title="分页"></a>分页</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 分页</span></span><br><span class="line">document.add_page_break()</span><br></pre></td></tr></table></figure>
+<h4 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.add_picture(<span class="string">'../img/协同.png'</span>, width=Inches(<span class="number">2</span>))</span><br></pre></td></tr></table></figure>
+<h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><p><strong>表格的创建</strong>:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 表格</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建表格</span></span><br><span class="line">table = document.add_table(rows=<span class="number">2</span>, cols=<span class="number">2</span>)</span><br><span class="line"><span class="comment"># 获取单个表格元素</span></span><br><span class="line">cell = table.cell(<span class="number">0</span>, <span class="number">1</span>)</span><br><span class="line"><span class="comment"># 给表格元素传值</span></span><br><span class="line">cell.text = <span class="string">'第一行,第二列'</span></span><br><span class="line"><span class="comment"># 获取一行元素 just like list,并传值</span></span><br><span class="line"><span class="comment"># 获取第二行元素</span></span><br><span class="line">row = table.rows[<span class="number">1</span>]</span><br><span class="line">row.cells[<span class="number">0</span>].text = <span class="string">'第二行,第一列'</span></span><br><span class="line">row.cells[<span class="number">1</span>].text = <span class="string">'第二行,第二列'</span></span><br></pre></td></tr></table></figure>
+<p><strong>一个模拟从数据库导入数据到word表格里的实例</strong>:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">document.add_paragraph(<span class="string">'表'</span>)</span><br><span class="line"><span class="comment"># 假装这是数据库取出来的数据</span></span><br><span class="line">data_list = [&#123;</span><br><span class="line">    <span class="string">"name"</span>:<span class="string">"张麻子"</span>,</span><br><span class="line">    <span class="string">"age"</span>:<span class="string">"18"</span>,</span><br><span class="line">    <span class="string">"描述"</span>:<span class="string">"脸上有麻子"</span>,</span><br><span class="line">&#125;,</span><br><span class="line">&#123;</span><br><span class="line">    <span class="string">"name"</span>:<span class="string">"赵四"</span>,</span><br><span class="line">    <span class="string">"age"</span>:<span class="string">"998"</span>,</span><br><span class="line">    <span class="string">"描述"</span>:<span class="string">"尼古拉斯赵四"</span>,</span><br><span class="line">&#125;]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个表格</span></span><br><span class="line">table = document.add_table(<span class="number">1</span>, <span class="number">3</span>)</span><br><span class="line">table.style = <span class="string">'LightShading-Accent2'</span></span><br><span class="line"><span class="comment"># 填写标头</span></span><br><span class="line">heading_cells = table.rows[<span class="number">0</span>].cells</span><br><span class="line">heading_cells[<span class="number">0</span>].text = <span class="string">'name'</span></span><br><span class="line">heading_cells[<span class="number">1</span>].text = <span class="string">'age'</span></span><br><span class="line">heading_cells[<span class="number">2</span>].text = <span class="string">'描述'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 把数据导入到表格里</span></span><br><span class="line"><span class="keyword">for</span> items <span class="keyword">in</span> data_list:</span><br><span class="line">    row = table_1.add_row()</span><br><span class="line">    i = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> items:</span><br><span class="line">        row.cells[i].text = items[item]</span><br><span class="line">        i += <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<h3 id="了解更多-auto-word"><a href="#了解更多-auto-word" class="headerlink" title="了解更多(auto_word)"></a>了解更多(auto_word)</h3><p>如果你对python自动化word很感兴趣,想进一步提升请<a href="http://python-docx.readthedocs.io/en/latest/index.html" target="_blank" rel="noopener">猛击这里</a></p>
+<h2 id="Python自动化之Excel"><a href="#Python自动化之Excel" class="headerlink" title="Python自动化之Excel"></a>Python自动化之Excel</h2><h3 id="安装-xlrd、xlwt"><a href="#安装-xlrd、xlwt" class="headerlink" title="安装(xlrd、xlwt)"></a>安装(xlrd、xlwt)</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># xlrd 涌入内容读取, xlwr 用于内容写入</span></span><br><span class="line">pip install xlrd</span><br><span class="line">pip install xlwt</span><br></pre></td></tr></table></figure>
+<h3 id="快速入门-auto-Excel"><a href="#快速入门-auto-Excel" class="headerlink" title="快速入门(auto_Excel)"></a>快速入门(auto_Excel)</h3><h3 id="xlrd使用"><a href="#xlrd使用" class="headerlink" title="xlrd使用"></a>xlrd使用</h3><h4 id="获取Excel文件"><a href="#获取Excel文件" class="headerlink" title="获取Excel文件"></a>获取Excel文件</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">workbook = xlrd.open_workbook(<span class="string">'excel_file_path'</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="获取工作表名称"><a href="#获取工作表名称" class="headerlink" title="获取工作表名称"></a>获取工作表名称</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 获取所有工作表名称</span></span><br><span class="line">workbook_name_list = workbook.sheet_name()</span><br><span class="line"><span class="comment"># 根据索引获取sheet名称</span></span><br><span class="line">sheet2_name = workbook.sheet_name()[<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
+<h4 id="获取工作表-三种方式"><a href="#获取工作表-三种方式" class="headerlink" title="获取工作表(三种方式)"></a>获取工作表(三种方式)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sheet_1 = workbook.sheets()[<span class="number">0</span>]     <span class="comment">#通过索引顺序获取</span></span><br><span class="line">sheet_2 = workbook.sheet_by_index(<span class="number">1</span>)     <span class="comment">#通过索引顺序获取</span></span><br><span class="line">sheet = workbook.sheet_by_name(u‘Sheet_name‘)   <span class="comment">#通过Excel表名称</span></span><br></pre></td></tr></table></figure>
+<h4 id="常用的sheet对象的属性和方法"><a href="#常用的sheet对象的属性和方法" class="headerlink" title="常用的sheet对象的属性和方法"></a>常用的sheet对象的属性和方法</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 获取sheet名称</span></span><br><span class="line">sheet_name = sheet.name</span><br><span class="line"><span class="comment"># 获取sheet行数</span></span><br><span class="line">sheet_rows = sheet.nrows</span><br><span class="line"><span class="comment"># 获取sheet列数</span></span><br><span class="line">sheet_cols = sheet.ncols</span><br><span class="line"><span class="comment"># 获取sheet整行的值(索引)</span></span><br><span class="line">rows = sheet.row_values(<span class="number">1</span>)</span><br><span class="line"><span class="comment"># 获取sheet整列的值(索引)</span></span><br><span class="line">cols = sheet.col_values(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取指定单元格的内容</span></span><br><span class="line"><span class="comment"># 方法一(x,y表示二维索引坐标):</span></span><br><span class="line">cell_data = sheet.cell(x,y).value</span><br><span class="line"><span class="comment"># 方法二:</span></span><br><span class="line">cell_data = sheet.cell_value(x,y)</span><br><span class="line"><span class="comment"># 方法三:</span></span><br><span class="line">cell_data = sheet.row(x)[y].value</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取单元格内容的数据类型(解决获取date类型为浮点型的引子)</span></span><br><span class="line"><span class="comment"># 返回值说明: 0 empty,1 string, 2 number, 3 date, 4 boolean, 5 error</span></span><br><span class="line">cell_type = sheet.cell(x,y).ctype</span><br></pre></td></tr></table></figure>
+<h4 id="获取单元内容为日期类型的方式"><a href="#获取单元内容为日期类型的方式" class="headerlink" title="获取单元内容为日期类型的方式"></a>获取单元内容为日期类型的方式</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">date_value = xlrd.xldate_as_tuple(sheet_2.cell_value(<span class="number">1</span>,<span class="number">2</span>),workbook.datemode)</span><br><span class="line">result = date(*date_value[:<span class="number">3</span>]).strftime(<span class="string">r'%Y/%m/%d'</span>)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
+<h4 id="扩展-获取合并单元格的内容"><a href="#扩展-获取合并单元格的内容" class="headerlink" title="(扩展)获取合并单元格的内容"></a>(扩展)获取合并单元格的内容</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 只获取合并单元格的内容</span></span><br><span class="line"><span class="comment"># 问题,只能取到行/列合并的第一个索引值</span></span><br><span class="line"><span class="comment"># 解决代码</span></span><br><span class="line">merge = []</span><br><span class="line"><span class="keyword">for</span> (rlow,rhigh,clow,chigh) <span class="keyword">in</span> sheet_2.merged_cells:</span><br><span class="line">    merge.append([rlow,clow])</span><br><span class="line"><span class="keyword">for</span> index <span class="keyword">in</span> merge:</span><br><span class="line">    print(sheet_2.cell_value(index[<span class="number">0</span>],index[<span class="number">1</span>]))</span><br></pre></td></tr></table></figure>
+<h3 id="xlwt使用"><a href="#xlwt使用" class="headerlink" title="xlwt使用"></a>xlwt使用</h3><h4 id="sheet的创建"><a href="#sheet的创建" class="headerlink" title="sheet的创建"></a>sheet的创建</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建工作簿</span></span><br><span class="line">workbook = xlwt.Workbook()</span><br><span class="line"><span class="comment"># 创建sheet,第二参数用于确认同一个cell单元是否可以重设值</span></span><br><span class="line">sheet_1 = workbook.add_sheet(<span class="string">'sheet_name'</span>,cell_overwrite_ok=<span class="keyword">True</span>)</span><br><span class="line"><span class="comment"># 完成编辑后记得保存</span></span><br><span class="line">workbook.save(<span class="string">'file_path'</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="内容的写入"><a href="#内容的写入" class="headerlink" title="内容的写入"></a>内容的写入</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># x,y 表行索引, y,h 表列索引 , string表要输入的字符串, style表字符串样式,如果只有两个参数x,y则表示第x+1行第y+1列</span></span><br><span class="line">sheet.write(x, y, h, w, string, sytle)</span><br></pre></td></tr></table></figure>
+<h4 id="单元格的合并"><a href="#单元格的合并" class="headerlink" title="单元格的合并"></a>单元格的合并</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 和xlrd不一样的地方是,x,y,h,w顾头又顾尾!!!</span></span><br><span class="line"><span class="comment"># 和xlrd不一样的地方是,x,y,h,w顾头又顾尾!!!</span></span><br><span class="line"><span class="comment"># 和xlrd不一样的地方是,x,y,h,w顾头又顾尾!!!</span></span><br><span class="line"><span class="comment"># 直接写入一个合并的单元格</span></span><br><span class="line">sheet.write_merge(x, y, h, w, string, sytle)</span><br></pre></td></tr></table></figure>
+<h4 id="牛刀小试"><a href="#牛刀小试" class="headerlink" title="牛刀小试"></a>牛刀小试</h4><blockquote>
+<p>案例来自<a href="https://www.cnblogs.com/linyfeng/p/7123423.html" target="_blank" rel="noopener">这里</a>,例子非常棒,但是由于时间有点早,本人大胆进行了加工改良</p>
+</blockquote>
+<p><strong>请生成如下图格式的Excel文件</strong>:</p>
+<p><img src="xlwt练习_01.png" alt="Excel写入练习 图片_01"></p>
+<p><strong>源码</strong>:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设置字体的样式</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">set_style</span><span class="params">(name,height,bold=False)</span>:</span></span><br><span class="line">    style = xlwt.XFStyle() <span class="comment"># 初始化样式</span></span><br><span class="line">    font = xlwt.Font() <span class="comment"># 为样式创建字体</span></span><br><span class="line">    font.name = name <span class="comment"># 'Times New Roman'</span></span><br><span class="line">    font.bold = bold</span><br><span class="line">    font.color_index = <span class="number">4</span></span><br><span class="line">    font.height = height</span><br><span class="line">    style.font = font</span><br><span class="line">    <span class="comment"># 这部分设置居中格式</span></span><br><span class="line">    alignment = xlwt.Alignment()</span><br><span class="line">    alignment.horz = xlwt.Alignment.HORZ_CENTER    <span class="comment">#水平居中</span></span><br><span class="line">    alignment.vert = xlwt.Alignment.VERT_CENTER    <span class="comment">#垂直居中</span></span><br><span class="line">    style.alignment = alignment</span><br><span class="line">    <span class="keyword">return</span> style</span><br><span class="line"></span><br><span class="line"><span class="comment">#生成excel文件</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">write_excel</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">'''创建第一个sheet:sheet1'''</span></span><br><span class="line">    workbook = xlwt.Workbook() <span class="comment">#创建工作簿</span></span><br><span class="line">    sheet1 = workbook.add_sheet(<span class="string">'sheet1'</span>,cell_overwrite_ok=<span class="keyword">True</span>) <span class="comment">#创建sheet</span></span><br><span class="line">    row0 = [<span class="string">'业务'</span>,<span class="string">'状态'</span>,<span class="string">'北京'</span>,<span class="string">'上海'</span>,<span class="string">'广州'</span>,<span class="string">'深圳'</span>,<span class="string">'状态小计'</span>,<span class="string">'合计'</span>]</span><br><span class="line">    column0 = [<span class="string">'机票'</span>,<span class="string">'船票'</span>,<span class="string">'火车票'</span>,<span class="string">'汽车票'</span>,<span class="string">'其它'</span>]</span><br><span class="line">    status = [<span class="string">'预订'</span>,<span class="string">'出票'</span>,<span class="string">'退票'</span>,<span class="string">'业务小计'</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment">#生成第一行</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(row0)):</span><br><span class="line">        sheet1.write(<span class="number">0</span>,i,row0[i],set_style(<span class="string">'Times New Roman'</span>,<span class="number">220</span>,<span class="keyword">True</span>))</span><br><span class="line"></span><br><span class="line">    <span class="comment">#生成第一列和最后一列(合并4行)</span></span><br><span class="line">    i, j = <span class="number">1</span>, <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> i &lt; <span class="number">4</span>*len(column0) <span class="keyword">and</span> j &lt; len(column0):</span><br><span class="line">        sheet1.write_merge(i,i+<span class="number">3</span>,<span class="number">0</span>,<span class="number">0</span>,column0[j],set_style(<span class="string">'Arial'</span>,<span class="number">220</span>,<span class="keyword">True</span>)) <span class="comment">#第一列</span></span><br><span class="line">        sheet1.write_merge(i,i+<span class="number">3</span>,<span class="number">7</span>,<span class="number">7</span>) <span class="comment">#最后一列"合计"</span></span><br><span class="line">        i += <span class="number">4</span></span><br><span class="line">        j += <span class="number">1</span></span><br><span class="line">    sheet1.write_merge(<span class="number">21</span>,<span class="number">21</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="string">u'合计'</span>,set_style(<span class="string">'Times New Roman'</span>,<span class="number">220</span>,<span class="keyword">True</span>))</span><br><span class="line"></span><br><span class="line">    <span class="comment">#生成第二列</span></span><br><span class="line">    i = <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> i &lt; <span class="number">4</span>*len(column0):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(len(status)):</span><br><span class="line">            sheet1.write(j+i+<span class="number">1</span>, <span class="number">1</span>, status[j])</span><br><span class="line">        i += <span class="number">4</span></span><br><span class="line"></span><br><span class="line">    workbook.save(<span class="string">'../doc/demo1.xls'</span>) <span class="comment">#保存文件</span></span><br><span class="line">write_excel()</span><br></pre></td></tr></table></figure>
+<h4 id="再次牛刀小试"><a href="#再次牛刀小试" class="headerlink" title="再次牛刀小试"></a>再次牛刀小试</h4><p><strong>请生成如下图格式的Excel文件</strong>:</p>
+<p><img src="xlwt练习_02.png" alt="Excel写入练习 图片_02"></p>
+<p><strong>源码</strong>:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 生成exce文件</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">write_excel_two</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="string">'''创建第二个sheet:sheet2'''</span></span><br><span class="line">    workbook = xlwt.Workbook() <span class="comment">#创建工作簿</span></span><br><span class="line">    sheet2 = workbook.add_sheet(<span class="string">'sheet2'</span>,cell_overwrite_ok=<span class="keyword">True</span>) <span class="comment">#创建sheet2</span></span><br><span class="line">    row0 = [<span class="string">'姓名'</span>,<span class="string">'年龄'</span>,<span class="string">'出生日期'</span>,<span class="string">'爱好'</span>,<span class="string">'关系'</span>]</span><br><span class="line">    column0 = [<span class="string">'小杰'</span>,<span class="string">'小胖'</span>,<span class="string">'小明'</span>,<span class="string">'大神'</span>,<span class="string">'大仙'</span>,<span class="string">'小敏'</span>,<span class="string">'无名'</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment">#生成第一行</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,len(row0)):</span><br><span class="line">        sheet2.write(<span class="number">0</span>,i,row0[i],set_style(<span class="string">'Times New Roman'</span>,<span class="number">220</span>,<span class="keyword">True</span>))</span><br><span class="line"></span><br><span class="line">    <span class="comment">#生成第一列</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,len(column0)):</span><br><span class="line">        sheet2.write(i+<span class="number">1</span>,<span class="number">0</span>,column0[i],set_style(<span class="string">'Times New Roman'</span>,<span class="number">220</span>))</span><br><span class="line"></span><br><span class="line">    sheet2.write(<span class="number">1</span>,<span class="number">2</span>,<span class="string">'1911/11/11'</span>,set_style(<span class="string">'Times New Roman'</span>,<span class="number">220</span>))</span><br><span class="line">    sheet2.write_merge(<span class="number">7</span>,<span class="number">7</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="string">'暂无'</span>,set_style(<span class="string">'Times New Roman'</span>,<span class="number">220</span>)) <span class="comment">#合并列单元格</span></span><br><span class="line">    sheet2.write_merge(<span class="number">1</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">4</span>,<span class="string">'好朋友'</span>,set_style(<span class="string">'Times New Roman'</span>,<span class="number">220</span>)) <span class="comment">#合并行单元格</span></span><br><span class="line"></span><br><span class="line">    workbook.save(<span class="string">'../doc/demo2.xls'</span>) <span class="comment">#保存文件</span></span><br><span class="line">write_excel_two()</span><br></pre></td></tr></table></figure>
+<h3 id="了解更多-auto-excel"><a href="#了解更多-auto-excel" class="headerlink" title="了解更多(auto_excel)"></a>了解更多(auto_excel)</h3><p>如果你对python自动化Excel很感兴趣,想进一步提升请<a href="http://www.python-excel.org/" target="_blank" rel="noopener">猛击这里</a></p>
+
+      
+    </div>
+    
+    
+    
+<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #555;font-size:14px;">-------------The End-------------</div>
+    
+</div>
+
+  
+</div>
+	<div>
+		
+			
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文作者:</span><a href="/" title="访问 李超 的个人博客">李超</a></p>
+  <p><span>本文链接:</span><a href="/Python自动化Word、Excel/" title="Python自动化Word、Excel">http://www.superli.tech/Python自动化Word、Excel/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.superli.tech/Python自动化Word、Excel/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>版权声明:</span><i class="fa fa-creative-commons"></i>本博客所有文章除特别声明外，均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+    });
+    });  
+</script>
+
+
+		
+	</div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="李超 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="李超 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag">
+			<i class="fa fa-tag"></i>
+			Python</a>
+          
+            <a href="/tags/Word/" rel="tag">
+			<i class="fa fa-tag"></i>
+			Word</a>
+          
+            <a href="/tags/Excel/" rel="tag">
+			<i class="fa fa-tag"></i>
+			Excel</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/Python多进程简单上手/" rel="next" title="Python多进程简单上手">
+                <i class="fa fa-chevron-left"></i> Python多进程简单上手
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/搭建属于自己的Pipserver/" rel="prev" title="搭建属于自己的Pipserver">
+                搭建属于自己的Pipserver <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTUwNy8xNjAzNA=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/头像.jpg"
+                alt="李超" />
+            
+              <p class="site-author-name" itemprop="name">李超</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/easy318" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://mlln.cn/#menu" title="mlln.cn" target="_blank">mlln.cn</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://chengming1993722.github.io/" title="chengming1993722.github.io" target="_blank">chengming1993722.github.io</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python自动化Wrod和Excel入门培训"><span class="nav-number">1.</span> <span class="nav-text">Python自动化Wrod和Excel入门培训</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#阅读文档之前你应该"><span class="nav-number">1.1.</span> <span class="nav-text">阅读文档之前你应该</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#培训完以后你应该具备"><span class="nav-number">1.2.</span> <span class="nav-text">培训完以后你应该具备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python自动化之Word"><span class="nav-number">1.3.</span> <span class="nav-text">Python自动化之Word</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-python-docx"><span class="nav-number">1.3.1.</span> <span class="nav-text">安装(python-docx)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速入门-auto-Word"><span class="nav-number">1.3.2.</span> <span class="nav-text">快速入门(auto_Word)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#打开一份文档"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">打开一份文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加标题"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">添加标题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#段落"><span class="nav-number">1.3.2.3.</span> <span class="nav-text">段落</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分页"><span class="nav-number">1.3.2.4.</span> <span class="nav-text">分页</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#插入图片"><span class="nav-number">1.3.2.5.</span> <span class="nav-text">插入图片</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表格"><span class="nav-number">1.3.2.6.</span> <span class="nav-text">表格</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#了解更多-auto-word"><span class="nav-number">1.3.3.</span> <span class="nav-text">了解更多(auto_word)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python自动化之Excel"><span class="nav-number">1.4.</span> <span class="nav-text">Python自动化之Excel</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-xlrd、xlwt"><span class="nav-number">1.4.1.</span> <span class="nav-text">安装(xlrd、xlwt)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速入门-auto-Excel"><span class="nav-number">1.4.2.</span> <span class="nav-text">快速入门(auto_Excel)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#xlrd使用"><span class="nav-number">1.4.3.</span> <span class="nav-text">xlrd使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#获取Excel文件"><span class="nav-number">1.4.3.1.</span> <span class="nav-text">获取Excel文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取工作表名称"><span class="nav-number">1.4.3.2.</span> <span class="nav-text">获取工作表名称</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取工作表-三种方式"><span class="nav-number">1.4.3.3.</span> <span class="nav-text">获取工作表(三种方式)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用的sheet对象的属性和方法"><span class="nav-number">1.4.3.4.</span> <span class="nav-text">常用的sheet对象的属性和方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取单元内容为日期类型的方式"><span class="nav-number">1.4.3.5.</span> <span class="nav-text">获取单元内容为日期类型的方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#扩展-获取合并单元格的内容"><span class="nav-number">1.4.3.6.</span> <span class="nav-text">(扩展)获取合并单元格的内容</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#xlwt使用"><span class="nav-number">1.4.4.</span> <span class="nav-text">xlwt使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#sheet的创建"><span class="nav-number">1.4.4.1.</span> <span class="nav-text">sheet的创建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#内容的写入"><span class="nav-number">1.4.4.2.</span> <span class="nav-text">内容的写入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#单元格的合并"><span class="nav-number">1.4.4.3.</span> <span class="nav-text">单元格的合并</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#牛刀小试"><span class="nav-number">1.4.4.4.</span> <span class="nav-text">牛刀小试</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#再次牛刀小试"><span class="nav-number">1.4.4.5.</span> <span class="nav-text">再次牛刀小试</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#了解更多-auto-excel"><span class="nav-number">1.4.5.</span> <span class="nav-text">了解更多(auto_excel)</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-snowflake-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">李超</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      本站总访问数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      人次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("sf9UBNH48IvYO9WEIqh1aNCx-gzGzoHsz", "VH7LBOLAcT2B6sDLznQ98MyV");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
