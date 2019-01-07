@@ -3,6 +3,71 @@
 
 
     
+  <url>
+    <loc>http://www.superli.tech/Vscode%E4%B8%8APython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE%E5%92%8C%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2019-01-07T08:47:37.901Z</lastmod>
+    <data>
+        <display>
+        <title>Vscode上Python环境的配置和使用</title>
+        <pubTime>2019-01-07T08:01:34.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>Vscode</tag>
+         
+         
+           
+             
+              <breadCrumb title="Vscode" url="http://www.superli.tech/categories/Vscode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.superli.tech/Python-%E9%87%8C%E7%9A%84%E7%9B%B8%E5%AF%B9%E5%AF%BC%E5%85%A5%E5%92%8C%E7%BB%9D%E5%AF%B9%E5%AF%BC%E5%85%A5/</loc>
+    <lastmod>2019-01-07T06:20:40.459Z</lastmod>
+    <data>
+        <display>
+        <title>Python 里的相对导入和绝对导入</title>
+        <pubTime>2019-01-07T02:40:09.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="http://www.superli.tech/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.superli.tech/%E5%90%8D%E8%AF%8D%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2019-01-07T02:38:16.622Z</lastmod>
+    <data>
+        <display>
+        <title>名词总结</title>
+        <pubTime>2019-01-03T13:23:33.000Z</pubTime>
+        
+        <tag>英语</tag>
+         
+         
+           
+             
+              <breadCrumb title="英语" url="http://www.superli.tech/categories/%E8%8B%B1%E8%AF%AD/"/>
+          
+             
+              <breadCrumb title="名词" url="http://www.superli.tech/categories/%E8%8B%B1%E8%AF%AD/%E5%90%8D%E8%AF%8D/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://www.superli.tech/%E5%9F%B9%E8%AE%AD%E9%80%9A%E7%9F%A5%E5%B8%96/</loc>
@@ -613,9 +678,9 @@
         <title>Vscode下书写Markdown的利器</title>
         <pubTime>2018-08-22T11:22:12.000Z</pubTime>
         
-        <tag>Markdown</tag>
-         
         <tag>Vscode</tag>
+         
+        <tag>Markdown</tag>
          
          
            
