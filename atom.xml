@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.superli.tech/"/>
+  <link href="https://ojerk.cn/"/>
   <updated>2019-01-08T08:17:43.526Z</updated>
-  <id>http://www.superli.tech/</id>
+  <id>https://ojerk.cn/</id>
   
   <author>
     <name>李超</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Vscode上Python环境的配置和使用</title>
-    <link href="http://www.superli.tech/Vscode%E4%B8%8APython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE%E5%92%8C%E4%BD%BF%E7%94%A8/"/>
-    <id>http://www.superli.tech/Vscode上Python环境的配置和使用/</id>
+    <link href="https://ojerk.cn/Vscode%E4%B8%8APython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE%E5%92%8C%E4%BD%BF%E7%94%A8/"/>
+    <id>https://ojerk.cn/Vscode上Python环境的配置和使用/</id>
     <published>2019-01-07T08:01:34.000Z</published>
     <updated>2019-01-08T08:17:43.526Z</updated>
     
@@ -34,19 +34,19 @@
     
     </summary>
     
-      <category term="Vscode" scheme="http://www.superli.tech/categories/Vscode/"/>
+      <category term="Vscode" scheme="https://ojerk.cn/categories/Vscode/"/>
     
     
-      <category term="Python" scheme="http://www.superli.tech/tags/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/tags/Python/"/>
     
-      <category term="Vscode" scheme="http://www.superli.tech/tags/Vscode/"/>
+      <category term="Vscode" scheme="https://ojerk.cn/tags/Vscode/"/>
     
   </entry>
   
   <entry>
     <title>Python 里的相对导入和绝对导入</title>
-    <link href="http://www.superli.tech/Python-%E9%87%8C%E7%9A%84%E7%9B%B8%E5%AF%B9%E5%AF%BC%E5%85%A5%E5%92%8C%E7%BB%9D%E5%AF%B9%E5%AF%BC%E5%85%A5/"/>
-    <id>http://www.superli.tech/Python-里的相对导入和绝对导入/</id>
+    <link href="https://ojerk.cn/Python-%E9%87%8C%E7%9A%84%E7%9B%B8%E5%AF%B9%E5%AF%BC%E5%85%A5%E5%92%8C%E7%BB%9D%E5%AF%B9%E5%AF%BC%E5%85%A5/"/>
+    <id>https://ojerk.cn/Python-里的相对导入和绝对导入/</id>
     <published>2019-01-07T02:40:09.000Z</published>
     <updated>2019-01-07T06:20:40.459Z</updated>
     
@@ -62,17 +62,17 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://www.superli.tech/tags/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>名词总结</title>
-    <link href="http://www.superli.tech/%E5%90%8D%E8%AF%8D%E6%80%BB%E7%BB%93/"/>
-    <id>http://www.superli.tech/名词总结/</id>
+    <link href="https://ojerk.cn/%E5%90%8D%E8%AF%8D%E6%80%BB%E7%BB%93/"/>
+    <id>https://ojerk.cn/名词总结/</id>
     <published>2019-01-03T13:23:33.000Z</published>
     <updated>2019-01-07T02:38:16.622Z</updated>
     
@@ -89,19 +89,19 @@
     
     </summary>
     
-      <category term="英语" scheme="http://www.superli.tech/categories/%E8%8B%B1%E8%AF%AD/"/>
+      <category term="英语" scheme="https://ojerk.cn/categories/%E8%8B%B1%E8%AF%AD/"/>
     
-      <category term="名词" scheme="http://www.superli.tech/categories/%E8%8B%B1%E8%AF%AD/%E5%90%8D%E8%AF%8D/"/>
+      <category term="名词" scheme="https://ojerk.cn/categories/%E8%8B%B1%E8%AF%AD/%E5%90%8D%E8%AF%8D/"/>
     
     
-      <category term="英语" scheme="http://www.superli.tech/tags/%E8%8B%B1%E8%AF%AD/"/>
+      <category term="英语" scheme="https://ojerk.cn/tags/%E8%8B%B1%E8%AF%AD/"/>
     
   </entry>
   
   <entry>
     <title>给jupyterNotebook配置属于自己的Python虚拟环境</title>
-    <link href="http://www.superli.tech/%E7%BB%99jupyterNotebook%E9%85%8D%E7%BD%AE%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"/>
-    <id>http://www.superli.tech/给jupyterNotebook配置属于自己的Python虚拟环境/</id>
+    <link href="https://ojerk.cn/%E7%BB%99jupyterNotebook%E9%85%8D%E7%BD%AE%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"/>
+    <id>https://ojerk.cn/给jupyterNotebook配置属于自己的Python虚拟环境/</id>
     <published>2018-11-07T02:02:48.000Z</published>
     <updated>2018-11-07T02:48:39.457Z</updated>
     
@@ -116,23 +116,23 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
-      <category term="jupyter" scheme="http://www.superli.tech/categories/Python/jupyter/"/>
+      <category term="jupyter" scheme="https://ojerk.cn/categories/Python/jupyter/"/>
     
     
-      <category term="Python" scheme="http://www.superli.tech/tags/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/tags/Python/"/>
     
-      <category term="VirtualEnvWrapper" scheme="http://www.superli.tech/tags/VirtualEnvWrapper/"/>
+      <category term="VirtualEnvWrapper" scheme="https://ojerk.cn/tags/VirtualEnvWrapper/"/>
     
-      <category term="Jupyter" scheme="http://www.superli.tech/tags/Jupyter/"/>
+      <category term="Jupyter" scheme="https://ojerk.cn/tags/Jupyter/"/>
     
   </entry>
   
   <entry>
     <title>Python入门_4讲</title>
-    <link href="http://www.superli.tech/Python%E5%85%A5%E9%97%A8-4%E8%AE%B2/"/>
-    <id>http://www.superli.tech/Python入门-4讲/</id>
+    <link href="https://ojerk.cn/Python%E5%85%A5%E9%97%A8-4%E8%AE%B2/"/>
+    <id>https://ojerk.cn/Python入门-4讲/</id>
     <published>2018-10-19T06:15:29.000Z</published>
     <updated>2019-01-03T08:58:13.698Z</updated>
     
@@ -147,19 +147,19 @@
     
     </summary>
     
-      <category term="Train" scheme="http://www.superli.tech/categories/Train/"/>
+      <category term="Train" scheme="https://ojerk.cn/categories/Train/"/>
     
     
-      <category term="Train" scheme="http://www.superli.tech/tags/Train/"/>
+      <category term="Train" scheme="https://ojerk.cn/tags/Train/"/>
     
-      <category term="词云" scheme="http://www.superli.tech/tags/%E8%AF%8D%E4%BA%91/"/>
+      <category term="词云" scheme="https://ojerk.cn/tags/%E8%AF%8D%E4%BA%91/"/>
     
   </entry>
   
   <entry>
     <title>解决词云中文无法正常显示问题</title>
-    <link href="http://www.superli.tech/%E8%A7%A3%E5%86%B3%E8%AF%8D%E4%BA%91%E4%B8%AD%E6%96%87%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
-    <id>http://www.superli.tech/解决词云中文无法正常显示问题/</id>
+    <link href="https://ojerk.cn/%E8%A7%A3%E5%86%B3%E8%AF%8D%E4%BA%91%E4%B8%AD%E6%96%87%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
+    <id>https://ojerk.cn/解决词云中文无法正常显示问题/</id>
     <published>2018-10-18T09:59:11.000Z</published>
     <updated>2018-10-19T01:11:40.557Z</updated>
     
@@ -175,19 +175,19 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://www.superli.tech/tags/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/tags/Python/"/>
     
-      <category term="wordcloud" scheme="http://www.superli.tech/tags/wordcloud/"/>
+      <category term="wordcloud" scheme="https://ojerk.cn/tags/wordcloud/"/>
     
   </entry>
   
   <entry>
     <title>Pip常用技巧总结</title>
-    <link href="http://www.superli.tech/Pip%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/"/>
-    <id>http://www.superli.tech/Pip常用技巧总结/</id>
+    <link href="https://ojerk.cn/Pip%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/"/>
+    <id>https://ojerk.cn/Pip常用技巧总结/</id>
     <published>2018-10-16T09:01:21.000Z</published>
     <updated>2018-10-19T01:03:53.807Z</updated>
     
@@ -204,21 +204,21 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
-      <category term="pip" scheme="http://www.superli.tech/categories/Python/pip/"/>
+      <category term="pip" scheme="https://ojerk.cn/categories/Python/pip/"/>
     
     
-      <category term="Python" scheme="http://www.superli.tech/tags/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/tags/Python/"/>
     
-      <category term="Pip" scheme="http://www.superli.tech/tags/Pip/"/>
+      <category term="Pip" scheme="https://ojerk.cn/tags/Pip/"/>
     
   </entry>
   
   <entry>
     <title>Python入门_3讲</title>
-    <link href="http://www.superli.tech/Python%E5%85%A5%E9%97%A8-3%E8%AE%B2/"/>
-    <id>http://www.superli.tech/Python入门-3讲/</id>
+    <link href="https://ojerk.cn/Python%E5%85%A5%E9%97%A8-3%E8%AE%B2/"/>
+    <id>https://ojerk.cn/Python入门-3讲/</id>
     <published>2018-10-12T04:50:49.000Z</published>
     <updated>2019-01-03T08:58:07.964Z</updated>
     
@@ -233,19 +233,19 @@
     
     </summary>
     
-      <category term="Train" scheme="http://www.superli.tech/categories/Train/"/>
+      <category term="Train" scheme="https://ojerk.cn/categories/Train/"/>
     
     
-      <category term="Train" scheme="http://www.superli.tech/tags/Train/"/>
+      <category term="Train" scheme="https://ojerk.cn/tags/Train/"/>
     
-      <category term="爬虫" scheme="http://www.superli.tech/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://ojerk.cn/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
   <entry>
     <title>Numpy里nan,inf的快速转换</title>
-    <link href="http://www.superli.tech/Numpy%E9%87%8Cnan-inf%E7%9A%84%E5%BF%AB%E9%80%9F%E8%BD%AC%E6%8D%A2/"/>
-    <id>http://www.superli.tech/Numpy里nan-inf的快速转换/</id>
+    <link href="https://ojerk.cn/Numpy%E9%87%8Cnan-inf%E7%9A%84%E5%BF%AB%E9%80%9F%E8%BD%AC%E6%8D%A2/"/>
+    <id>https://ojerk.cn/Numpy里nan-inf的快速转换/</id>
     <published>2018-10-11T01:37:16.000Z</published>
     <updated>2018-10-19T01:14:35.945Z</updated>
     
@@ -261,19 +261,19 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
-      <category term="numpy" scheme="http://www.superli.tech/categories/Python/numpy/"/>
+      <category term="numpy" scheme="https://ojerk.cn/categories/Python/numpy/"/>
     
     
-      <category term="Numpy" scheme="http://www.superli.tech/tags/Numpy/"/>
+      <category term="Numpy" scheme="https://ojerk.cn/tags/Numpy/"/>
     
   </entry>
   
   <entry>
     <title>Python入门_2讲</title>
-    <link href="http://www.superli.tech/Python%E5%85%A5%E9%97%A8-2%E8%AE%B2/"/>
-    <id>http://www.superli.tech/Python入门-2讲/</id>
+    <link href="https://ojerk.cn/Python%E5%85%A5%E9%97%A8-2%E8%AE%B2/"/>
+    <id>https://ojerk.cn/Python入门-2讲/</id>
     <published>2018-09-28T06:46:31.000Z</published>
     <updated>2019-01-03T08:57:59.495Z</updated>
     
@@ -288,17 +288,17 @@
     
     </summary>
     
-      <category term="Train" scheme="http://www.superli.tech/categories/Train/"/>
+      <category term="Train" scheme="https://ojerk.cn/categories/Train/"/>
     
     
-      <category term="Train" scheme="http://www.superli.tech/tags/Train/"/>
+      <category term="Train" scheme="https://ojerk.cn/tags/Train/"/>
     
   </entry>
   
   <entry>
     <title>Python入门_1讲</title>
-    <link href="http://www.superli.tech/Python%E5%85%A5%E9%97%A8-1%E8%AE%B2/"/>
-    <id>http://www.superli.tech/Python入门-1讲/</id>
+    <link href="https://ojerk.cn/Python%E5%85%A5%E9%97%A8-1%E8%AE%B2/"/>
+    <id>https://ojerk.cn/Python入门-1讲/</id>
     <published>2018-09-19T11:10:54.000Z</published>
     <updated>2019-01-03T08:57:51.480Z</updated>
     
@@ -315,42 +315,44 @@
     
     </summary>
     
-      <category term="Train" scheme="http://www.superli.tech/categories/Train/"/>
+      <category term="Train" scheme="https://ojerk.cn/categories/Train/"/>
     
     
-      <category term="Train" scheme="http://www.superli.tech/tags/Train/"/>
+      <category term="Train" scheme="https://ojerk.cn/tags/Train/"/>
     
   </entry>
   
   <entry>
     <title>一个部落</title>
-    <link href="http://www.superli.tech/game/"/>
-    <id>http://www.superli.tech/game/</id>
+    <link href="https://ojerk.cn/game/"/>
+    <id>https://ojerk.cn/game/</id>
     <published>2018-09-19T11:01:12.000Z</published>
-    <updated>2019-01-03T09:00:48.621Z</updated>
+    <updated>2019-01-22T02:25:05.848Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="一个部落注意事项"><a href="#一个部落注意事项" class="headerlink" title="一个部落注意事项"></a>一个部落注意事项</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="一个部落不完全指北"><a href="#一个部落不完全指北" class="headerlink" title="一个部落不完全指北"></a>一个部落不完全指北</h1><blockquote><p>更新时间: 2019年1月21日16:26:01</p></blockquote><h2 id="部落简介"><a href="#部落简介" class="headerlink" title="部落简介"></a>部落简介</h2><p><strong>创建历史:</strong><br>  部落成立于好几年前,由一儿子提出众父亲附议而创建,部落名灵感来源于周星驰&lt;&lt;鹿鼎记&gt;&gt;里”有间客栈”.刚开始本只打算宿舍内部休闲消遣就行,然发现开个部落战马蛋要10人,遂决定扩招,经过大家不断努力发展到了30人左右,而且居然还有妹子,但是随着毕业的日子越来越近,学渣忙着补考,学霸忙着考研,以及等等各种鸭梨,慢慢的很多人都AFK了,期间爸爸们的心血<del>差点毁于@不及阁@屌炸天的小兵手上</del>交于认真负责的@屌炸天的小兵细心打理,于2019年1月21日15:50:34还往前翻个几星期,发现毕业以后基本上联系的机会变少了,但是父子间的感情是不能够淡的,就决定重建部落</p><h2 id="招人要求"><a href="#招人要求" class="headerlink" title="招人要求"></a>招人要求</h2><p>截止2019年1月21日16:05:35部落情况:</p><p><img src="部落.png" alt="部落简介"><br><img src="部落竞赛.png" alt="部落竞赛"></p><p>部落于前不久以惊人的速度复活了!在这先感谢给为大佬的努力!!!<del>首领菊花献上先</del><br>部落代码: #P2J80YL0<br>微信: lc571347851<br>加入我们部落的暗号: <strong>一个部落牛批</strong><br>部落人员构造: 几乎都是研究生和刚毕业不久的愣头青(都是单身帅气的小哥哥哦!)<br>等级: 9~10本居多<br>部落风格: 娱乐里tou着认真</p><p>So,综上:</p><ul><li>部落战频率偏高,学生考试期间,其他特殊时段,将会有一段休战期</li><li>也欢迎休闲活跃的玩家</li><li>部落城堡不得低于7本,<del>当然你也可以使劲跟首领Py</del></li><li>这里不是互刷部落</li><li>能够认真看完我们落规</li><li>妹子可以无视上面条件加入,<del>首领说的</del>,<del>大屌萌妹请自爱</del></li></ul><p>什么人适合我们部落:</p><ul><li>学生</li><li>刚毕业没多久的小哥哥小姐姐</li><li>喜欢结交朋友</li><li>3星大手</li><li><del>热爱生活(我tao这条什么鬼)</del></li><li>有团队意识</li><li>不仅限于coc游戏交流,我们微信群里还有Dota4000分大神,LOL大师大手,吃鸡自走人形挂,王者荣耀金手指…</li></ul><h2 id="部落相关规定"><a href="#部落相关规定" class="headerlink" title="部落相关规定"></a>部落相关规定</h2><h3 id="部落战"><a href="#部落战" class="headerlink" title="部落战"></a>部落战</h3><ul><li>规则同样适用于部落联赛</li><li>部落战除特殊时期,基本上连开</li><li>部落战开始搜索对战时间统一定为晚上10点左右,方便大佬捐兵</li><li>参战人员从挂绿牌的队员中选出,所以请管理好自己的牌子</li><li>部落战务必引援</li><li>部落战技巧可以请教<del>部落首领</del>部落里三星大佬</li><li>部落战流派不做硬性规定(能三星同本的流派就是好流派)</li><li>屌丝兵 乱打 / 不打, 导致部落战失败会及时处理(这属于消极应战)</li><li>部落战紧急要兵可以到微信群要,等级高的大佬们白天都在上班,平时没时间老盯着游戏</li></ul><h3 id="部落联赛"><a href="#部落联赛" class="headerlink" title="部落联赛"></a>部落联赛</h3><ul><li>都报名参加,每胜利一场,参加了即使没上场也有奖励</li><li>在能保证胜利的前提下,将会派出低本出战</li></ul><h3 id="部落联赛奖励发放"><a href="#部落联赛奖励发放" class="headerlink" title="部落联赛奖励发放"></a>部落联赛奖励发放</h3><ul><li>首先将会分出一份发给联赛结束时部落里最活跃的队员(<a href="#关于活跃与不活跃">什么是最活跃的队员?</a>)</li><li>然后会分出3份发给最先完成<strong>部落竞赛</strong>任务的<strong>前3名</strong>(依次往下)</li><li>如果剩下还有,将会发给部落联赛表现积极的队员</li></ul><h3 id="部落驻军"><a href="#部落驻军" class="headerlink" title="部落驻军"></a>部落驻军</h3><ul><li>20单位: 1龙</li><li>25单位: 1龙 + MM / 法师 / 气球</li><li>30单位以上: 1龙/1狗 + 气球</li></ul><h2 id="关于平时捐兵"><a href="#关于平时捐兵" class="headerlink" title="关于平时捐兵"></a>关于平时捐兵</h2><ul><li>部落提供了两个捐兵脚本</li><li>部落不反对使用脚本,但是请使用脚本的同学把<strong>请求增援</strong>这个选项关了</li><li>除非特殊要求,请不要捐赠黄毛,炸弹人,哥布林,如果有人举报将会被处理</li><li>理论上你可以在请求援兵上提出任何要求,比如”给我来满级XXX”,但是要求越高你可能得到的增援时间越长</li><li>短时间内立马的到增援的办法:<ul><li>向脚本要</li><li>降低要求</li><li><del>和大佬Py</del></li><li>微信群</li></ul></li></ul><p>脚本捐兵细则:</p><ul><li>脚本只能识别中文不能识别英文</li><li>脚本目前只提供增援 <strong>胖子,MM</strong>,以后会扩充法师,气球,武神</li><li>凡识别到 <strong>不 / 除 / 部落战</strong> 关键字,将不会获得增援</li><li>识别到 <strong>随意</strong> 关键字将会获得MM</li><li>如果遵照以上仍然还没获得增援,那是因为脚本还没造好兵,又或者拉闸了…</li></ul><h2 id="清人"><a href="#清人" class="headerlink" title="清人"></a>清人</h2><ul><li>参加部落战后: 不打 / 瞎打 导致部落战失败(你可以手残,但是请不要瞎jer打)</li><li>屡次违反落规的铁头娃娃</li><li>当部落人数超过45人时,将会清理不活跃队员(<a href="#关于活跃与不活跃">不活跃?</a>)</li></ul><p><strong>补充:</strong>低本可以不捐兵,目前部落对捐兵人数没有做强制性安排,因为大家都很自觉</p><h2 id="关于活跃与不活跃"><a href="#关于活跃与不活跃" class="headerlink" title="关于活跃与不活跃"></a>关于活跃与不活跃</h2><p>根据官方数据会有如下统计:<br><img src="活跃与不活跃.png" alt="活跃与不活跃"></p><p>我们科比大佬(KOBE BRYANT)就是最活跃玩家,而二营长就很危险了</p><h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><ul><li>这只是第一版规定,肯定有诸多不成熟和不适合我们部落的地方,希望部落成员积极提出自己的看法和意见</li><li>谢谢各位大佬能够看完</li></ul><blockquote><p>以上所有最终解释权归一个部落所有</p></blockquote>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;一个部落注意事项&quot;&gt;&lt;a href=&quot;#一个部落注意事项&quot; class=&quot;headerlink&quot; title=&quot;一个部落注意事项&quot;&gt;&lt;/a&gt;一个部落注意事项&lt;/h1&gt;
+        &lt;h1 id=&quot;一个部落不完全指北&quot;&gt;&lt;a href=&quot;#一个部落不完全指北&quot; class=&quot;headerlink&quot; title=&quot;一个部落不完全指北&quot;&gt;&lt;/a&gt;一个部落不完全指北&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;更新时间: 2019年1月21日16:26:01&lt;/p&gt;
+
       
     
     </summary>
     
-      <category term="Game" scheme="http://www.superli.tech/categories/Game/"/>
+      <category term="Game" scheme="https://ojerk.cn/categories/Game/"/>
     
     
-      <category term="Game" scheme="http://www.superli.tech/tags/Game/"/>
+      <category term="Game" scheme="https://ojerk.cn/tags/Game/"/>
     
   </entry>
   
   <entry>
     <title>培训通知帖</title>
-    <link href="http://www.superli.tech/%E5%9F%B9%E8%AE%AD%E9%80%9A%E7%9F%A5%E5%B8%96/"/>
-    <id>http://www.superli.tech/培训通知帖/</id>
+    <link href="https://ojerk.cn/%E5%9F%B9%E8%AE%AD%E9%80%9A%E7%9F%A5%E5%B8%96/"/>
+    <id>https://ojerk.cn/培训通知帖/</id>
     <published>2018-09-18T06:58:41.000Z</published>
     <updated>2019-01-03T09:01:13.968Z</updated>
     
@@ -366,17 +368,17 @@
     
     </summary>
     
-      <category term="Train" scheme="http://www.superli.tech/categories/Train/"/>
+      <category term="Train" scheme="https://ojerk.cn/categories/Train/"/>
     
     
-      <category term="Train" scheme="http://www.superli.tech/tags/Train/"/>
+      <category term="Train" scheme="https://ojerk.cn/tags/Train/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu下多用户版jupyterhub部署</title>
-    <link href="http://www.superli.tech/Ubuntu%E4%B8%8B%E5%A4%9A%E7%94%A8%E6%88%B7%E7%89%88jupyterhub%E9%83%A8%E7%BD%B2/"/>
-    <id>http://www.superli.tech/Ubuntu下多用户版jupyterhub部署/</id>
+    <link href="https://ojerk.cn/Ubuntu%E4%B8%8B%E5%A4%9A%E7%94%A8%E6%88%B7%E7%89%88jupyterhub%E9%83%A8%E7%BD%B2/"/>
+    <id>https://ojerk.cn/Ubuntu下多用户版jupyterhub部署/</id>
     <published>2018-08-23T11:11:14.000Z</published>
     <updated>2018-10-19T01:12:53.820Z</updated>
     
@@ -391,21 +393,21 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
-      <category term="jupyter" scheme="http://www.superli.tech/categories/Python/jupyter/"/>
+      <category term="jupyter" scheme="https://ojerk.cn/categories/Python/jupyter/"/>
     
     
-      <category term="Linux" scheme="http://www.superli.tech/tags/Linux/"/>
+      <category term="Linux" scheme="https://ojerk.cn/tags/Linux/"/>
     
-      <category term="Jupyterhub" scheme="http://www.superli.tech/tags/Jupyterhub/"/>
+      <category term="Jupyterhub" scheme="https://ojerk.cn/tags/Jupyterhub/"/>
     
   </entry>
   
   <entry>
     <title>解决Ubuntu下matplotlib不能正常显示中文问题</title>
-    <link href="http://www.superli.tech/%E8%A7%A3%E5%86%B3Ubuntu%E4%B8%8Bmatplotlib%E4%B8%8D%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E4%B8%AD%E6%96%87/"/>
-    <id>http://www.superli.tech/解决Ubuntu下matplotlib不能正常显示中文/</id>
+    <link href="https://ojerk.cn/%E8%A7%A3%E5%86%B3Ubuntu%E4%B8%8Bmatplotlib%E4%B8%8D%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E4%B8%AD%E6%96%87/"/>
+    <id>https://ojerk.cn/解决Ubuntu下matplotlib不能正常显示中文/</id>
     <published>2018-08-23T11:06:35.000Z</published>
     <updated>2018-10-19T00:58:00.692Z</updated>
     
@@ -420,21 +422,21 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
-      <category term="matplotlib" scheme="http://www.superli.tech/categories/Python/matplotlib/"/>
+      <category term="matplotlib" scheme="https://ojerk.cn/categories/Python/matplotlib/"/>
     
     
-      <category term="Linux" scheme="http://www.superli.tech/tags/Linux/"/>
+      <category term="Linux" scheme="https://ojerk.cn/tags/Linux/"/>
     
-      <category term="Matplotlib" scheme="http://www.superli.tech/tags/Matplotlib/"/>
+      <category term="Matplotlib" scheme="https://ojerk.cn/tags/Matplotlib/"/>
     
   </entry>
   
   <entry>
     <title>解决Vscode右键Runcode中文乱码问题</title>
-    <link href="http://www.superli.tech/%E8%A7%A3%E5%86%B3Vscode%E5%8F%B3%E9%94%AERuncode%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/"/>
-    <id>http://www.superli.tech/解决Vscode右键Runcode中文乱码问题/</id>
+    <link href="https://ojerk.cn/%E8%A7%A3%E5%86%B3Vscode%E5%8F%B3%E9%94%AERuncode%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/"/>
+    <id>https://ojerk.cn/解决Vscode右键Runcode中文乱码问题/</id>
     <published>2018-08-23T10:55:52.000Z</published>
     <updated>2018-08-23T11:03:43.880Z</updated>
     
@@ -449,19 +451,19 @@
     
     </summary>
     
-      <category term="Vscode" scheme="http://www.superli.tech/categories/Vscode/"/>
+      <category term="Vscode" scheme="https://ojerk.cn/categories/Vscode/"/>
     
     
-      <category term="Vscode" scheme="http://www.superli.tech/tags/Vscode/"/>
+      <category term="Vscode" scheme="https://ojerk.cn/tags/Vscode/"/>
     
-      <category term="中文乱码" scheme="http://www.superli.tech/tags/%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/"/>
+      <category term="中文乱码" scheme="https://ojerk.cn/tags/%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/"/>
     
   </entry>
   
   <entry>
     <title>Pandas.DataFrame内存使用的查看</title>
-    <link href="http://www.superli.tech/Pandas-DataFrame%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E7%9A%84%E6%9F%A5%E7%9C%8B/"/>
-    <id>http://www.superli.tech/Pandas-DataFrame内存使用的查看/</id>
+    <link href="https://ojerk.cn/Pandas-DataFrame%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E7%9A%84%E6%9F%A5%E7%9C%8B/"/>
+    <id>https://ojerk.cn/Pandas-DataFrame内存使用的查看/</id>
     <published>2018-08-23T10:49:16.000Z</published>
     <updated>2018-10-19T01:15:01.456Z</updated>
     
@@ -476,19 +478,19 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
-      <category term="pandas" scheme="http://www.superli.tech/categories/Python/pandas/"/>
+      <category term="pandas" scheme="https://ojerk.cn/categories/Python/pandas/"/>
     
     
-      <category term="Pandas" scheme="http://www.superli.tech/tags/Pandas/"/>
+      <category term="Pandas" scheme="https://ojerk.cn/tags/Pandas/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu下Python自动上网脚本的实现</title>
-    <link href="http://www.superli.tech/Ubuntu%E4%B8%8BPython%E8%87%AA%E5%8A%A8%E4%B8%8A%E7%BD%91%E8%84%9A%E6%9C%AC%E7%9A%84%E5%AE%9E%E7%8E%B0/"/>
-    <id>http://www.superli.tech/Ubuntu下Python自动上网脚本的实现/</id>
+    <link href="https://ojerk.cn/Ubuntu%E4%B8%8BPython%E8%87%AA%E5%8A%A8%E4%B8%8A%E7%BD%91%E8%84%9A%E6%9C%AC%E7%9A%84%E5%AE%9E%E7%8E%B0/"/>
+    <id>https://ojerk.cn/Ubuntu下Python自动上网脚本的实现/</id>
     <published>2018-08-23T10:39:39.000Z</published>
     <updated>2018-10-19T01:08:56.277Z</updated>
     
@@ -503,21 +505,21 @@
     
     </summary>
     
-      <category term="Script" scheme="http://www.superli.tech/categories/Script/"/>
+      <category term="Script" scheme="https://ojerk.cn/categories/Script/"/>
     
     
-      <category term="Python" scheme="http://www.superli.tech/tags/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/tags/Python/"/>
     
-      <category term="Linux" scheme="http://www.superli.tech/tags/Linux/"/>
+      <category term="Linux" scheme="https://ojerk.cn/tags/Linux/"/>
     
-      <category term="Script" scheme="http://www.superli.tech/tags/Script/"/>
+      <category term="Script" scheme="https://ojerk.cn/tags/Script/"/>
     
   </entry>
   
   <entry>
     <title>Python虚拟环境搭建/迁移</title>
-    <link href="http://www.superli.tech/Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-%E8%BF%81%E7%A7%BB/"/>
-    <id>http://www.superli.tech/Python虚拟环境搭建-迁移/</id>
+    <link href="https://ojerk.cn/Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-%E8%BF%81%E7%A7%BB/"/>
+    <id>https://ojerk.cn/Python虚拟环境搭建-迁移/</id>
     <published>2018-08-22T11:54:20.000Z</published>
     <updated>2018-10-19T01:04:57.603Z</updated>
     
@@ -532,21 +534,21 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
-      <category term="virtualenv" scheme="http://www.superli.tech/categories/Python/virtualenv/"/>
+      <category term="virtualenv" scheme="https://ojerk.cn/categories/Python/virtualenv/"/>
     
     
-      <category term="VirtualEnv" scheme="http://www.superli.tech/tags/VirtualEnv/"/>
+      <category term="VirtualEnv" scheme="https://ojerk.cn/tags/VirtualEnv/"/>
     
-      <category term="VirtualEnvWrapper" scheme="http://www.superli.tech/tags/VirtualEnvWrapper/"/>
+      <category term="VirtualEnvWrapper" scheme="https://ojerk.cn/tags/VirtualEnvWrapper/"/>
     
   </entry>
   
   <entry>
     <title>搭建属于自己的Pipserver</title>
-    <link href="http://www.superli.tech/%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Pipserver/"/>
-    <id>http://www.superli.tech/搭建属于自己的Pipserver/</id>
+    <link href="https://ojerk.cn/%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Pipserver/"/>
+    <id>https://ojerk.cn/搭建属于自己的Pipserver/</id>
     <published>2018-08-22T11:49:27.000Z</published>
     <updated>2018-10-19T01:10:42.208Z</updated>
     
@@ -561,21 +563,21 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
-      <category term="pip" scheme="http://www.superli.tech/categories/Python/pip/"/>
+      <category term="pip" scheme="https://ojerk.cn/categories/Python/pip/"/>
     
     
-      <category term="Python" scheme="http://www.superli.tech/tags/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/tags/Python/"/>
     
-      <category term="Pip" scheme="http://www.superli.tech/tags/Pip/"/>
+      <category term="Pip" scheme="https://ojerk.cn/tags/Pip/"/>
     
   </entry>
   
   <entry>
     <title>Python自动化Word、Excel</title>
-    <link href="http://www.superli.tech/Python%E8%87%AA%E5%8A%A8%E5%8C%96Word%E3%80%81Excel/"/>
-    <id>http://www.superli.tech/Python自动化Word、Excel/</id>
+    <link href="https://ojerk.cn/Python%E8%87%AA%E5%8A%A8%E5%8C%96Word%E3%80%81Excel/"/>
+    <id>https://ojerk.cn/Python自动化Word、Excel/</id>
     <published>2018-08-22T11:43:49.000Z</published>
     <updated>2018-10-19T01:05:18.525Z</updated>
     
@@ -590,21 +592,21 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://www.superli.tech/tags/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/tags/Python/"/>
     
-      <category term="Word" scheme="http://www.superli.tech/tags/Word/"/>
+      <category term="Word" scheme="https://ojerk.cn/tags/Word/"/>
     
-      <category term="Excel" scheme="http://www.superli.tech/tags/Excel/"/>
+      <category term="Excel" scheme="https://ojerk.cn/tags/Excel/"/>
     
   </entry>
   
   <entry>
     <title>Python多进程简单上手</title>
-    <link href="http://www.superli.tech/Python%E5%A4%9A%E8%BF%9B%E7%A8%8B%E7%AE%80%E5%8D%95%E4%B8%8A%E6%89%8B/"/>
-    <id>http://www.superli.tech/Python多进程简单上手/</id>
+    <link href="https://ojerk.cn/Python%E5%A4%9A%E8%BF%9B%E7%A8%8B%E7%AE%80%E5%8D%95%E4%B8%8A%E6%89%8B/"/>
+    <id>https://ojerk.cn/Python多进程简单上手/</id>
     <published>2018-08-22T11:34:14.000Z</published>
     <updated>2018-10-19T01:04:13.665Z</updated>
     
@@ -619,19 +621,19 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://www.superli.tech/tags/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/tags/Python/"/>
     
-      <category term="Multiprocessing" scheme="http://www.superli.tech/tags/Multiprocessing/"/>
+      <category term="Multiprocessing" scheme="https://ojerk.cn/tags/Multiprocessing/"/>
     
   </entry>
   
   <entry>
     <title>Vscode下书写Markdown的利器</title>
-    <link href="http://www.superli.tech/Vscode%E4%B8%8B%E4%B9%A6%E5%86%99Markdown%E7%9A%84%E5%88%A9%E5%99%A8/"/>
-    <id>http://www.superli.tech/Vscode下书写Markdown的利器/</id>
+    <link href="https://ojerk.cn/Vscode%E4%B8%8B%E4%B9%A6%E5%86%99Markdown%E7%9A%84%E5%88%A9%E5%99%A8/"/>
+    <id>https://ojerk.cn/Vscode下书写Markdown的利器/</id>
     <published>2018-08-22T11:22:12.000Z</published>
     <updated>2018-08-22T11:23:30.600Z</updated>
     
@@ -646,19 +648,19 @@
     
     </summary>
     
-      <category term="Vscode" scheme="http://www.superli.tech/categories/Vscode/"/>
+      <category term="Vscode" scheme="https://ojerk.cn/categories/Vscode/"/>
     
     
-      <category term="Vscode" scheme="http://www.superli.tech/tags/Vscode/"/>
+      <category term="Vscode" scheme="https://ojerk.cn/tags/Vscode/"/>
     
-      <category term="Markdown" scheme="http://www.superli.tech/tags/Markdown/"/>
+      <category term="Markdown" scheme="https://ojerk.cn/tags/Markdown/"/>
     
   </entry>
   
   <entry>
     <title>解决Pandas下,to_csv乱码</title>
-    <link href="http://www.superli.tech/%E8%A7%A3%E5%86%B3Pandas%E4%B8%8B-to-csv%E4%B9%B1%E7%A0%81/"/>
-    <id>http://www.superli.tech/解决Pandas下-to-csv乱码/</id>
+    <link href="https://ojerk.cn/%E8%A7%A3%E5%86%B3Pandas%E4%B8%8B-to-csv%E4%B9%B1%E7%A0%81/"/>
+    <id>https://ojerk.cn/解决Pandas下-to-csv乱码/</id>
     <published>2018-08-20T10:34:31.000Z</published>
     <updated>2018-10-19T01:11:13.391Z</updated>
     
@@ -673,19 +675,19 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
-      <category term="pandas" scheme="http://www.superli.tech/categories/Python/pandas/"/>
+      <category term="pandas" scheme="https://ojerk.cn/categories/Python/pandas/"/>
     
     
-      <category term="Pandas" scheme="http://www.superli.tech/tags/Pandas/"/>
+      <category term="Pandas" scheme="https://ojerk.cn/tags/Pandas/"/>
     
   </entry>
   
   <entry>
     <title>Python Shutil</title>
-    <link href="http://www.superli.tech/Shutil/"/>
-    <id>http://www.superli.tech/Shutil/</id>
+    <link href="https://ojerk.cn/Shutil/"/>
+    <id>https://ojerk.cn/Shutil/</id>
     <published>2018-08-06T00:52:12.000Z</published>
     <updated>2018-10-19T01:05:25.828Z</updated>
     
@@ -700,17 +702,17 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://www.superli.tech/tags/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>Python itertools</title>
-    <link href="http://www.superli.tech/Itertools/"/>
-    <id>http://www.superli.tech/Itertools/</id>
+    <link href="https://ojerk.cn/Itertools/"/>
+    <id>https://ojerk.cn/Itertools/</id>
     <published>2018-08-06T00:52:01.000Z</published>
     <updated>2018-10-19T01:02:08.597Z</updated>
     
@@ -725,17 +727,17 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://www.superli.tech/tags/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>Python Collections</title>
-    <link href="http://www.superli.tech/Collections/"/>
-    <id>http://www.superli.tech/Collections/</id>
+    <link href="https://ojerk.cn/Collections/"/>
+    <id>https://ojerk.cn/Collections/</id>
     <published>2018-08-03T01:58:48.000Z</published>
     <updated>2018-10-19T00:58:31.155Z</updated>
     
@@ -750,17 +752,17 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://www.superli.tech/tags/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>Python Pathlib</title>
-    <link href="http://www.superli.tech/Pathlib/"/>
-    <id>http://www.superli.tech/Pathlib/</id>
+    <link href="https://ojerk.cn/Pathlib/"/>
+    <id>https://ojerk.cn/Pathlib/</id>
     <published>2018-08-01T03:11:11.000Z</published>
     <updated>2018-10-19T01:03:37.189Z</updated>
     
@@ -775,17 +777,17 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://www.superli.tech/tags/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>github简单入门</title>
-    <link href="http://www.superli.tech/Github%E5%85%A5%E9%97%A8%E6%95%99%E5%AD%A6/"/>
-    <id>http://www.superli.tech/Github入门教学/</id>
+    <link href="https://ojerk.cn/Github%E5%85%A5%E9%97%A8%E6%95%99%E5%AD%A6/"/>
+    <id>https://ojerk.cn/Github入门教学/</id>
     <published>2018-07-27T08:43:41.000Z</published>
     <updated>2018-08-23T11:16:09.153Z</updated>
     
@@ -800,19 +802,19 @@
     
     </summary>
     
-      <category term="Git" scheme="http://www.superli.tech/categories/Git/"/>
+      <category term="Git" scheme="https://ojerk.cn/categories/Git/"/>
     
     
-      <category term="Git" scheme="http://www.superli.tech/tags/Git/"/>
+      <category term="Git" scheme="https://ojerk.cn/tags/Git/"/>
     
-      <category term="Github" scheme="http://www.superli.tech/tags/Github/"/>
+      <category term="Github" scheme="https://ojerk.cn/tags/Github/"/>
     
   </entry>
   
   <entry>
     <title>Python里包、库、模块的区别</title>
-    <link href="http://www.superli.tech/Python%E9%87%8C%E5%BA%93%E3%80%81%E5%8C%85%E3%80%81%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
-    <id>http://www.superli.tech/Python里库、包、模块的区别/</id>
+    <link href="https://ojerk.cn/Python%E9%87%8C%E5%BA%93%E3%80%81%E5%8C%85%E3%80%81%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>https://ojerk.cn/Python里库、包、模块的区别/</id>
     <published>2018-07-27T01:59:41.000Z</published>
     <updated>2018-10-19T01:04:28.497Z</updated>
     
@@ -827,17 +829,17 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://www.superli.tech/tags/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>Python Unittest</title>
-    <link href="http://www.superli.tech/Unittest/"/>
-    <id>http://www.superli.tech/Unittest/</id>
+    <link href="https://ojerk.cn/Unittest/"/>
+    <id>https://ojerk.cn/Unittest/</id>
     <published>2018-07-23T11:08:15.000Z</published>
     <updated>2018-10-19T01:09:54.796Z</updated>
     
@@ -852,10 +854,10 @@
     
     </summary>
     
-      <category term="Python" scheme="http://www.superli.tech/categories/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://www.superli.tech/tags/Python/"/>
+      <category term="Python" scheme="https://ojerk.cn/tags/Python/"/>
     
   </entry>
   
