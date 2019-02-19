@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://ojerk.cn/Vscode%E9%87%8CTypeScript%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2019-02-19T03:29:19.108Z</lastmod>
+    <data>
+        <display>
+        <title>Vscode里TypeScript开发环境的配置</title>
+        <pubTime>2019-02-19T02:33:15.000Z</pubTime>
+        
+        <tag>Vscode</tag>
+         
+        <tag>TypeScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="TypeScript" url="https://ojerk.cn/categories/TypeScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://ojerk.cn/game/</loc>
     <lastmod>2019-01-22T02:25:05.848Z</lastmod>
     <data>
@@ -274,9 +296,9 @@
         <title>Ubuntu下多用户版jupyterhub部署</title>
         <pubTime>2018-08-23T11:11:14.000Z</pubTime>
         
-        <tag>Linux</tag>
-         
         <tag>Jupyterhub</tag>
+         
+        <tag>Linux</tag>
          
          
            
