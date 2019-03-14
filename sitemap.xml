@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ojerk.cn/Vscode%E4%B8%8APython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE%E5%92%8C%E4%BD%BF%E7%94%A8/</loc>
+    
+    <lastmod>2019-03-14T09:27:48.433Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ojerk.cn/Vscode%E9%87%8CTypeScript%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE/</loc>
     
     <lastmod>2019-02-19T03:29:19.108Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://ojerk.cn/game/</loc>
     
     <lastmod>2019-01-22T02:25:05.848Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ojerk.cn/Vscode%E4%B8%8APython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE%E5%92%8C%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2019-01-08T08:17:43.526Z</lastmod>
     
   </url>
   
