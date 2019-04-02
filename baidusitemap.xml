@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://ojerk.cn/award/</loc>
+    <lastmod>2019-04-02T06:38:44.122Z</lastmod>
+    <data>
+        <display>
+        <title>一个部落奖励说明帖</title>
+        <pubTime>2019-04-02T06:07:17.000Z</pubTime>
+        
+        <tag>Game</tag>
+         
+         
+           
+             
+              <breadCrumb title="Game" url="https://ojerk.cn/categories/Game/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://ojerk.cn/Vscode%E4%B8%8APython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE%E5%92%8C%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2019-03-14T09:27:48.433Z</lastmod>
     <data>
@@ -296,9 +316,9 @@
         <title>Ubuntu下多用户版jupyterhub部署</title>
         <pubTime>2018-08-23T11:11:14.000Z</pubTime>
         
-        <tag>Jupyterhub</tag>
-         
         <tag>Linux</tag>
+         
+        <tag>Jupyterhub</tag>
          
          
            
