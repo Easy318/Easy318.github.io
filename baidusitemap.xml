@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://ojerk.cn/Ubuntu%E4%B8%8BMongoDB%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2019-04-08T08:17:17.158Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu下MongoDB的安装及使用</title>
+        <pubTime>2019-04-08T00:47:02.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>MongoDB</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu" url="https://ojerk.cn/categories/Ubuntu/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://ojerk.cn/award/</loc>
     <lastmod>2019-04-02T06:47:19.822Z</lastmod>
     <data>
@@ -316,9 +338,9 @@
         <title>Ubuntu下多用户版jupyterhub部署</title>
         <pubTime>2018-08-23T11:11:14.000Z</pubTime>
         
-        <tag>Linux</tag>
-         
         <tag>Jupyterhub</tag>
+         
+        <tag>Linux</tag>
          
          
            
