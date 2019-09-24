@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://ojerk.cn/Enum/</loc>
+    <lastmod>2019-09-24T06:19:04.521Z</lastmod>
+    <data>
+        <display>
+        <title>Enum</title>
+        <pubTime>2019-09-24T06:17:12.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://ojerk.cn/Vscode%E4%B8%8APython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE%E5%92%8C%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2019-05-31T02:16:45.195Z</lastmod>
     <data>
@@ -338,9 +358,9 @@
         <title>Ubuntu下多用户版jupyterhub部署</title>
         <pubTime>2018-08-23T11:11:14.000Z</pubTime>
         
-        <tag>Jupyterhub</tag>
-         
         <tag>Linux</tag>
+         
+        <tag>Jupyterhub</tag>
          
          
            

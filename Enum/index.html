@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Git,Github," />
+  <meta name="keywords" content="Python," />
 
 
 
@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="Git_GitHub Briefer Course 教程源于Here,以下是自己的整理  安装Win10环境下:猛击这里下载安装包,默认选项安装,安装完成后,右键菜单出现下图标识表示安装成功! 初次使用的配置打开Git Bash命令窗口输入: 12git config --global user.name &quot;Your Name&quot;git config --global user.email &quot;ema">
-<meta name="keywords" content="Git,Github">
+<meta name="description" content="Python标准库之Enum(枚举)枚举的创建:  枚举名(name)不能重复,但是值(value)可以重复 如果需要创建值也不允许重复的枚举类,请使用@enum.unique装饰器  123456789101112131415161718192021from enum import Enum, unique# 方法一# 使用了自动值,从1开始计数Color = Enum(&apos;Color&apos;, &apos;RE">
+<meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="github简单入门">
-<meta property="og:url" content="https://ojerk.cn/Github入门教学/index.html">
+<meta property="og:title" content="Enum">
+<meta property="og:url" content="https://ojerk.cn/Enum/index.html">
 <meta property="og:site_name" content="Superli&#39;s Blog">
-<meta property="og:description" content="Git_GitHub Briefer Course 教程源于Here,以下是自己的整理  安装Win10环境下:猛击这里下载安装包,默认选项安装,安装完成后,右键菜单出现下图标识表示安装成功! 初次使用的配置打开Git Bash命令窗口输入: 12git config --global user.name &quot;Your Name&quot;git config --global user.email &quot;ema">
+<meta property="og:description" content="Python标准库之Enum(枚举)枚举的创建:  枚举名(name)不能重复,但是值(value)可以重复 如果需要创建值也不允许重复的枚举类,请使用@enum.unique装饰器  123456789101112131415161718192021from enum import Enum, unique# 方法一# 使用了自动值,从1开始计数Color = Enum(&apos;Color&apos;, &apos;RE">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-23T11:16:09.153Z">
+<meta property="og:updated_time" content="2019-09-24T06:19:04.521Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="github简单入门">
-<meta name="twitter:description" content="Git_GitHub Briefer Course 教程源于Here,以下是自己的整理  安装Win10环境下:猛击这里下载安装包,默认选项安装,安装完成后,右键菜单出现下图标识表示安装成功! 初次使用的配置打开Git Bash命令窗口输入: 12git config --global user.name &quot;Your Name&quot;git config --global user.email &quot;ema">
+<meta name="twitter:title" content="Enum">
+<meta name="twitter:description" content="Python标准库之Enum(枚举)枚举的创建:  枚举名(name)不能重复,但是值(value)可以重复 如果需要创建值也不允许重复的枚举类,请使用@enum.unique装饰器  123456789101112131415161718192021from enum import Enum, unique# 方法一# 使用了自动值,从1开始计数Color = Enum(&apos;Color&apos;, &apos;RE">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="https://ojerk.cn/Github入门教学/"/>
+  <link rel="canonical" href="https://ojerk.cn/Enum/"/>
 
 
 
 
 
-  <title>github简单入门 | Superli's Blog</title>
+  <title>Enum | Superli's Blog</title>
   
 
 
@@ -292,7 +292,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ojerk.cn/Github入门教学/">
+    <link itemprop="mainEntityOfPage" href="https://ojerk.cn/Enum/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="李超">
@@ -309,7 +309,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">github简单入门</h2>
+          <h2 class="post-title" itemprop="name headline">Enum</h2>
         
 
         <div class="post-meta">
@@ -321,8 +321,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-27T16:43:41+08:00">
-                2018-07-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T14:17:12+08:00">
+                2019-09-24
               </time>
             
 
@@ -344,8 +344,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Git/" itemprop="url" rel="index">
-                    <span itemprop="name">Git</span>
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
                   </a>
                 </span>
 
@@ -361,7 +361,7 @@
 
           
           
-             <span id="/Github入门教学/" class="leancloud_visitors" data-flag-title="github简单入门">
+             <span id="/Enum/" class="leancloud_visitors" data-flag-title="Enum">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -389,7 +389,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,300
+                  397
                 </span>
               
 
@@ -414,128 +414,39 @@
       
 
       
-        <h1 id="Git-GitHub-Briefer-Course"><a href="#Git-GitHub-Briefer-Course" class="headerlink" title="Git_GitHub Briefer Course"></a>Git_GitHub Briefer Course</h1><blockquote>
-<p>教程源于<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">Here</a>,以下是自己的整理</p>
-</blockquote>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><strong>Win10环境下:</strong><br><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">猛击这里下载</a>安装包,默认选项安装,安装完成后,右键菜单出现下图标识表示安装成功!</p>
-<h2 id="初次使用的配置"><a href="#初次使用的配置" class="headerlink" title="初次使用的配置"></a>初次使用的配置</h2><p>打开<em>Git Bash</em>命令窗口输入:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --<span class="keyword">global</span> user.name <span class="string">"Your Name"</span></span><br><span class="line">git config --<span class="keyword">global</span> user.email <span class="string">"email@example.com"</span></span><br></pre></td></tr></table></figure>
-<h2 id="Git具体食用方法步骤"><a href="#Git具体食用方法步骤" class="headerlink" title="Git具体食用方法步骤"></a>Git具体食用方法步骤</h2><p><strong>初始化Git仓库</strong>:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
-<p><strong>添加文件到Git仓库，分两步：</strong>:</p>
-<ol>
-<li>把需要提交的文件先放入缓存区</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add &lt;file&gt; <span class="comment">#注意，可反复多次使用，添加多个文件；</span></span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>使用提交命令</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit <span class="comment">#完成提交</span></span><br></pre></td></tr></table></figure>
-<p><strong>查看工作区的状态</strong>:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
-<p>如果git status告诉你有文件被修改过，使用下面代码可以查看修改内容</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff</span><br></pre></td></tr></table></figure>
-<p>查看工作区和版本库里面最新版本的区别：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff HEAD -- filename</span><br></pre></td></tr></table></figure>
-<p><strong>时光穿梭</strong>:</p>
-<p>HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard commit_id</span><br></pre></td></tr></table></figure>
-<p>查看提交历史</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure>
-<p>查看命令历史</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reflog</span><br></pre></td></tr></table></figure>
-<p>丢弃工作区的修改</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -- readme.txt</span><br></pre></td></tr></table></figure>
-<p>该命令意思就是，把readme.txt文件在工作区的修改全部撤销，这里有两种情况：</p>
+        <h1 id="Python标准库之Enum-枚举"><a href="#Python标准库之Enum-枚举" class="headerlink" title="Python标准库之Enum(枚举)"></a>Python标准库之Enum(枚举)</h1><p><strong>枚举的创建:</strong></p>
 <ul>
-<li>readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；</li>
-<li>readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。</li>
+<li>枚举名(name)不能重复,但是值(value)可以重复</li>
+<li>如果需要创建值也不允许重复的枚举类,请使用@enum.unique装饰器</li>
 </ul>
-<p>总之，就是让这个文件回到最近一次git commit或git add时的状态。<br>如果已经提交到缓存区,就需要先把文件从缓存区撤下来:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset HEAD &lt;file&gt;</span><br></pre></td></tr></table></figure>
-<p>然后再执行上一步:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -- readme.txt</span><br></pre></td></tr></table></figure>
-<p>或者还可以(前提是没有把文件推送到远程git仓库):</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reflog</span><br></pre></td></tr></table></figure>
-<p>再reset回去:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard commit_id</span><br></pre></td></tr></table></figure>
-<p><strong>文件删除</strong>:</p>
-<p>首先删除工作区文件:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm test.txt</span><br></pre></td></tr></table></figure>
-<p>此时两种情况:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> enum <span class="keyword">import</span> Enum, unique</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 方法一</span></span><br><span class="line"><span class="comment"># 使用了自动值,从1开始计数</span></span><br><span class="line"></span><br><span class="line">Color = Enum(<span class="string">'Color'</span>, <span class="string">'RED GREEN BLUE'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 方法二</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Color</span><span class="params">(Enum)</span></span></span><br><span class="line"><span class="class"></span></span><br><span class="line">    RED = 1</span><br><span class="line">    GREEN = <span class="number">2</span></span><br><span class="line">    BLUE = <span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="meta">@unique</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Color</span><span class="params">(Enum)</span></span></span><br><span class="line"><span class="class"></span></span><br><span class="line">    RED = 1</span><br><span class="line">    GREEN =<span class="number">2</span></span><br><span class="line">    BLUE = <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<p><strong>枚举的访问:</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 方法一</span></span><br><span class="line">member = Color.RED</span><br><span class="line"><span class="comment"># 方法二</span></span><br><span class="line">member = Color[<span class="string">'RED'</span>]</span><br><span class="line"><span class="comment"># 方法三</span></span><br><span class="line">member = Color(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<p>说明:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 1. 可读性极强的打印信息</span></span><br><span class="line">print(member)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>Color.RED</span><br><span class="line">print(repr(member))</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>&lt;Color.RED: <span class="number">1</span>&gt;</span><br><span class="line"><span class="comment"># 2. 枚举成员的类型是它所属的枚举：</span></span><br><span class="line">type(Color.RED)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>&lt;enum <span class="string">'Color'</span>&gt;</span><br><span class="line">isinstance(Color.GREEN, Color)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">True</span></span><br></pre></td></tr></table></figure>
+<p><strong>枚举的属性:</strong></p>
 <ul>
-<li>确实要删除此文件,则执行:</li>
+<li>只读,不能修改</li>
 </ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git rm test.txt</span><br><span class="line">rm <span class="string">'test.txt'</span></span><br><span class="line">$ git commit -m <span class="string">"remove test.txt"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 属性name,枚举名</span></span><br><span class="line">member.name</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'RED'</span></span><br><span class="line"><span class="comment"># 数据value,枚举值</span></span><br><span class="line">member.value</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p><strong>枚举的循环(迭代):</strong></p>
 <ul>
-<li>发现删错了?没关系,可以从版本库回复到最后一次提交上去的修改</li>
+<li>按照顺序迭代</li>
 </ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -- test.txt</span><br></pre></td></tr></table></figure>
-<h2 id="GitHub具体食用方法步骤"><a href="#GitHub具体食用方法步骤" class="headerlink" title="GitHub具体食用方法步骤"></a>GitHub具体食用方法步骤</h2><h3 id="准备阶段"><a href="#准备阶段" class="headerlink" title="准备阶段"></a>准备阶段</h3><ol>
-<li>首先你得注册自己的GitHub账号(<a href="https://github.com/" target="_blank" rel="noopener">猛击这里注册</a>)</li>
-<li>由于你的本地Git仓库和GitHub仓库之间的传输是通过SSH加密的，所以，需要如下设置：</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"youremail@example.com"</span> <span class="comment">#填写自己的邮箱,然后一路回车就可以</span></span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>在用户主目录里找到.ssh目录,里面有<strong>id_rsa</strong>和<strong>id_rsa.pub</strong>两个文件,登录GitHub,找到settings里面SSH Keys页面把<strong>id_rsa.pub</strong>里面的内容添加进去</li>
-</ol>
-<h3 id="GitHub食用阶段"><a href="#GitHub食用阶段" class="headerlink" title="GitHub食用阶段"></a>GitHub食用阶段</h3><p><strong>关联一个远程库</strong>:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@server-name:path/repo-name.git</span><br></pre></td></tr></table></figure>
-<p>取消关联:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote remove origin git@server-name:path/repo-name.git</span><br></pre></td></tr></table></figure>
-<p><strong>第一次推送master分支的所有内容</strong>:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
-<p>此后每次推送:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-<p><strong>远程库的克隆</strong>:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:michaelliao/gitskills.git</span><br></pre></td></tr></table></figure>
-<p><strong>分支的操作</strong>:</p>
-<p>查看分支:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br></pre></td></tr></table></figure>
-<p>创建分支：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch &lt;name&gt;</span><br></pre></td></tr></table></figure>
-<p>切换分支：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout &lt;name&gt;</span><br></pre></td></tr></table></figure>
-<p>创建+切换分支：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b &lt;name&gt;</span><br></pre></td></tr></table></figure>
-<p>合并某分支到当前分支：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge &lt;name&gt;</span><br></pre></td></tr></table></figure>
-<p>删除分支：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -d &lt;name&gt;</span><br></pre></td></tr></table></figure>
-<p>查看分支合并情况:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log --graph --pretty=oneline --abbrev-commit</span><br></pre></td></tr></table></figure>
-<p><strong>多人协作</strong>:</p>
-<p>查看远程库的信息</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote</span><br></pre></td></tr></table></figure>
-<p>显示更详细的信息</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
-<p>推送分支</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-<p>创建远程origin的dev分支到本地</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b dev origin/dev</span><br></pre></td></tr></table></figure>
-<p><strong>多人协作小结</strong>:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 方法一</span></span><br><span class="line"><span class="keyword">for</span> color <span class="keyword">in</span> Color:</span><br><span class="line">    print(color)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>Color.RED</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>Color.GREEN</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>Color.BLUE</span><br><span class="line"></span><br><span class="line"><span class="comment"># 方法二</span></span><br><span class="line"><span class="keyword">for</span> name, member <span class="keyword">in</span> Color.__members__.items():</span><br><span class="line">    print(name, member)</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>RED Color.RED</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>RED Color.GREEN</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>RED Color.BLUE</span><br><span class="line"></span><br><span class="line"><span class="comment"># 方法三</span></span><br><span class="line">list(Color)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>[&lt;Color.RED: <span class="number">1</span>&gt;, &lt;Color.GREEN: <span class="number">2</span>&gt;, &lt;Color.BLUE: <span class="number">3</span>&gt;]</span><br></pre></td></tr></table></figure>
+<p><strong>枚举的比较:</strong></p>
 <ul>
-<li>查看远程库信息，使用<strong>git remote -v</strong>；</li>
-<li>本地新建的分支如果不推送到远程，对其他人就是不可见的；</li>
-<li>从本地推送分支，使用<strong>git push origin branch-name</strong>，如果推送失败，先用git pull抓取远程的新提交；</li>
-<li>在本地创建和远程分支对应的分支，使用<strong>git checkout -b branch-name origin/branch-name</strong>，本地和远程分支的名称最好一致；</li>
-<li>建立本地分支和远程分支的关联，使用<strong>git branch –set-upstream branch-name origin/branch-name</strong>；</li>
-<li>从远程抓取分支，使用<strong>git pull</strong>，如果有冲突，要先处理冲突。</li>
+<li>不支持有序比较,比如大于小于</li>
+<li>支持平等比较 == , !=</li>
+<li>与非枚举值的比较总是不相等(即使是Enum类的变体IntEnum,也不行)</li>
 </ul>
-<p><strong>.gitignore文件说明</strong>:</p>
-<p>在使用git时,它默认会把所有文件添加到版本控制器中,但是在实践中我们可能会遇到有的文件不需要添加到版控制当中,比如vscode编译时产生的.vscode文件我们不希望它被上传到GitHub上面,涉及到保密的.xlsx文件等等,这时候你可能就需要一个.gitignore文件来达到目的</p>
-<ul>
-<li>规则<ul>
-<li>空白或者以#开始的文字将被忽略, 比如注释一行可以用 #</li>
-<li>可以使用通配符,例如 *</li>
-<li>使用 / 结束可以匹配文件夹,例如 doc/ 将匹配doc文件夹</li>
-<li>使用 ! 来声明一个非语句. 比如 !doc.txt 将不会忽略doc.txt文件</li>
-</ul>
-</li>
-</ul>
-<p><a href="https://www.cnblogs.com/langtianya/p/5748885.html" target="_blank" rel="noopener">猛击这里获取更多</a></p>
+<p><code>`</code>python<br>Color.RED is Color.RED</p>
 <blockquote>
-<p>未完待续…</p>
+<blockquote>
+<blockquote>
+<p>True<br>Color.RED is not Color.BLUE<br>True<br>Color.RED is Color.BLUE<br>False</p>
+</blockquote>
+</blockquote>
 </blockquote>
 
       
@@ -563,8 +474,8 @@
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <p><span>本文作者:</span><a href="/" title="访问 李超 的个人博客">李超</a></p>
-  <p><span>本文链接:</span><a href="/Github入门教学/" title="github简单入门">https://ojerk.cn/Github入门教学/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://ojerk.cn/Github入门教学/"  aria-label="复制成功！"></i></span>
+  <p><span>本文链接:</span><a href="/Enum/" title="Enum">https://ojerk.cn/Enum/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://ojerk.cn/Enum/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>版权声明:</span><i class="fa fa-creative-commons"></i>本博客所有文章除特别声明外，均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>  
 </div>
@@ -624,13 +535,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Git/" rel="tag">
+            <a href="/tags/Python/" rel="tag">
 			<i class="fa fa-tag"></i>
-			Git</a>
-          
-            <a href="/tags/Github/" rel="tag">
-			<i class="fa fa-tag"></i>
-			Github</a>
+			Python</a>
           
         </div>
       
@@ -643,8 +550,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/Python里库、包、模块的区别/" rel="next" title="Python里包、库、模块的区别">
-                <i class="fa fa-chevron-left"></i> Python里包、库、模块的区别
+              <a href="/Ubuntu下MongoDB的安装及使用/" rel="next" title="Ubuntu下MongoDB的安装及使用">
+                <i class="fa fa-chevron-left"></i> Ubuntu下MongoDB的安装及使用
               </a>
             
           </div>
@@ -652,10 +559,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/Pathlib/" rel="prev" title="Python Pathlib">
-                Python Pathlib <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -830,7 +733,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git-GitHub-Briefer-Course"><span class="nav-number">1.</span> <span class="nav-text">Git_GitHub Briefer Course</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初次使用的配置"><span class="nav-number">1.2.</span> <span class="nav-text">初次使用的配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git具体食用方法步骤"><span class="nav-number">1.3.</span> <span class="nav-text">Git具体食用方法步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub具体食用方法步骤"><span class="nav-number">1.4.</span> <span class="nav-text">GitHub具体食用方法步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#准备阶段"><span class="nav-number">1.4.1.</span> <span class="nav-text">准备阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub食用阶段"><span class="nav-number">1.4.2.</span> <span class="nav-text">GitHub食用阶段</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python标准库之Enum-枚举"><span class="nav-number">1.</span> <span class="nav-text">Python标准库之Enum(枚举)</span></a></li></ol></div>
             
 
           </div>
