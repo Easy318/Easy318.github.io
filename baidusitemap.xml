@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://ojerk.cn/SQLAlchemy/</loc>
+    <lastmod>2019-09-29T02:52:07.930Z</lastmod>
+    <data>
+        <display>
+        <title>SQLAlchemy</title>
+        <pubTime>2019-09-24T07:30:48.000Z</pubTime>
+        
+        <tag>SQL</tag>
+         
+        <tag>SQLAlchemy</tag>
+         
+         
+           
+             
+              <breadCrumb title="SQL" url="https://ojerk.cn/categories/SQL/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://ojerk.cn/MysqlServer%E5%90%84%E5%B9%B3%E5%8F%B0%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2019-09-24T07:53:48.023Z</lastmod>
     <data>
@@ -17,28 +39,6 @@
            
              
               <breadCrumb title="Mysql" url="https://ojerk.cn/categories/Mysql/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/SQLAlchemy%E5%AD%A6%E4%B9%A0%E5%8F%8A%E4%BD%BF%E7%94%A8/</loc>
-    <lastmod>2019-09-24T07:31:46.501Z</lastmod>
-    <data>
-        <display>
-        <title>SQLAlchemy学习及使用</title>
-        <pubTime>2019-09-24T07:30:48.000Z</pubTime>
-        
-        <tag>SQL</tag>
-         
-        <tag>SQLAlchemy</tag>
-         
-         
-           
-             
-              <breadCrumb title="SQL" url="https://ojerk.cn/categories/SQL/"/>
           
         </display>
     </data>

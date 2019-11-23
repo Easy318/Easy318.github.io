@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="SQL,SQLAlchemy," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Superli's Blog" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="阅读前的准备 在开始前,请确保你已经做好以下准备   请确保你的Python版本是3.6以上 已安装完Mysql-server,如果还没有安装,可以参考MysqlServer各平台下的安装及使用  SQLALchemy安装及使用安装1pip install SQLAlchemy 使用直接上一个增删改查的栗子: 12345678910111213141516171819202122232425262">
+<meta name="keywords" content="SQL,SQLAlchemy">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SQLAlchemy">
+<meta property="og:url" content="https://ojerk.cn/SQLAlchemy/index.html">
+<meta property="og:site_name" content="Superli&#39;s Blog">
+<meta property="og:description" content="阅读前的准备 在开始前,请确保你已经做好以下准备   请确保你的Python版本是3.6以上 已安装完Mysql-server,如果还没有安装,可以参考MysqlServer各平台下的安装及使用  SQLALchemy安装及使用安装1pip install SQLAlchemy 使用直接上一个增删改查的栗子: 12345678910111213141516171819202122232425262">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-09-29T02:52:07.930Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SQLAlchemy">
+<meta name="twitter:description" content="阅读前的准备 在开始前,请确保你已经做好以下准备   请确保你的Python版本是3.6以上 已安装完Mysql-server,如果还没有安装,可以参考MysqlServer各平台下的安装及使用  SQLALchemy安装及使用安装1pip install SQLAlchemy 使用直接上一个增删改查的栗子: 12345678910111213141516171819202122232425262">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://ojerk.cn/SQLAlchemy/"/>
+
+
+
+
+
+  <title>SQLAlchemy | Superli's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+	<a href="https://github.com/easy318"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Superli's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-game">
+          <a href="/categories/Game/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-gamepad"></i> <br />
+            
+            游戏
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-train">
+          <a href="/categories/Train/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-graduation-cap"></i> <br />
+            
+            培训
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ojerk.cn/SQLAlchemy/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="李超">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/头像.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Superli's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">SQLAlchemy</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T15:30:48+08:00">
+                2019-09-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/SQL/" itemprop="url" rel="index">
+                    <span itemprop="name">SQL</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/SQLAlchemy/" class="leancloud_visitors" data-flag-title="SQLAlchemy">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+			<span class="post-meta-divider"></span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,366
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="阅读前的准备"><a href="#阅读前的准备" class="headerlink" title="阅读前的准备"></a>阅读前的准备</h2><blockquote>
+<p>在开始前,请确保你已经做好以下准备</p>
+</blockquote>
+<ul>
+<li>请确保你的Python版本是3.6以上</li>
+<li>已安装完Mysql-server,如果还没有安装,可以参考<a href="https://ojerk.cn/MysqlServer%E5%90%84%E5%B9%B3%E5%8F%B0%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/">MysqlServer各平台下的安装及使用</a></li>
+</ul>
+<h2 id="SQLALchemy安装及使用"><a href="#SQLALchemy安装及使用" class="headerlink" title="SQLALchemy安装及使用"></a>SQLALchemy安装及使用</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install SQLAlchemy</span><br></pre></td></tr></table></figure>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p><strong>直接上一个增删改查的栗子:</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> create_engine, Column, Integer, String</span><br><span class="line"><span class="keyword">from</span> sqlalchemy.ext.declarative <span class="keyword">import</span> declarative_base</span><br><span class="line"><span class="keyword">from</span> sqlalchemy.orm <span class="keyword">import</span> sessionmaker</span><br><span class="line"></span><br><span class="line"><span class="comment"># 数据库配置</span></span><br><span class="line">HOSTNAME = <span class="string">'127.0.0.1'</span></span><br><span class="line">PORT = <span class="string">'3306'</span></span><br><span class="line">DATABASE = <span class="string">'first_sqlalchemy'</span></span><br><span class="line">USERNAME = <span class="string">'root'</span></span><br><span class="line">PASSWORD = <span class="string">'root'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># dialect+driver://username:password@host:port/database</span></span><br><span class="line">DB_URI = <span class="string">f"mysql+pymysql://<span class="subst">&#123;USERNAME&#125;</span>:<span class="subst">&#123;PASSWORD&#125;</span>@<span class="subst">&#123;HOSTNAME&#125;</span>:<span class="subst">&#123;PORT&#125;</span>/<span class="subst">&#123;DATABASE&#125;</span>?charset=utf8mb4"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建链接引擎</span></span><br><span class="line">engine = create_engine(DB_URI)</span><br><span class="line"><span class="comment"># 利用引擎来创建一个ORM基类</span></span><br><span class="line">Base = declarative_base(engine)</span><br><span class="line"><span class="comment"># 利用session对象进行数据的增删改查</span></span><br><span class="line">session = sessionmaker(engine)()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 用这个Base类作为基类来写自己的ORM类。要定义__tablename__类属性，来指定这个模型映射到数据库中的表名</span></span><br><span class="line"><span class="comment"># 在这个ORM模型中创建一些属性，来跟表中的字段进行一一映射。这些属性必须是sqlalchemy给我们提供好的数据类型。</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span><span class="params">(Base)</span>:</span></span><br><span class="line">    __tablename__ = <span class="string">'person'</span></span><br><span class="line">    id = Column(Integer, primary_key=<span class="keyword">True</span>, autoincrement=<span class="keyword">True</span>)</span><br><span class="line">    name = Column(String(<span class="number">50</span>))</span><br><span class="line">    age = Column(Integer)</span><br><span class="line">    country = Column(String(<span class="number">50</span>))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 方便打印对象时,查看数据</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__repr__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> <span class="string">f"&lt;Person(name:<span class="subst">&#123;self.name&#125;</span>, age:<span class="subst">&#123;self.age&#125;</span>, country:<span class="subst">&#123;self.country&#125;</span>)&gt;"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用Base.metadata.create_all()来将模型映射到数据库中</span></span><br><span class="line"><span class="comment"># 注意: 一旦使用Base.metadata.create_all()将模型映射到数据库中后，即使改变了模型的字段，也不会重新映射了</span></span><br><span class="line"><span class="comment"># 为了方便测试,可以调用Base.metadata.drop_all(),清除由Base创建的表</span></span><br><span class="line"><span class="comment"># Base.metadata.drop_all()</span></span><br><span class="line"></span><br><span class="line">Base.metadata.create_all()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加数据</span></span><br><span class="line"><span class="comment"># 方法一(单个添加)</span></span><br><span class="line">p = Person(name=<span class="string">'张三'</span>, age=<span class="number">18</span>, country=<span class="string">'china'</span>)</span><br><span class="line">session.add(p)</span><br><span class="line">session.commit()</span><br><span class="line"><span class="comment"># 方法二(一次性添加多个)</span></span><br><span class="line">p1 = Person(name=<span class="string">'李四'</span>,age=<span class="number">19</span>,country=<span class="string">'china'</span>)</span><br><span class="line">p2 = Person(name=<span class="string">'王五'</span>,age=<span class="number">20</span>,country=<span class="string">'china'</span>)</span><br><span class="line">session.add_all([p1,p2])</span><br><span class="line">session.commit()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看数据</span></span><br><span class="line"><span class="comment"># 查找某个模型对应的那个表中所有的数据：</span></span><br><span class="line">all_person = session.query(Person).all()</span><br><span class="line"><span class="comment"># 使用filter_by来做条件查询</span></span><br><span class="line">all_person = session.query(Person).filter_by(name=<span class="string">'张三'</span>).all()</span><br><span class="line"><span class="comment"># 使用filter来做条件查询</span></span><br><span class="line">all_person = session.query(Person).filter(Person.name==<span class="string">'张三'</span>).all()</span><br><span class="line"><span class="comment"># 使用get方法查找数据，get方法是根据id来查找的，只会返回一条数据或者None</span></span><br><span class="line">person = session.query(Person).get(primary_key)</span><br><span class="line"><span class="comment"># 使用first方法获取结果集中的第一条数据</span></span><br><span class="line">person = session.query(Person).first()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改数据</span></span><br><span class="line">person = session.query(Person).first()</span><br><span class="line">person.name = <span class="string">'王麻子'</span></span><br><span class="line">session.commit()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除数据</span></span><br><span class="line">person = session.query(Person).first()</span><br><span class="line">session.delete(person)</span><br><span class="line">session.commit()</span><br></pre></td></tr></table></figure>
+<p><strong>常用数据类型:</strong></p>
+<table>
+<thead>
+<tr>
+<th>python类型</th>
+<th>映射到数据库的对应类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Integer</td>
+<td>int</td>
+<td>整型</td>
+</tr>
+<tr>
+<td>Float</td>
+<td>float</td>
+<td>浮点类型(占32位)</td>
+</tr>
+<tr>
+<td>Double</td>
+<td>double</td>
+<td>双精度浮点类型(占64位)</td>
+</tr>
+<tr>
+<td>String</td>
+<td>varchar</td>
+<td>可变字符类型</td>
+</tr>
+<tr>
+<td>Boolean</td>
+<td>tinyint</td>
+<td>布尔类型</td>
+</tr>
+<tr>
+<td>DECIMAL</td>
+<td>decimal</td>
+<td>定点类型</td>
+</tr>
+<tr>
+<td>Enum</td>
+<td>enum</td>
+<td>枚举类型</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>datetime</td>
+<td>时间类型，只能存储年月日</td>
+</tr>
+<tr>
+<td>DateTime</td>
+<td>datetime</td>
+<td>时间类型，可以存储年月日时分秒毫秒等</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>datetime</td>
+<td>时间类型，只能存储时分秒</td>
+</tr>
+<tr>
+<td>Text</td>
+<td>text</td>
+<td>存储长字符串(大概6w多字符)</td>
+</tr>
+<tr>
+<td>LONGTEXT</td>
+<td>longtext</td>
+<td>长文本类型</td>
+</tr>
+</tbody>
+</table>
+<p>补充:</p>
+<ul>
+<li>DECIMAL(arg1,arg2) 传两个参数,arg1代表该字段一共存储多少位数字,arg2代表小数点后保留多少位(四舍五入)</li>
+<li><a href="https://ojerk.cn/Enum/">Eunm</a>可以直接用Python3自带的枚举类来进行传递,示例代码如下:</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 不使用自带的enum</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Article</span><span class="params">(Base)</span>:</span></span><br><span class="line">    __tablename__ = <span class="string">'article'</span></span><br><span class="line">    id = Column(Integer,primary_key=<span class="keyword">True</span>,autoincrement=<span class="keyword">True</span>)</span><br><span class="line">    tag = Column(Enum(<span class="string">"python"</span>,<span class="string">'flask'</span>,<span class="string">'django'</span>))</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> enum <span class="keyword">import</span> Enum</span><br><span class="line">Tag = Enum(<span class="string">'Tag'</span>, <span class="string">'python flask django'</span>)</span><br><span class="line"><span class="comment"># 使用自带的enum</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Article</span><span class="params">(Base)</span>:</span></span><br><span class="line">    __tablename__ = <span class="string">'article'</span></span><br><span class="line">    id = Column(Integer,primary_key=<span class="keyword">True</span>,autoincrement=<span class="keyword">True</span>)</span><br><span class="line">    tag = Column(Enum(Tag))</span><br><span class="line"></span><br><span class="line">article = Article(tag=Tag.flask)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>关于映射到数据库里的datetime类型,可以借助Python里datetime模块来实现,示例代码如下</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> Date, DateTime, Time</span><br><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime, date, time</span><br><span class="line"></span><br><span class="line"><span class="comment"># Date</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Article</span><span class="params">(Base)</span>:</span></span><br><span class="line">    __tablename__ = <span class="string">'article'</span></span><br><span class="line">    id = Column(Integer,primary_key=<span class="keyword">True</span>,autoincrement=<span class="keyword">True</span>)</span><br><span class="line">    create_time = Column(Date)</span><br><span class="line"></span><br><span class="line">article = Article(create_time=date(<span class="number">2017</span>,<span class="number">10</span>,<span class="number">10</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># DateTime</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Article</span><span class="params">(Base)</span>:</span></span><br><span class="line">    __tablename__ = <span class="string">'article'</span></span><br><span class="line">    id = Column(Integer,primary_key=<span class="keyword">True</span>,autoincrement=<span class="keyword">True</span>)</span><br><span class="line">    create_time = Column(DateTime)</span><br><span class="line"></span><br><span class="line">article = Article(create_time=datetime(<span class="number">2011</span>,<span class="number">11</span>,<span class="number">11</span>,<span class="number">11</span>,<span class="number">11</span>,<span class="number">11</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># Time</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Article</span><span class="params">(Base)</span>:</span></span><br><span class="line">    __tablename__ = <span class="string">'article'</span></span><br><span class="line">    id = Column(Integer,primary_key=<span class="keyword">True</span>,autoincrement=<span class="keyword">True</span>)</span><br><span class="line">    create_time = Column(Time)</span><br><span class="line"></span><br><span class="line">article = Article(create_time=time(hour=<span class="number">11</span>,minute=<span class="number">11</span>,second=<span class="number">11</span>))</span><br></pre></td></tr></table></figure>
+<p><strong>Column常用参数:</strong></p>
+<ul>
+<li>primary_key：设置字段为主键</li>
+<li>autoincrement：设置字段为自增长的</li>
+<li>default：设置字段的默认值,常用于发表时间这些字段上</li>
+<li>nullable：指定某个字段是否可以为空,默认值是True</li>
+<li>unique：指定某个字段的值是否唯一,默认是False</li>
+<li>onupdate：在数据更新的时候会调用这个参数指定的值或者函数<ul>
+<li>注意</li>
+<li>在第一次插入这条数据的时候，不会用onupdate的值，只会使用default的值</li>
+<li>常用于每次更新数据的时候都要更新字段,比如update_time</li>
+</ul>
+</li>
+<li>name：指定ORM模型中某个属性映射到表中的字段名<ul>
+<li>注意</li>
+<li>如果不指定，那么会使用这个属性的名字来作为字段名</li>
+<li>如果指定了，就会使用指定的这个值作为参数</li>
+<li>这个参数也可以当作位置参数，在第1个参数来指定, 请见下面示例代码</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 关键字参数指定</span></span><br><span class="line">title = Column(String(<span class="number">50</span>),name=<span class="string">'my_title'</span>,nullable=<span class="keyword">False</span>)</span><br><span class="line"><span class="comment"># 位置参数指定</span></span><br><span class="line">title = Column(<span class="string">'my_title'</span>,String(<span class="number">50</span>),nullable=<span class="keyword">False</span>)</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #555;font-size:14px;">-------------The End-------------</div>
+    
+</div>
+
+  
+</div>
+	<div>
+		
+			
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文作者:</span><a href="/" title="访问 李超 的个人博客">李超</a></p>
+  <p><span>本文链接:</span><a href="/SQLAlchemy/" title="SQLAlchemy">https://ojerk.cn/SQLAlchemy/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://ojerk.cn/SQLAlchemy/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>版权声明:</span><i class="fa fa-creative-commons"></i>本博客所有文章除特别声明外，均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+    });
+    });  
+</script>
+
+
+		
+	</div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="李超 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="李超 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/SQL/" rel="tag">
+			<i class="fa fa-tag"></i>
+			SQL</a>
+          
+            <a href="/tags/SQLAlchemy/" rel="tag">
+			<i class="fa fa-tag"></i>
+			SQLAlchemy</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/MysqlServer各平台下的安装及使用/" rel="next" title="MysqlServer各平台下的安装及使用">
+                <i class="fa fa-chevron-left"></i> MysqlServer各平台下的安装及使用
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTUwNy8xNjAzNA=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/头像.jpg"
+                alt="李超" />
+            
+              <p class="site-author-name" itemprop="name">李超</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/easy318" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://mlln.cn/#menu" title="mlln.cn" target="_blank">mlln.cn</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://chengming1993722.github.io/" title="chengming1993722.github.io" target="_blank">chengming1993722.github.io</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#阅读前的准备"><span class="nav-number">1.</span> <span class="nav-text">阅读前的准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SQLALchemy安装及使用"><span class="nav-number">2.</span> <span class="nav-text">SQLALchemy安装及使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用"><span class="nav-number">2.2.</span> <span class="nav-text">使用</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-steam-square"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">李超</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("sf9UBNH48IvYO9WEIqh1aNCx-gzGzoHsz", "VH7LBOLAcT2B6sDLznQ98MyV");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
