@@ -4,21 +4,507 @@
 
     
   <url>
-    <loc>https://ojerk.cn/SQLAlchemy/</loc>
-    <lastmod>2019-09-29T02:52:07.930Z</lastmod>
+    <loc>https://ojerk.cn/Vscode%E4%B8%8B%E4%B9%A6%E5%86%99Markdown%E7%9A%84%E5%88%A9%E5%99%A8/</loc>
+    <lastmod>2019-12-05T13:52:25.743Z</lastmod>
     <data>
         <display>
-        <title>SQLAlchemy</title>
+        <title>Vscode下书写Markdown的利器</title>
+        <pubTime>2018-08-22T11:22:12.000Z</pubTime>
+        
+        <tag>Markdown</tag>
+         
+         
+           
+             
+              <breadCrumb title="Markdown" url="https://ojerk.cn/categories/Markdown/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Vscode%E4%B8%8APython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE%E5%92%8C%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2019-12-05T13:52:16.604Z</lastmod>
+    <data>
+        <display>
+        <title>Vscode上Python环境的配置和使用</title>
+        <pubTime>2019-01-07T08:01:34.000Z</pubTime>
+        
+        <tag>Vscode</tag>
+         
+         
+           
+             
+              <breadCrumb title="Vscode" url="https://ojerk.cn/categories/Vscode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Unittest/</loc>
+    <lastmod>2019-12-05T13:51:55.739Z</lastmod>
+    <data>
+        <display>
+        <title>Python标准库之Unittest</title>
+        <pubTime>2018-07-23T11:08:15.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Ubuntu%E4%B8%8BMongoDB%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2019-12-05T13:51:23.599Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu下MongoDB的安装及使用</title>
+        <pubTime>2019-04-08T00:47:02.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>MongoDB</tag>
+         
+         
+           
+             
+              <breadCrumb title="MongoDB" url="https://ojerk.cn/categories/MongoDB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Ubuntu%E4%B8%8B%E5%A4%9A%E7%94%A8%E6%88%B7%E7%89%88jupyterhub%E9%83%A8%E7%BD%B2/</loc>
+    <lastmod>2019-12-05T13:51:11.634Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu下多用户版jupyterhub部署</title>
+        <pubTime>2018-08-23T11:11:14.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Jupyterhub</tag>
+         
+        <tag>jupyter</tag>
+         
+         
+           
+             
+              <breadCrumb title="jupyter" url="https://ojerk.cn/categories/jupyter/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/SQLAlchemy/</loc>
+    <lastmod>2019-12-05T13:50:47.490Z</lastmod>
+    <data>
+        <display>
+        <title>SQLAlchemy不完全指北</title>
         <pubTime>2019-09-24T07:30:48.000Z</pubTime>
         
-        <tag>SQL</tag>
-         
         <tag>SQLAlchemy</tag>
          
          
            
              
-              <breadCrumb title="SQL" url="https://ojerk.cn/categories/SQL/"/>
+              <breadCrumb title="SQLAlchemy" url="https://ojerk.cn/categories/SQLAlchemy/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Shutil/</loc>
+    <lastmod>2019-12-05T13:50:23.035Z</lastmod>
+    <data>
+        <display>
+        <title>Python标准库之Shutil</title>
+        <pubTime>2018-08-06T00:52:12.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-%E8%BF%81%E7%A7%BB/</loc>
+    <lastmod>2019-12-05T13:50:02.366Z</lastmod>
+    <data>
+        <display>
+        <title>Python虚拟环境搭建/迁移</title>
+        <pubTime>2018-08-22T11:54:20.000Z</pubTime>
+        
+        <tag>VirtualEnv</tag>
+         
+         
+           
+             
+              <breadCrumb title="Virtualenv" url="https://ojerk.cn/categories/Virtualenv/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Python%E5%A4%9A%E8%BF%9B%E7%A8%8B%E7%AE%80%E5%8D%95%E4%B8%8A%E6%89%8B/</loc>
+    <lastmod>2019-12-05T13:49:20.447Z</lastmod>
+    <data>
+        <display>
+        <title>Python多进程不完全指北</title>
+        <pubTime>2018-08-22T11:34:14.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Python-%E9%87%8C%E7%9A%84%E7%9B%B8%E5%AF%B9%E5%AF%BC%E5%85%A5%E5%92%8C%E7%BB%9D%E5%AF%B9%E5%AF%BC%E5%85%A5/</loc>
+    <lastmod>2019-12-05T13:49:00.749Z</lastmod>
+    <data>
+        <display>
+        <title>Python里的相对导入和绝对导入</title>
+        <pubTime>2019-01-07T02:40:09.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Pip%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2019-12-05T13:48:45.445Z</lastmod>
+    <data>
+        <display>
+        <title>Pip不完全指北</title>
+        <pubTime>2018-10-16T09:01:21.000Z</pubTime>
+        
+        <tag>Pip</tag>
+         
+         
+           
+             
+              <breadCrumb title="Pip" url="https://ojerk.cn/categories/Pip/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Pathlib/</loc>
+    <lastmod>2019-12-05T13:48:24.118Z</lastmod>
+    <data>
+        <display>
+        <title>Python标准库之Pathlib</title>
+        <pubTime>2018-08-01T03:11:11.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Pandas-DataFrame%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E7%9A%84%E6%9F%A5%E7%9C%8B/</loc>
+    <lastmod>2019-12-05T13:48:12.236Z</lastmod>
+    <data>
+        <display>
+        <title>Pandas.DataFrame内存使用的查看</title>
+        <pubTime>2018-08-23T10:49:16.000Z</pubTime>
+        
+        <tag>Pandas</tag>
+         
+         
+           
+             
+              <breadCrumb title="Pandas" url="https://ojerk.cn/categories/Pandas/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Numpy%E9%87%8Cnan-inf%E7%9A%84%E5%BF%AB%E9%80%9F%E8%BD%AC%E6%8D%A2/</loc>
+    <lastmod>2019-12-05T13:48:01.182Z</lastmod>
+    <data>
+        <display>
+        <title>Numpy里nan,inf的快速转换</title>
+        <pubTime>2018-10-11T01:37:16.000Z</pubTime>
+        
+        <tag>Numpy</tag>
+         
+         
+           
+             
+              <breadCrumb title="Numpy" url="https://ojerk.cn/categories/Numpy/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Itertools/</loc>
+    <lastmod>2019-12-05T13:47:15.378Z</lastmod>
+    <data>
+        <display>
+        <title>Python标准库之itertools</title>
+        <pubTime>2018-08-06T00:52:01.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Github%E5%85%A5%E9%97%A8%E6%95%99%E5%AD%A6/</loc>
+    <lastmod>2019-12-05T13:47:05.462Z</lastmod>
+    <data>
+        <display>
+        <title>github不完全指北</title>
+        <pubTime>2018-07-27T08:43:41.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="https://ojerk.cn/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Collections/</loc>
+    <lastmod>2019-11-30T11:06:08.370Z</lastmod>
+    <data>
+        <display>
+        <title>Python标准库之Collections</title>
+        <pubTime>2018-08-03T01:58:48.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Enum/</loc>
+    <lastmod>2019-11-30T11:03:49.622Z</lastmod>
+    <data>
+        <display>
+        <title>Python标准库之Enum(枚举)</title>
+        <pubTime>2019-09-24T06:17:12.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/%E5%9F%B9%E8%AE%AD%E9%80%9A%E7%9F%A5%E5%B8%96/</loc>
+    <lastmod>2019-11-30T11:00:53.443Z</lastmod>
+    <data>
+        <display>
+        <title>培训通知帖</title>
+        <pubTime>2018-09-18T06:58:41.000Z</pubTime>
+        
+        <tag>培训</tag>
+         
+         
+           
+             
+              <breadCrumb title="培训" url="https://ojerk.cn/categories/%E5%9F%B9%E8%AE%AD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/%E8%A7%A3%E5%86%B3Vscode%E5%8F%B3%E9%94%AERuncode%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2019-11-30T11:00:28.837Z</lastmod>
+    <data>
+        <display>
+        <title>Vscode右键Runcode中文乱码问题的解决</title>
+        <pubTime>2018-08-23T10:55:52.000Z</pubTime>
+        
+        <tag>vscode</tag>
+         
+        <tag>乱码</tag>
+         
+         
+           
+             
+              <breadCrumb title="vscode" url="https://ojerk.cn/categories/vscode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/%E8%A7%A3%E5%86%B3Ubuntu%E4%B8%8Bmatplotlib%E4%B8%8D%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E4%B8%AD%E6%96%87/</loc>
+    <lastmod>2019-11-23T05:50:33.578Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu下matplotlib不能正常显示中文问题的解决</title>
+        <pubTime>2018-08-23T11:06:35.000Z</pubTime>
+        
+        <tag>matplotlib</tag>
+         
+         
+           
+             
+              <breadCrumb title="matplotlib" url="https://ojerk.cn/categories/matplotlib/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/%E8%A7%A3%E5%86%B3Pandas%E4%B8%8B-to-csv%E4%B9%B1%E7%A0%81/</loc>
+    <lastmod>2019-11-23T05:46:46.535Z</lastmod>
+    <data>
+        <display>
+        <title>Pandas调用to_csv方法乱码问题的解决</title>
+        <pubTime>2018-08-20T10:34:31.000Z</pubTime>
+        
+        <tag>pandas</tag>
+         
+         
+           
+             
+              <breadCrumb title="pandas" url="https://ojerk.cn/categories/pandas/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/%E8%A7%A3%E5%86%B3%E8%AF%8D%E4%BA%91%E4%B8%AD%E6%96%87%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2019-11-23T05:46:00.670Z</lastmod>
+    <data>
+        <display>
+        <title>词云里中文无法正常显示问题的解决</title>
+        <pubTime>2018-10-18T09:59:11.000Z</pubTime>
+        
+        <tag>词云</tag>
+         
+         
+           
+             
+              <breadCrumb title="python" url="https://ojerk.cn/categories/python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/%E7%BB%99jupyterNotebook%E9%85%8D%E7%BD%AE%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</loc>
+    <lastmod>2019-11-23T05:45:39.549Z</lastmod>
+    <data>
+        <display>
+        <title>JupyterNotebook---配置属于自己的Python虚拟环境</title>
+        <pubTime>2018-11-07T02:02:48.000Z</pubTime>
+        
+        <tag>jupyter</tag>
+         
+         
+           
+             
+              <breadCrumb title="jupyter" url="https://ojerk.cn/categories/jupyter/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Pipserver/</loc>
+    <lastmod>2019-11-23T05:45:10.890Z</lastmod>
+    <data>
+        <display>
+        <title>Pip---搭建属于自己的PipServer服务器</title>
+        <pubTime>2018-08-22T11:49:27.000Z</pubTime>
+        
+        <tag>Pip</tag>
+         
+         
+           
+             
+              <breadCrumb title="pip" url="https://ojerk.cn/categories/pip/"/>
           
         </display>
     </data>
@@ -39,70 +525,6 @@
            
              
               <breadCrumb title="Mysql" url="https://ojerk.cn/categories/Mysql/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/Enum/</loc>
-    <lastmod>2019-09-24T06:27:56.416Z</lastmod>
-    <data>
-        <display>
-        <title>Enum</title>
-        <pubTime>2019-09-24T06:17:12.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/Vscode%E4%B8%8APython%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE%E5%92%8C%E4%BD%BF%E7%94%A8/</loc>
-    <lastmod>2019-05-31T02:16:45.195Z</lastmod>
-    <data>
-        <display>
-        <title>Vscode上Python环境的配置和使用</title>
-        <pubTime>2019-01-07T08:01:34.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>Vscode</tag>
-         
-         
-           
-             
-              <breadCrumb title="Vscode" url="https://ojerk.cn/categories/Vscode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/Ubuntu%E4%B8%8BMongoDB%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</loc>
-    <lastmod>2019-04-15T08:04:35.438Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu下MongoDB的安装及使用</title>
-        <pubTime>2019-04-08T00:47:02.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-        <tag>MongoDB</tag>
-         
-         
-           
-             
-              <breadCrumb title="Ubuntu" url="https://ojerk.cn/categories/Ubuntu/"/>
           
         </display>
     </data>
@@ -171,69 +593,6 @@
     </url>
 
     
-  <url>
-    <loc>https://ojerk.cn/Python-%E9%87%8C%E7%9A%84%E7%9B%B8%E5%AF%B9%E5%AF%BC%E5%85%A5%E5%92%8C%E7%BB%9D%E5%AF%B9%E5%AF%BC%E5%85%A5/</loc>
-    <lastmod>2019-01-07T06:20:40.459Z</lastmod>
-    <data>
-        <display>
-        <title>Python 里的相对导入和绝对导入</title>
-        <pubTime>2019-01-07T02:40:09.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/%E5%90%8D%E8%AF%8D%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2019-01-07T02:38:16.622Z</lastmod>
-    <data>
-        <display>
-        <title>名词总结</title>
-        <pubTime>2019-01-03T13:23:33.000Z</pubTime>
-        
-        <tag>英语</tag>
-         
-         
-           
-             
-              <breadCrumb title="英语" url="https://ojerk.cn/categories/%E8%8B%B1%E8%AF%AD/"/>
-          
-             
-              <breadCrumb title="名词" url="https://ojerk.cn/categories/%E8%8B%B1%E8%AF%AD/%E5%90%8D%E8%AF%8D/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>https://ojerk.cn/%E5%9F%B9%E8%AE%AD%E9%80%9A%E7%9F%A5%E5%B8%96/</loc>
-    <lastmod>2019-01-03T09:01:13.968Z</lastmod>
-    <data>
-        <display>
-        <title>培训通知帖</title>
-        <pubTime>2018-09-18T06:58:41.000Z</pubTime>
-        
-        <tag>Train</tag>
-         
-         
-           
-             
-              <breadCrumb title="Train" url="https://ojerk.cn/categories/Train/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>https://ojerk.cn/Python%E5%85%A5%E9%97%A8-4%E8%AE%B2/</loc>
@@ -320,194 +679,6 @@
 
     
   <url>
-    <loc>https://ojerk.cn/%E7%BB%99jupyterNotebook%E9%85%8D%E7%BD%AE%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</loc>
-    <lastmod>2018-11-07T02:48:39.457Z</lastmod>
-    <data>
-        <display>
-        <title>给jupyterNotebook配置属于自己的Python虚拟环境</title>
-        <pubTime>2018-11-07T02:02:48.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>VirtualEnvWrapper</tag>
-         
-        <tag>Jupyter</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-             
-              <breadCrumb title="jupyter" url="https://ojerk.cn/categories/Python/jupyter/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/Pandas-DataFrame%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E7%9A%84%E6%9F%A5%E7%9C%8B/</loc>
-    <lastmod>2018-10-19T01:15:01.456Z</lastmod>
-    <data>
-        <display>
-        <title>Pandas.DataFrame内存使用的查看</title>
-        <pubTime>2018-08-23T10:49:16.000Z</pubTime>
-        
-        <tag>Pandas</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-             
-              <breadCrumb title="pandas" url="https://ojerk.cn/categories/Python/pandas/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/Numpy%E9%87%8Cnan-inf%E7%9A%84%E5%BF%AB%E9%80%9F%E8%BD%AC%E6%8D%A2/</loc>
-    <lastmod>2018-10-19T01:14:35.945Z</lastmod>
-    <data>
-        <display>
-        <title>Numpy里nan,inf的快速转换</title>
-        <pubTime>2018-10-11T01:37:16.000Z</pubTime>
-        
-        <tag>Numpy</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-             
-              <breadCrumb title="numpy" url="https://ojerk.cn/categories/Python/numpy/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/Ubuntu%E4%B8%8B%E5%A4%9A%E7%94%A8%E6%88%B7%E7%89%88jupyterhub%E9%83%A8%E7%BD%B2/</loc>
-    <lastmod>2018-10-19T01:12:53.820Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu下多用户版jupyterhub部署</title>
-        <pubTime>2018-08-23T11:11:14.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Jupyterhub</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-             
-              <breadCrumb title="jupyter" url="https://ojerk.cn/categories/Python/jupyter/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/%E8%A7%A3%E5%86%B3%E8%AF%8D%E4%BA%91%E4%B8%AD%E6%96%87%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2018-10-19T01:11:40.557Z</lastmod>
-    <data>
-        <display>
-        <title>解决词云中文无法正常显示问题</title>
-        <pubTime>2018-10-18T09:59:11.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>wordcloud</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/%E8%A7%A3%E5%86%B3Pandas%E4%B8%8B-to-csv%E4%B9%B1%E7%A0%81/</loc>
-    <lastmod>2018-10-19T01:11:13.391Z</lastmod>
-    <data>
-        <display>
-        <title>解决Pandas下,to_csv乱码</title>
-        <pubTime>2018-08-20T10:34:31.000Z</pubTime>
-        
-        <tag>Pandas</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-             
-              <breadCrumb title="pandas" url="https://ojerk.cn/categories/Python/pandas/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Pipserver/</loc>
-    <lastmod>2018-10-19T01:10:42.208Z</lastmod>
-    <data>
-        <display>
-        <title>搭建属于自己的Pipserver</title>
-        <pubTime>2018-08-22T11:49:27.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>Pip</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-             
-              <breadCrumb title="pip" url="https://ojerk.cn/categories/Python/pip/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/Unittest/</loc>
-    <lastmod>2018-10-19T01:09:54.796Z</lastmod>
-    <data>
-        <display>
-        <title>Python Unittest</title>
-        <pubTime>2018-07-23T11:08:15.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://ojerk.cn/Ubuntu%E4%B8%8BPython%E8%87%AA%E5%8A%A8%E4%B8%8A%E7%BD%91%E8%84%9A%E6%9C%AC%E7%9A%84%E5%AE%9E%E7%8E%B0/</loc>
     <lastmod>2018-10-19T01:08:56.277Z</lastmod>
     <data>
@@ -525,26 +696,6 @@
            
              
               <breadCrumb title="Script" url="https://ojerk.cn/categories/Script/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/Shutil/</loc>
-    <lastmod>2018-10-19T01:05:25.828Z</lastmod>
-    <data>
-        <display>
-        <title>Python Shutil</title>
-        <pubTime>2018-08-06T00:52:12.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
           
         </display>
     </data>
@@ -576,31 +727,6 @@
 
     
   <url>
-    <loc>https://ojerk.cn/Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA-%E8%BF%81%E7%A7%BB/</loc>
-    <lastmod>2018-10-19T01:04:57.603Z</lastmod>
-    <data>
-        <display>
-        <title>Python虚拟环境搭建/迁移</title>
-        <pubTime>2018-08-22T11:54:20.000Z</pubTime>
-        
-        <tag>VirtualEnv</tag>
-         
-        <tag>VirtualEnvWrapper</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-             
-              <breadCrumb title="virtualenv" url="https://ojerk.cn/categories/Python/virtualenv/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://ojerk.cn/Python%E9%87%8C%E5%BA%93%E3%80%81%E5%8C%85%E3%80%81%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8C%BA%E5%88%AB/</loc>
     <lastmod>2018-10-19T01:04:28.497Z</lastmod>
     <data>
@@ -614,204 +740,6 @@
            
              
               <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/Python%E5%A4%9A%E8%BF%9B%E7%A8%8B%E7%AE%80%E5%8D%95%E4%B8%8A%E6%89%8B/</loc>
-    <lastmod>2018-10-19T01:04:13.665Z</lastmod>
-    <data>
-        <display>
-        <title>Python多进程简单上手</title>
-        <pubTime>2018-08-22T11:34:14.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>Multiprocessing</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/Pip%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2018-10-19T01:03:53.807Z</lastmod>
-    <data>
-        <display>
-        <title>Pip常用技巧总结</title>
-        <pubTime>2018-10-16T09:01:21.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>Pip</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-             
-              <breadCrumb title="pip" url="https://ojerk.cn/categories/Python/pip/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/Pathlib/</loc>
-    <lastmod>2018-10-19T01:03:37.189Z</lastmod>
-    <data>
-        <display>
-        <title>Python Pathlib</title>
-        <pubTime>2018-08-01T03:11:11.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/Itertools/</loc>
-    <lastmod>2018-10-19T01:02:08.597Z</lastmod>
-    <data>
-        <display>
-        <title>Python itertools</title>
-        <pubTime>2018-08-06T00:52:01.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/Collections/</loc>
-    <lastmod>2018-10-19T00:58:31.155Z</lastmod>
-    <data>
-        <display>
-        <title>Python Collections</title>
-        <pubTime>2018-08-03T01:58:48.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/%E8%A7%A3%E5%86%B3Ubuntu%E4%B8%8Bmatplotlib%E4%B8%8D%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E4%B8%AD%E6%96%87/</loc>
-    <lastmod>2018-10-19T00:58:00.692Z</lastmod>
-    <data>
-        <display>
-        <title>解决Ubuntu下matplotlib不能正常显示中文问题</title>
-        <pubTime>2018-08-23T11:06:35.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Matplotlib</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
-          
-             
-              <breadCrumb title="matplotlib" url="https://ojerk.cn/categories/Python/matplotlib/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/Github%E5%85%A5%E9%97%A8%E6%95%99%E5%AD%A6/</loc>
-    <lastmod>2018-08-23T11:16:09.153Z</lastmod>
-    <data>
-        <display>
-        <title>github简单入门</title>
-        <pubTime>2018-07-27T08:43:41.000Z</pubTime>
-        
-        <tag>Git</tag>
-         
-        <tag>Github</tag>
-         
-         
-           
-             
-              <breadCrumb title="Git" url="https://ojerk.cn/categories/Git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/%E8%A7%A3%E5%86%B3Vscode%E5%8F%B3%E9%94%AERuncode%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2018-08-23T11:03:43.880Z</lastmod>
-    <data>
-        <display>
-        <title>解决Vscode右键Runcode中文乱码问题</title>
-        <pubTime>2018-08-23T10:55:52.000Z</pubTime>
-        
-        <tag>Vscode</tag>
-         
-        <tag>中文乱码</tag>
-         
-         
-           
-             
-              <breadCrumb title="Vscode" url="https://ojerk.cn/categories/Vscode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/Vscode%E4%B8%8B%E4%B9%A6%E5%86%99Markdown%E7%9A%84%E5%88%A9%E5%99%A8/</loc>
-    <lastmod>2018-08-22T11:23:30.600Z</lastmod>
-    <data>
-        <display>
-        <title>Vscode下书写Markdown的利器</title>
-        <pubTime>2018-08-22T11:22:12.000Z</pubTime>
-        
-        <tag>Vscode</tag>
-         
-        <tag>Markdown</tag>
-         
-         
-           
-             
-              <breadCrumb title="Vscode" url="https://ojerk.cn/categories/Vscode/"/>
           
         </display>
     </data>

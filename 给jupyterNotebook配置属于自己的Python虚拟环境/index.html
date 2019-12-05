@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Python,VirtualEnvWrapper,Jupyter," />
+  <meta name="keywords" content="jupyter," />
 
 
 
@@ -89,9 +89,9 @@
 
 
 <meta name="description" content="背景自从发现jupyterNotebook这种神器以后,发现项目里某些需要开会讨论的代码块,借助notebook可以很愉快的完成,只需要把环境部署到一个kernel上就行,接下来我将介绍如何在notebook上部署你专属的Python虚拟环境 创建默认大家已经装好了jupyter  进入到你需要部署的python虚拟环境里    安装ipykernel  1pip install ipykerne">
-<meta name="keywords" content="Python,VirtualEnvWrapper,Jupyter">
+<meta name="keywords" content="jupyter">
 <meta property="og:type" content="article">
-<meta property="og:title" content="给jupyterNotebook配置属于自己的Python虚拟环境">
+<meta property="og:title" content="JupyterNotebook---配置属于自己的Python虚拟环境">
 <meta property="og:url" content="https://ojerk.cn/给jupyterNotebook配置属于自己的Python虚拟环境/index.html">
 <meta property="og:site_name" content="Superli&#39;s Blog">
 <meta property="og:description" content="背景自从发现jupyterNotebook这种神器以后,发现项目里某些需要开会讨论的代码块,借助notebook可以很愉快的完成,只需要把环境部署到一个kernel上就行,接下来我将介绍如何在notebook上部署你专属的Python虚拟环境 创建默认大家已经装好了jupyter  进入到你需要部署的python虚拟环境里    安装ipykernel  1pip install ipykerne">
@@ -100,9 +100,9 @@
 <meta property="og:image" content="https://ojerk.cn/给jupyterNotebook配置属于自己的Python虚拟环境/第二部.png">
 <meta property="og:image" content="https://ojerk.cn/给jupyterNotebook配置属于自己的Python虚拟环境/第三步.png">
 <meta property="og:image" content="https://ojerk.cn/给jupyterNotebook配置属于自己的Python虚拟环境/第四步.png">
-<meta property="og:updated_time" content="2018-11-07T02:48:39.457Z">
+<meta property="og:updated_time" content="2019-11-23T05:45:39.549Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="给jupyterNotebook配置属于自己的Python虚拟环境">
+<meta name="twitter:title" content="JupyterNotebook---配置属于自己的Python虚拟环境">
 <meta name="twitter:description" content="背景自从发现jupyterNotebook这种神器以后,发现项目里某些需要开会讨论的代码块,借助notebook可以很愉快的完成,只需要把环境部署到一个kernel上就行,接下来我将介绍如何在notebook上部署你专属的Python虚拟环境 创建默认大家已经装好了jupyter  进入到你需要部署的python虚拟环境里    安装ipykernel  1pip install ipykerne">
 <meta name="twitter:image" content="https://ojerk.cn/给jupyterNotebook配置属于自己的Python虚拟环境/第一步.png">
 
@@ -140,7 +140,7 @@
 
 
 
-  <title>给jupyterNotebook配置属于自己的Python虚拟环境 | Superli's Blog</title>
+  <title>JupyterNotebook---配置属于自己的Python虚拟环境 | Superli's Blog</title>
   
 
 
@@ -314,7 +314,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">给jupyterNotebook配置属于自己的Python虚拟环境</h2>
+          <h2 class="post-title" itemprop="name headline">JupyterNotebook---配置属于自己的Python虚拟环境</h2>
         
 
         <div class="post-meta">
@@ -349,18 +349,7 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index">
-                    <span itemprop="name">Python</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/jupyter/" itemprop="url" rel="index">
+                  <a href="/categories/jupyter/" itemprop="url" rel="index">
                     <span itemprop="name">jupyter</span>
                   </a>
                 </span>
@@ -377,7 +366,7 @@
 
           
           
-             <span id="/给jupyterNotebook配置属于自己的Python虚拟环境/" class="leancloud_visitors" data-flag-title="给jupyterNotebook配置属于自己的Python虚拟环境">
+             <span id="/给jupyterNotebook配置属于自己的Python虚拟环境/" class="leancloud_visitors" data-flag-title="JupyterNotebook---配置属于自己的Python虚拟环境">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -430,7 +419,7 @@
       
 
       
-        <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>自从发现jupyterNotebook这种神器以后,发现项目里某些需要开会讨论的代码块,借助notebook可以很愉快的完成,只需要把环境部署到一个kernel上就行,接下来我将介绍如何在notebook上部署你专属的Python虚拟环境</p>
+        <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>自从发现jupyterNotebook这种神器以后,发现项目里某些需要开会讨论的代码块,借助notebook可以很愉快的完成,只需要把环境部署到一个kernel上就行,接下来我将介绍如何在notebook上部署你专属的Python虚拟环境</p>
 <h2 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h2><p>默认大家已经装好了jupyter</p>
 <ol>
 <li>进入到你需要部署的python虚拟环境里</li>
@@ -458,6 +447,7 @@
 <p><img src="第四步.png" alt="第四步"></p>
 <h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><p>如果你一不小心创建了自己不满意的kernel怎么办?没关系还可以删除</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter kernelspec remove kernelName</span><br></pre></td></tr></table></figure>
+
       
     </div>
     
@@ -483,7 +473,7 @@
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <p><span>本文作者:</span><a href="/" title="访问 李超 的个人博客">李超</a></p>
-  <p><span>本文链接:</span><a href="/给jupyterNotebook配置属于自己的Python虚拟环境/" title="给jupyterNotebook配置属于自己的Python虚拟环境">https://ojerk.cn/给jupyterNotebook配置属于自己的Python虚拟环境/</a>
+  <p><span>本文链接:</span><a href="/给jupyterNotebook配置属于自己的Python虚拟环境/" title="JupyterNotebook---配置属于自己的Python虚拟环境">https://ojerk.cn/给jupyterNotebook配置属于自己的Python虚拟环境/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://ojerk.cn/给jupyterNotebook配置属于自己的Python虚拟环境/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>版权声明:</span><i class="fa fa-creative-commons"></i>本博客所有文章除特别声明外，均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</p>  
@@ -544,17 +534,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Python/" rel="tag">
+            <a href="/tags/jupyter/" rel="tag">
 			<i class="fa fa-tag"></i>
-			Python</a>
-          
-            <a href="/tags/VirtualEnvWrapper/" rel="tag">
-			<i class="fa fa-tag"></i>
-			VirtualEnvWrapper</a>
-          
-            <a href="/tags/Jupyter/" rel="tag">
-			<i class="fa fa-tag"></i>
-			Jupyter</a>
+			jupyter</a>
           
         </div>
       
@@ -577,8 +559,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/名词总结/" rel="prev" title="名词总结">
-                名词总结 <i class="fa fa-chevron-right"></i>
+              <a href="/Python-里的相对导入和绝对导入/" rel="prev" title="Python里的相对导入和绝对导入">
+                Python里的相对导入和绝对导入 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -664,7 +646,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-count">36</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -675,7 +657,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">32</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -686,7 +668,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-count">37</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -754,7 +736,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建"><span class="nav-number">1.1.</span> <span class="nav-text">创建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除"><span class="nav-number">1.2.</span> <span class="nav-text">删除</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建"><span class="nav-number">2.</span> <span class="nav-text">创建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除"><span class="nav-number">3.</span> <span class="nav-text">删除</span></a></li></ol></div>
             
 
           </div>
