@@ -4,6 +4,150 @@
 
     
   <url>
+    <loc>https://ojerk.cn/WTForms%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8C%97%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <lastmod>2019-12-10T13:41:38.883Z</lastmod>
+    <data>
+        <display>
+        <title>WTForms不完全指北（一）</title>
+        <pubTime>2019-12-10T13:19:45.000Z</pubTime>
+        
+        <tag>Flask</tag>
+         
+        <tag>WTForms</tag>
+         
+         
+           
+             
+              <breadCrumb title="Flask" url="https://ojerk.cn/categories/Flask/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/%E7%BB%99jupyterNotebook%E9%85%8D%E7%BD%AE%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</loc>
+    <lastmod>2019-12-10T12:43:27.654Z</lastmod>
+    <data>
+        <display>
+        <title>JupyterNotebook---配置属于自己的Python虚拟环境</title>
+        <pubTime>2018-11-07T02:02:48.000Z</pubTime>
+        
+        <tag>Jupyter</tag>
+         
+         
+           
+             
+              <breadCrumb title="Jupyter" url="https://ojerk.cn/categories/Jupyter/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/%E8%A7%A3%E5%86%B3%E8%AF%8D%E4%BA%91%E4%B8%AD%E6%96%87%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2019-12-10T12:43:21.189Z</lastmod>
+    <data>
+        <display>
+        <title>词云里中文无法正常显示问题的解决</title>
+        <pubTime>2018-10-18T09:59:11.000Z</pubTime>
+        
+        <tag>词云</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/%E8%A7%A3%E5%86%B3Pandas%E4%B8%8B-to-csv%E4%B9%B1%E7%A0%81/</loc>
+    <lastmod>2019-12-10T12:43:15.915Z</lastmod>
+    <data>
+        <display>
+        <title>Pandas调用to_csv方法乱码问题的解决</title>
+        <pubTime>2018-08-20T10:34:31.000Z</pubTime>
+        
+        <tag>Pandas</tag>
+         
+         
+           
+             
+              <breadCrumb title="Pandas" url="https://ojerk.cn/categories/Pandas/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/%E8%A7%A3%E5%86%B3Ubuntu%E4%B8%8Bmatplotlib%E4%B8%8D%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E4%B8%AD%E6%96%87/</loc>
+    <lastmod>2019-12-10T12:43:09.802Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu下matplotlib不能正常显示中文问题的解决</title>
+        <pubTime>2018-08-23T11:06:35.000Z</pubTime>
+        
+        <tag>Matplotlib</tag>
+         
+         
+           
+             
+              <breadCrumb title="Matplotlib" url="https://ojerk.cn/categories/Matplotlib/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/%E8%A7%A3%E5%86%B3Vscode%E5%8F%B3%E9%94%AERuncode%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2019-12-10T12:42:59.554Z</lastmod>
+    <data>
+        <display>
+        <title>Vscode右键Runcode中文乱码问题的解决</title>
+        <pubTime>2018-08-23T10:55:52.000Z</pubTime>
+        
+        <tag>Vscode</tag>
+         
+        <tag>乱码</tag>
+         
+         
+           
+             
+              <breadCrumb title="Vscode" url="https://ojerk.cn/categories/Vscode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Pipserver/</loc>
+    <lastmod>2019-12-10T12:41:58.805Z</lastmod>
+    <data>
+        <display>
+        <title>Pip---搭建属于自己的PipServer服务器</title>
+        <pubTime>2018-08-22T11:49:27.000Z</pubTime>
+        
+        <tag>Pip</tag>
+         
+         
+           
+             
+              <breadCrumb title="Pip" url="https://ojerk.cn/categories/Pip/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://ojerk.cn/Vscode%E4%B8%8B%E4%B9%A6%E5%86%99Markdown%E7%9A%84%E5%88%A9%E5%99%A8/</loc>
     <lastmod>2019-12-05T13:52:25.743Z</lastmod>
     <data>
@@ -138,6 +282,30 @@
         <pubTime>2018-08-06T00:52:12.000Z</pubTime>
         
         <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Python%E8%87%AA%E5%8A%A8%E5%8C%96Word%E3%80%81Excel/</loc>
+    <lastmod>2019-12-05T13:50:14.186Z</lastmod>
+    <data>
+        <display>
+        <title>Python自动化Word、Excel</title>
+        <pubTime>2018-08-22T11:43:49.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>Word</tag>
+         
+        <tag>Excel</tag>
          
          
            
@@ -390,128 +558,6 @@
 
     
   <url>
-    <loc>https://ojerk.cn/%E8%A7%A3%E5%86%B3Vscode%E5%8F%B3%E9%94%AERuncode%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2019-11-30T11:00:28.837Z</lastmod>
-    <data>
-        <display>
-        <title>Vscode右键Runcode中文乱码问题的解决</title>
-        <pubTime>2018-08-23T10:55:52.000Z</pubTime>
-        
-        <tag>vscode</tag>
-         
-        <tag>乱码</tag>
-         
-         
-           
-             
-              <breadCrumb title="vscode" url="https://ojerk.cn/categories/vscode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/%E8%A7%A3%E5%86%B3Ubuntu%E4%B8%8Bmatplotlib%E4%B8%8D%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E4%B8%AD%E6%96%87/</loc>
-    <lastmod>2019-11-23T05:50:33.578Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu下matplotlib不能正常显示中文问题的解决</title>
-        <pubTime>2018-08-23T11:06:35.000Z</pubTime>
-        
-        <tag>matplotlib</tag>
-         
-         
-           
-             
-              <breadCrumb title="matplotlib" url="https://ojerk.cn/categories/matplotlib/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/%E8%A7%A3%E5%86%B3Pandas%E4%B8%8B-to-csv%E4%B9%B1%E7%A0%81/</loc>
-    <lastmod>2019-11-23T05:46:46.535Z</lastmod>
-    <data>
-        <display>
-        <title>Pandas调用to_csv方法乱码问题的解决</title>
-        <pubTime>2018-08-20T10:34:31.000Z</pubTime>
-        
-        <tag>pandas</tag>
-         
-         
-           
-             
-              <breadCrumb title="pandas" url="https://ojerk.cn/categories/pandas/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/%E8%A7%A3%E5%86%B3%E8%AF%8D%E4%BA%91%E4%B8%AD%E6%96%87%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2019-11-23T05:46:00.670Z</lastmod>
-    <data>
-        <display>
-        <title>词云里中文无法正常显示问题的解决</title>
-        <pubTime>2018-10-18T09:59:11.000Z</pubTime>
-        
-        <tag>词云</tag>
-         
-         
-           
-             
-              <breadCrumb title="python" url="https://ojerk.cn/categories/python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/%E7%BB%99jupyterNotebook%E9%85%8D%E7%BD%AE%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</loc>
-    <lastmod>2019-11-23T05:45:39.549Z</lastmod>
-    <data>
-        <display>
-        <title>JupyterNotebook---配置属于自己的Python虚拟环境</title>
-        <pubTime>2018-11-07T02:02:48.000Z</pubTime>
-        
-        <tag>jupyter</tag>
-         
-         
-           
-             
-              <breadCrumb title="jupyter" url="https://ojerk.cn/categories/jupyter/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84Pipserver/</loc>
-    <lastmod>2019-11-23T05:45:10.890Z</lastmod>
-    <data>
-        <display>
-        <title>Pip---搭建属于自己的PipServer服务器</title>
-        <pubTime>2018-08-22T11:49:27.000Z</pubTime>
-        
-        <tag>Pip</tag>
-         
-         
-           
-             
-              <breadCrumb title="pip" url="https://ojerk.cn/categories/pip/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://ojerk.cn/MysqlServer%E5%90%84%E5%B9%B3%E5%8F%B0%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2019-09-24T07:53:48.023Z</lastmod>
     <data>
@@ -696,30 +742,6 @@
            
              
               <breadCrumb title="Script" url="https://ojerk.cn/categories/Script/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/Python%E8%87%AA%E5%8A%A8%E5%8C%96Word%E3%80%81Excel/</loc>
-    <lastmod>2018-10-19T01:05:18.525Z</lastmod>
-    <data>
-        <display>
-        <title>Python自动化Word、Excel</title>
-        <pubTime>2018-08-22T11:43:49.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>Word</tag>
-         
-        <tag>Excel</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://ojerk.cn/categories/Python/"/>
           
         </display>
     </data>
