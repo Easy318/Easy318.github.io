@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="Superli&#39;s Blog">
 <meta property="og:description" content="Linux下MysqlServer的安装及使用本次教程针对以下版本的linux系统,其他版本的请自行测试  Debian 8 and 9 Ubuntu 16.04, 18.04, and 18.10  安装第一步: 猛击这里,下载MySQL APT repository 第二步: 使用以下命令安装第一步下载的发行包在安装包的过程中，将要求您选择MySQL服务器和其他组件的版本,我们只选择第一个服务">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-24T07:53:48.023Z">
+<meta property="og:updated_time" content="2019-12-11T14:18:12.938Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MysqlServer各平台下的安装及使用">
 <meta name="twitter:description" content="Linux下MysqlServer的安装及使用本次教程针对以下版本的linux系统,其他版本的请自行测试  Debian 8 and 9 Ubuntu 16.04, 18.04, and 18.10  安装第一步: 猛击这里,下载MySQL APT repository 第二步: 使用以下命令安装第一步下载的发行包在安装包的过程中，将要求您选择MySQL服务器和其他组件的版本,我们只选择第一个服务">
@@ -389,7 +389,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  462
+                  471
                 </span>
               
 
@@ -434,8 +434,10 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service mysql status</span><br></pre></td></tr></table></figure>
 <p><strong>关闭服务:</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service mysql stop</span><br></pre></td></tr></table></figure>
-<p><strong>重启服务:</strong></p>
+<p><strong>启动服务:</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service mysql start</span><br></pre></td></tr></table></figure>
+<p><strong>重启服务:</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service mysql restart</span><br></pre></td></tr></table></figure>
 <h3 id="配置远程访问"><a href="#配置远程访问" class="headerlink" title="配置远程访问"></a>配置远程访问</h3><p>默认刚装完的mysql服务是不提供远程连接的权限的,需要更改一下在mysql数据库里user表里host项的配置信息</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot -p&lt;password&gt;</span><br><span class="line">use mysql;</span><br><span class="line">update user set host = '%' where user = 'root';</span><br><span class="line">flush privileges;</span><br><span class="line">quit;</span><br></pre></td></tr></table></figure>
 <p>这时候可以用Python编写一个脚本测试一下:</p>
@@ -646,7 +648,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-count">38</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -657,7 +659,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -668,7 +670,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
