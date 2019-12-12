@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="引导上节演示了WTF的基本用法,这节将扩展以下知识点  常用验证器 自定义字段验证规则  常用验证器 Email：验证上传的数据是否为邮箱 EqualTo：验证上传的数据是否和另外一个字段相等，常用的就是密码和确认密码两个字段是否相等 InputRequired：验证上传的字段是否为空(可以理解为,必填字段) Length：长度限制，有min和max两个值进行限制(包含min,和max两个值在内)">
+<meta name="description" content="导读上节演示了WTF的基本用法,这节将扩展以下知识点  常用验证器 自定义字段验证规则  常用验证器 Email：验证上传的数据是否为邮箱 EqualTo：验证上传的数据是否和另外一个字段相等，常用的就是密码和确认密码两个字段是否相等 InputRequired：验证上传的字段是否为空(可以理解为,必填字段) Length：长度限制，有min和max两个值进行限制(包含min,和max两个值在内)">
 <meta name="keywords" content="Flask,WTForms">
 <meta property="og:type" content="article">
 <meta property="og:title" content="WTForms不完全指北（二）">
 <meta property="og:url" content="https://ojerk.cn/WTForms不完全指北（二）/index.html">
 <meta property="og:site_name" content="Superli&#39;s Blog">
-<meta property="og:description" content="引导上节演示了WTF的基本用法,这节将扩展以下知识点  常用验证器 自定义字段验证规则  常用验证器 Email：验证上传的数据是否为邮箱 EqualTo：验证上传的数据是否和另外一个字段相等，常用的就是密码和确认密码两个字段是否相等 InputRequired：验证上传的字段是否为空(可以理解为,必填字段) Length：长度限制，有min和max两个值进行限制(包含min,和max两个值在内)">
+<meta property="og:description" content="导读上节演示了WTF的基本用法,这节将扩展以下知识点  常用验证器 自定义字段验证规则  常用验证器 Email：验证上传的数据是否为邮箱 EqualTo：验证上传的数据是否和另外一个字段相等，常用的就是密码和确认密码两个字段是否相等 InputRequired：验证上传的字段是否为空(可以理解为,必填字段) Length：长度限制，有min和max两个值进行限制(包含min,和max两个值在内)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-11T14:42:06.494Z">
+<meta property="og:updated_time" content="2019-12-11T14:46:39.977Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WTForms不完全指北（二）">
-<meta name="twitter:description" content="引导上节演示了WTF的基本用法,这节将扩展以下知识点  常用验证器 自定义字段验证规则  常用验证器 Email：验证上传的数据是否为邮箱 EqualTo：验证上传的数据是否和另外一个字段相等，常用的就是密码和确认密码两个字段是否相等 InputRequired：验证上传的字段是否为空(可以理解为,必填字段) Length：长度限制，有min和max两个值进行限制(包含min,和max两个值在内)">
+<meta name="twitter:description" content="导读上节演示了WTF的基本用法,这节将扩展以下知识点  常用验证器 自定义字段验证规则  常用验证器 Email：验证上传的数据是否为邮箱 EqualTo：验证上传的数据是否和另外一个字段相等，常用的就是密码和确认密码两个字段是否相等 InputRequired：验证上传的字段是否为空(可以理解为,必填字段) Length：长度限制，有min和max两个值进行限制(包含min,和max两个值在内)">
 
 
 
@@ -389,7 +389,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  858
+                  841
                 </span>
               
 
@@ -414,7 +414,7 @@
       
 
       
-        <h2 id="引导"><a href="#引导" class="headerlink" title="引导"></a>引导</h2><p>上节演示了WTF的基本用法,这节将扩展以下知识点</p>
+        <h2 id="导读"><a href="#导读" class="headerlink" title="导读"></a>导读</h2><p>上节演示了WTF的基本用法,这节将扩展以下知识点</p>
 <ul>
 <li>常用验证器</li>
 <li>自定义字段验证规则</li>
@@ -431,9 +431,9 @@
 </ul>
 <h2 id="自定义字段验证规则"><a href="#自定义字段验证规则" class="headerlink" title="自定义字段验证规则"></a>自定义字段验证规则</h2><p>如果想要对表单中的某个字段进行更细化的验证，那么可以针对这个字段进行单独的自定义扩展,步骤如下：</p>
 <ol>
-<li>定义一个方法，方法的名字规则是：<code>validate_字段名(self,filed)</code>。</li>
-<li>在方法中，使用<code>field.data</code>可以获取到这个字段的具体的值。</li>
-<li>如果数据满足条件，那么可以什么都不做。如果验证失败，那么应该抛出一个<code>wtforms.validators.ValidationError</code>的异常，并且把验证失败的信息传到这个异常类中</li>
+<li>定义一个方法，方法的名字规则是：<code>validate_字段名(self,filed)</code></li>
+<li>在方法中，使用<code>field.data</code>可以获取到这个字段的具体的值</li>
+<li>如果验证失败，那么应该抛出一个<code>wtforms.validators.ValidationError</code>的异常，并且把验证失败的信息传到这个异常类中</li>
 </ol>
 <p>示例代码:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> wtforms.validators <span class="keyword">import</span> ValidationError</span><br><span class="line"> required = StringField(validators=[InputRequired()])</span><br><span class="line">    <span class="comment"># 1234</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">validate_required</span><span class="params">(self, field)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> field.data != <span class="string">'1234'</span>:</span><br><span class="line">            <span class="keyword">raise</span> ValidationError(<span class="string">'暗号不对！'</span>)</span><br></pre></td></tr></table></figure>
@@ -558,6 +558,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/一文搞懂cookie和session/" rel="prev" title="一文搞懂cookie和session">
+                一文搞懂cookie和session <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -641,7 +645,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">38</span>
+                  <span class="site-state-item-count">40</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -652,7 +656,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -663,7 +667,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-count">31</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -731,7 +735,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#引导"><span class="nav-number">1.</span> <span class="nav-text">引导</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用验证器"><span class="nav-number">2.</span> <span class="nav-text">常用验证器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义字段验证规则"><span class="nav-number">3.</span> <span class="nav-text">自定义字段验证规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#完整测试源码"><span class="nav-number">4.</span> <span class="nav-text">完整测试源码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#导读"><span class="nav-number">1.</span> <span class="nav-text">导读</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用验证器"><span class="nav-number">2.</span> <span class="nav-text">常用验证器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义字段验证规则"><span class="nav-number">3.</span> <span class="nav-text">自定义字段验证规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#完整测试源码"><span class="nav-number">4.</span> <span class="nav-text">完整测试源码</span></a></li></ol></div>
             
 
           </div>

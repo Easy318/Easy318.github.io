@@ -4,12 +4,60 @@
 
     
   <url>
-    <loc>https://ojerk.cn/WTForms%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8C%97%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
-    <lastmod>2019-12-11T14:42:08.481Z</lastmod>
+    <loc>https://ojerk.cn/cookie%E5%92%8Csession%E5%9C%A8flask%E9%87%8C%E7%9A%84%E8%BF%90%E7%94%A8/</loc>
+    <lastmod>2019-12-12T11:15:25.291Z</lastmod>
     <data>
         <display>
-        <title>WTForms不完全指北（一）</title>
-        <pubTime>2019-12-10T13:19:45.000Z</pubTime>
+        <title>cookie和session在flask里的运用</title>
+        <pubTime>2019-12-12T09:30:46.000Z</pubTime>
+        
+        <tag>Flask</tag>
+         
+        <tag>Cookie</tag>
+         
+        <tag>Session</tag>
+         
+         
+           
+             
+              <breadCrumb title="Flask" url="https://ojerk.cn/categories/Flask/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/%E4%B8%80%E6%96%87%E6%90%9E%E6%87%82cookie%E5%92%8Csession/</loc>
+    <lastmod>2019-12-12T09:31:42.318Z</lastmod>
+    <data>
+        <display>
+        <title>一文搞懂cookie和session</title>
+        <pubTime>2019-12-12T09:10:29.000Z</pubTime>
+        
+        <tag>Cookie</tag>
+         
+        <tag>Session</tag>
+         
+        <tag>Web</tag>
+         
+         
+           
+             
+              <breadCrumb title="Web" url="https://ojerk.cn/categories/Web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/WTForms%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8C%97%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
+    <lastmod>2019-12-11T14:46:39.977Z</lastmod>
+    <data>
+        <display>
+        <title>WTForms不完全指北（二）</title>
+        <pubTime>2019-12-11T13:43:19.000Z</pubTime>
         
         <tag>Flask</tag>
          
@@ -26,12 +74,12 @@
 
     
   <url>
-    <loc>https://ojerk.cn/WTForms%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8C%97%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
-    <lastmod>2019-12-11T14:42:06.494Z</lastmod>
+    <loc>https://ojerk.cn/WTForms%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8C%97%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <lastmod>2019-12-11T14:42:08.481Z</lastmod>
     <data>
         <display>
-        <title>WTForms不完全指北（二）</title>
-        <pubTime>2019-12-11T13:43:19.000Z</pubTime>
+        <title>WTForms不完全指北（一）</title>
+        <pubTime>2019-12-10T13:19:45.000Z</pubTime>
         
         <tag>Flask</tag>
          
@@ -363,9 +411,9 @@
         <title>Ubuntu下多用户版jupyterhub部署</title>
         <pubTime>2018-08-23T11:11:14.000Z</pubTime>
         
-        <tag>Linux</tag>
-         
         <tag>Jupyterhub</tag>
+         
+        <tag>Linux</tag>
          
         <tag>jupyter</tag>
          
