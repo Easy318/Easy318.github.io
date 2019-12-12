@@ -88,19 +88,19 @@
 
 
 
-<meta name="description" content="先介绍cookie在flask里的运用先来看一下我们用到的一个关键方法flask.Response.set_cookie  常用参数和注意事项:  key:可以看做字典里的键 value:可以看做字典里的值 max_age：以秒为单位,距离现在多少秒后cookie会过期 为datetime类型,这个时间需要设置为格林尼治时间,也就是要距离北京少8个小时的时间 如果max_age和expires都设">
+<meta name="description" content="cookie在flask里的运用先来看一下我们用到的一个关键方法flask.Response.set_cookie的官方API文档  常用参数说明:  key:可以看做字典里的键 value:可以看做字典里的值 max_age：以秒为单位,距离现在多少秒后cookie会过期 expires: 为datetime类型,这个时间需要设置为格林尼治时间,也就是实际使用的时候要用北京时间减8个小时  使用">
 <meta name="keywords" content="Flask,Cookie,Session">
 <meta property="og:type" content="article">
 <meta property="og:title" content="cookie和session在flask里的运用">
 <meta property="og:url" content="https://ojerk.cn/cookie和session在flask里的运用/index.html">
 <meta property="og:site_name" content="Superli&#39;s Blog">
-<meta property="og:description" content="先介绍cookie在flask里的运用先来看一下我们用到的一个关键方法flask.Response.set_cookie  常用参数和注意事项:  key:可以看做字典里的键 value:可以看做字典里的值 max_age：以秒为单位,距离现在多少秒后cookie会过期 为datetime类型,这个时间需要设置为格林尼治时间,也就是要距离北京少8个小时的时间 如果max_age和expires都设">
+<meta property="og:description" content="cookie在flask里的运用先来看一下我们用到的一个关键方法flask.Response.set_cookie的官方API文档  常用参数说明:  key:可以看做字典里的键 value:可以看做字典里的值 max_age：以秒为单位,距离现在多少秒后cookie会过期 expires: 为datetime类型,这个时间需要设置为格林尼治时间,也就是实际使用的时候要用北京时间减8个小时  使用">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://ojerk.cn/cookie和session在flask里的运用/set_cookie_api.png">
-<meta property="og:updated_time" content="2019-12-12T11:15:25.291Z">
+<meta property="og:updated_time" content="2019-12-12T13:50:59.233Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="cookie和session在flask里的运用">
-<meta name="twitter:description" content="先介绍cookie在flask里的运用先来看一下我们用到的一个关键方法flask.Response.set_cookie  常用参数和注意事项:  key:可以看做字典里的键 value:可以看做字典里的值 max_age：以秒为单位,距离现在多少秒后cookie会过期 为datetime类型,这个时间需要设置为格林尼治时间,也就是要距离北京少8个小时的时间 如果max_age和expires都设">
+<meta name="twitter:description" content="cookie在flask里的运用先来看一下我们用到的一个关键方法flask.Response.set_cookie的官方API文档  常用参数说明:  key:可以看做字典里的键 value:可以看做字典里的值 max_age：以秒为单位,距离现在多少秒后cookie会过期 expires: 为datetime类型,这个时间需要设置为格林尼治时间,也就是实际使用的时候要用北京时间减8个小时  使用">
 <meta name="twitter:image" content="https://ojerk.cn/cookie和session在flask里的运用/set_cookie_api.png">
 
 
@@ -391,7 +391,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  566
+                  577
                 </span>
               
 
@@ -416,14 +416,17 @@
       
 
       
-        <h2 id="先介绍cookie在flask里的运用"><a href="#先介绍cookie在flask里的运用" class="headerlink" title="先介绍cookie在flask里的运用"></a>先介绍cookie在flask里的运用</h2><p>先来看一下我们用到的一个关键方法<strong>flask.Response.set_cookie</strong></p>
+        <h2 id="cookie在flask里的运用"><a href="#cookie在flask里的运用" class="headerlink" title="cookie在flask里的运用"></a>cookie在flask里的运用</h2><p>先来看一下我们用到的一个关键方法<strong>flask.Response.set_cookie</strong>的官方API文档</p>
 <p><img src="set_cookie_api.png" alt="set_cookie_api"></p>
-<p><strong>常用参数和注意事项:</strong></p>
+<p><strong>常用参数说明:</strong></p>
 <ul>
 <li>key:可以看做字典里的键</li>
 <li>value:可以看做字典里的值</li>
 <li>max_age：以秒为单位,距离现在多少秒后cookie会过期</li>
-<li>为datetime类型,这个时间需要设置为格林尼治时间,也就是要距离北京少8个小时的时间</li>
+<li>expires: 为datetime类型,这个时间需要设置为格林尼治时间,也就是实际使用的时候要用北京时间减8个小时</li>
+</ul>
+<p><strong>使用注意事项:</strong></p>
+<ul>
 <li>如果max_age和expires都设置了,那么这时候以max_age为标准</li>
 <li>max_age不支持IE8以下的浏览器</li>
 <li>expires在新版的HTTP协议中被废弃,但是截止目前所有的浏览器都还是能够支持，所以如果想要兼容IE8以下的浏览器,应该使用expires，否则使用max_age</li>
@@ -734,7 +737,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#先介绍cookie在flask里的运用"><span class="nav-number">1.</span> <span class="nav-text">先介绍cookie在flask里的运用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#session在flask里的运用"><span class="nav-number">2.</span> <span class="nav-text">session在flask里的运用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#cookie在flask里的运用"><span class="nav-number">1.</span> <span class="nav-text">cookie在flask里的运用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#session在flask里的运用"><span class="nav-number">2.</span> <span class="nav-text">session在flask里的运用</span></a></li></ol></div>
             
 
           </div>
