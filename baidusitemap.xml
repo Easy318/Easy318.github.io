@@ -4,6 +4,52 @@
 
     
   <url>
+    <loc>https://ojerk.cn/Jupyterhub%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8C%97/</loc>
+    <lastmod>2020-02-18T11:23:10.171Z</lastmod>
+    <data>
+        <display>
+        <title>JupyterHub和JupyterLab服务器部署不完全指北</title>
+        <pubTime>2020-02-18T09:19:18.000Z</pubTime>
+        
+        <tag>JupyterHub</tag>
+         
+        <tag>JupyterLab</tag>
+         
+        <tag>Linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="jupyter" url="https://ojerk.cn/categories/jupyter/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://ojerk.cn/Ubuntu%E4%B8%8B%E5%A4%9A%E7%94%A8%E6%88%B7%E7%89%88jupyterhub%E9%83%A8%E7%BD%B2/</loc>
+    <lastmod>2020-02-18T09:24:32.324Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu下多用户版jupyterhub部署</title>
+        <pubTime>2018-08-23T11:11:14.000Z</pubTime>
+        
+        <tag>JupyterHub</tag>
+         
+        <tag>Linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="jupyter" url="https://ojerk.cn/categories/jupyter/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://ojerk.cn/cookie%E5%92%8Csession%E5%9C%A8flask%E9%87%8C%E7%9A%84%E8%BF%90%E7%94%A8/</loc>
     <lastmod>2019-12-12T13:50:59.233Z</lastmod>
     <data>
@@ -397,30 +443,6 @@
            
              
               <breadCrumb title="MongoDB" url="https://ojerk.cn/categories/MongoDB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://ojerk.cn/Ubuntu%E4%B8%8B%E5%A4%9A%E7%94%A8%E6%88%B7%E7%89%88jupyterhub%E9%83%A8%E7%BD%B2/</loc>
-    <lastmod>2019-12-05T13:51:11.634Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu下多用户版jupyterhub部署</title>
-        <pubTime>2018-08-23T11:11:14.000Z</pubTime>
-        
-        <tag>Jupyterhub</tag>
-         
-        <tag>Linux</tag>
-         
-        <tag>jupyter</tag>
-         
-         
-           
-             
-              <breadCrumb title="jupyter" url="https://ojerk.cn/categories/jupyter/"/>
           
         </display>
     </data>
