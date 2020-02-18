@@ -100,10 +100,12 @@
 <meta property="og:image" content="https://ojerk.cn/Jupyterhub服务器部署不完全指北/virtual配置成功.png">
 <meta property="og:image" content="https://ojerk.cn/Jupyterhub服务器部署不完全指北/虚拟环境创建成功.png">
 <meta property="og:image" content="https://ojerk.cn/Jupyterhub服务器部署不完全指北/nginx配置成功.png">
+<meta property="og:image" content="https://ojerk.cn/Jupyterhub服务器部署不完全指北/nginx启动成功.png">
 <meta property="og:image" content="https://ojerk.cn/Jupyterhub服务器部署不完全指北/jupyterhub启动成功.png">
 <meta property="og:image" content="https://ojerk.cn/Jupyterhub服务器部署不完全指北/注释.png">
 <meta property="og:image" content="https://ojerk.cn/Jupyterhub服务器部署不完全指北/新效果.png">
-<meta property="og:updated_time" content="2020-02-18T11:23:10.171Z">
+<meta property="og:image" content="https://ojerk.cn/Jupyterhub服务器部署不完全指北/index.png">
+<meta property="og:updated_time" content="2020-02-18T11:29:50.414Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JupyterHub和JupyterLab服务器部署不完全指北">
 <meta name="twitter:description" content="前提条件本次教程使用的是Ubuntu 18.04,其他Linux distributions请自行测试使用 目标 我们将在Python虚拟环境下创建JupyterHub+JupyterLab 该虚拟环境将提供所有用户使用 自定义模板配置 通过Nginx建立一个反向代理提供外部访问使用  第一部分: 创建虚拟环境Ubuntu 18.04 自带了Python3.6.9,省去了很多安装上的麻烦,我们直接">
@@ -397,7 +399,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,536
+                  1,529
                 </span>
               
 
@@ -485,7 +487,7 @@
 <p>这时候我们重启一下nginx</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service nginx restart</span><br></pre></td></tr></table></figure>
 <p>打开你的浏览器输入你服务器地址,如下图所示则说明nginx服务启动成功</p>
-<p>~<a href="nginx启动成功.png">nginx</a></p>
+<p><img src="nginx启动成功.png" alt="nginx"></p>
 <h2 id="第五部分-启动服务器"><a href="#第五部分-启动服务器" class="headerlink" title="第五部分: 启动服务器"></a>第五部分: 启动服务器</h2><p>在刚开始创建的虚拟环境下执行</p>
 <p><strong>临时测试:</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/jupyterhub</span><br><span class="line">jupyterhub</span><br></pre></td></tr></table></figure>
@@ -493,9 +495,8 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/jupyterhub</span><br><span class="line">nohup jupyterhub &amp;</span><br></pre></td></tr></table></figure>
 <p>打开浏览器输入: <strong>你的IP地址/jupyter</strong>,看到如下图所示,说明服务器配置并启动成功</p>
 <p><img src="jupyterhub启动成功.png" alt="jupyterhub启动成功"></p>
-<h2 id="第六部分-自定义模板"><a href="#第六部分-自定义模板" class="headerlink" title="第六部分: 自定义模板"></a>第六部分: 自定义模板</h2><p>jupyterhub的页面是根据jinja2生成的,所以你想要修改模板需要先了解jinja2,这里只是抛砖引玉,举一个简单的例子来说明一下,由于我们的网站不是通过https加密,所以你可以看到我们的登录界面有一个丑丑凑得Warning提示,我将修改模板来取消掉该提示</p>
-<p>jupyterhub默认的模板文件储存在 /opt/virtualenvs/jupyter/share/jupyterhub/templates下面</p>
-<p>所以我们打开login.html做如下修改</p>
+<h2 id="第六部分-自定义模板"><a href="#第六部分-自定义模板" class="headerlink" title="第六部分: 自定义模板"></a>第六部分: 自定义模板</h2><p>jupyterhub的页面是根据jinja2生成的,所以你想要修改模板需要先了解jinja2,这里只是抛砖引玉,举一个简单的例子来说明一下,由于我们的网站不是通过https加密,所以你可以看到我们的登录界面有一个丑丑的Warning提示,我将修改模板来取消掉该提示</p>
+<p>jupyterhub默认的模板文件储存在 /opt/virtualenvs/jupyter/share/jupyterhub/templates下面,所以我们打开login.html做如下修改</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /opt/virtualenvs/jupyter/share/jupyterhub/templates/login.html</span><br></pre></td></tr></table></figure>
 <p>注释掉如下代码:</p>
 <p><img src="注释.png" alt="注释"></p>
@@ -507,7 +508,7 @@
 <p>根据提示配置完,然后在配置文件里把该用户添加到管理员白名单</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vim /opt/jupyterhub/jupyterhub_config.py</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 做如下修改</span><br><span class="line">c.Authenticator.admin_users = &#123;'wlb'&#125;</span><br></pre></td></tr></table></figure>
 <p>启动服务器,输入账号密码,你就会发现你可以成功登陆到如下主界面</p>
-<p>![主界面]{index.png}</p>
+<p><img src="index.png" alt="主界面"></p>
 <p>作为管理员:</p>
 <ul>
 <li>可以添加删除用户,以及创建管理员,通过控制台提供的接口进行操作,配置文件将会自动更新</li>
